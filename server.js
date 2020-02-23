@@ -7,7 +7,8 @@ const path = require('path');
 const app = express();
 
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/mern', {useNewUrlParser:true});
+// mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/mern', {useNewUrlParser:true});
+mongoose.connect("mongodb+srv://chukwiz:bmamarcus@csm-dl1cm.mongodb.net/test?retryWrites=true&w=majority");
 
 app.use(cors({
     origin: process.env.ALLOW_ORIGIN,

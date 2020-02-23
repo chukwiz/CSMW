@@ -4,26 +4,6 @@ import axios from 'axios';
 export const register = (newUser) => {
     return axios
     .post('users/register',newUser
-    // {
-    //     first_name:newUser.first_name,
-    //     last_name:newUser.last_name,
-    //     email:newUser.email,
-    //     password:newUser.password,
-    //     job:newUser.job,
-    //     age:newUser.age,
-    //     phone:newUser.phone,
-    //     city:newUser.city,
-    //     usInvestor:newUser.usInvestor,
-    //     investorType:newUser.investorType,
-    //     accredited:newUser.accredited,
-    //     hearabout:newUser.hearabout,
-    //     capital:newUser.capital,
-    //     fundsType:newUser.fundsType,
-    //     liketoKnow:newUser.liketoKnow,
-    //     bitaddress:newUser.bitaddress,
-    //     photo:newUser.photo,
-    //     documents:newUser.documents,
-    // }
     )
     .then(res=> {
         console.log(newUser)

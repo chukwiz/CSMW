@@ -1,9 +1,34 @@
 import React from 'react';
+
+import Backdrop from '@material-ui/core/Backdrop';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import { makeStyles } from '@material-ui/core/styles';
+
 import SignupForm from '../../components/SignUp/UserForm';
 
+const useStyles = makeStyles(theme => ({
+  backdrop: {
+    zIndex: theme.zIndex.drawer + 1,
+    color: '#fff',
+  },
+}));
+
 const SignUp = () => {
+
+  const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleToggle = () => {
+    setOpen(!open);
+  };
+
     return (
         <div style={{fontSize:"85%"}}>
+        {/* <Backdrop className={classes.backdrop} open onClick={handleClose}>
+        <CircularProgress color="inherit" />
+      </Backdrop> */}
           {/*[if lt IE 9]>
   <div style="text-align:center; padding: 6px 0; background: #cc0000; font-size: 18px; color: #fff; font-weight: 500;">You are using an old version of Internet Explorer. For a better experience, keep your browser up to date. <a href="http://windows.microsoft.com/ie" target="_blank" class="btn btn-sm btn-info"><i class="fa fa-edge"></i> Get the latest IE</a></div>
   <![endif]*/}

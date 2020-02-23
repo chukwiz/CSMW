@@ -13,6 +13,10 @@ import Bitcoin from "./Bitcoin";
 import Uploads from "./Uploads";
 import Uploadd from "./Uploadp";
 
+import Backdrop from '@material-ui/core/Backdrop';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import { makeStyles } from '@material-ui/core/styles';
+
 class UserForm extends Component {
     state = {
         step:1,
@@ -36,7 +40,8 @@ class UserForm extends Component {
         photourl:"",
         documents:null,
         documentsurl:"",
-        finished:null
+        finished:null,
+        loading:false
     }
 
 
@@ -55,14 +60,16 @@ class UserForm extends Component {
     }
 
     submit = () => {
-        this.setState({finished:true})
+        this.setState({finished:true,loading:true})
         let data = new FormData()
         // userdata.append("file",this.state.photo)
         for(let name in this.state){
             data.append(name,this.state[name])
         }
         register(data)
-        // .then(history.push('/login'))
+        .then(history.push('/login'),(err) => {
+            this.setState({loading:false})
+        })
     }
 
     handleChange = input => e => {
@@ -162,10 +169,15 @@ class UserForm extends Component {
                             prevStep = {this.prevStep} />
                         )
                 default:
-                    return null
+                    return (
+                        null
+                    )
 
         }
+
+        
     }
+    
 }
 
 export default UserForm

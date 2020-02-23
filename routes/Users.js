@@ -97,10 +97,12 @@ users.post('/register',upload.fields([{name:"documents", maxCount:1},{name:"phot
         //     }
         // })
         // sendMail(email, first_name)
+        console.log('user registered')
         res.header('x-auth', token).send(user)
     })
     .catch((err) => {
-        res.status(400).send(err)
+        // res.status(400).send(err)
+        console.log(err)
     })
 
     // User.findOne({
