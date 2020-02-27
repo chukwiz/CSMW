@@ -94,4 +94,4 @@ const sendMail = (email, name) => {
 }
 
 
-module.exports = sendMail;
+// module.exports = sendMail;

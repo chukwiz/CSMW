@@ -37,12 +37,12 @@ const useStyles = makeStyles(theme => ({
       width: 40,
     height: 40,
     borderRadius:"50%",
-    border:"1px solid #ccc",
+    border:"1px solid #1b1b1b",
     padding:6,
     alignSelf:"flex-end",
     float:"right",
     resizeMode: 'contain',
-    backgroundColor:"#dfdfdf"
+    // backgroundColor:"#dfdfdf"
 
     },
 
@@ -59,7 +59,7 @@ const classes = useStyles({color: props.color});
 return (
 <Paper elevation={0} className = {classes.root}>
 <div className = {classes.margin}>
-  <div style = {{color:"#505050" ,display:"inline", fontWeight:"200"}} >
+  <div style = {{color:"#505050",backgroundColor:"#3e72aa27",padding:"10px",borderRadius:"5%" ,display:"inline", fontWeight:"200"}} >
   <h4 style ={{margin:0, fontWeight:400,color:"#808080d7"}}> {props.name} </h4>
   {/* <p style ={{margin:0}}>sfd</p> */}
   </div>

@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import {Link,Route} from 'react-router-dom';
 
 // 
 import { makeStyles } from '@material-ui/core/styles';
@@ -10,7 +9,6 @@ import FavoriteIcon from '@material-ui/icons/DeveloperMode';
 import CreditCard from '@material-ui/icons/CreditCard';
 import PropTypes from 'prop-types';
 // import SwipeableViews from 'react-swipeable-views';
-import {useTheme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 // 
@@ -24,6 +22,16 @@ import {Button, ButtonGroup} from '@material-ui/core';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import Pay from './Pay/pay';
+
+import Backdrop from '@material-ui/core/Backdrop';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import QRCode from './QRCode';
+
+import QRPng from '../../../Assets/qr.png';
 
 import classes from './Deposit.module.css';
 
@@ -58,11 +66,35 @@ function a11yProps(index) {
 }
 
 const useStyles = makeStyles(theme => ({
-  // root: {
-  //   backgroundColor: theme.palette.background.paper,
-  //   width: 500,
-  // },
-}));
+  root1: {
+    flexGrow: 1,
+  },
+  backdrop: {
+      zIndex: theme.zIndex.drawer + 1,
+      color: '#fff',
+    },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+  root: {
+      display: 'flex',
+      flexWrap: 'wrap',
+    },
+    margin: {
+      margin: theme.spacing(1),
+    },
+    button:{
+      marginTop:60
+    },
+    withoutLabel: {
+      marginTop: theme.spacing(3),
+    },
+    textField: {
+      width: 200,
+    },
+}))
 
 // 
 
@@ -116,32 +148,57 @@ const Deposit = () => {
 
 export default Deposit;
 
+
+
+
 const BankWire = () => {
 
-  const [currency, setCurrency] = React.useState('');
+  const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
 
-  const [value, setValue] = React.useState('');
+const handleClose = () => {
+  setOpen(false);
+  handleDialogOpen()
 
-  const handleChange = event => {
-    setCurrency(event.target.value);
+};
+const handleToggle = () => {
+  let inter = Math.floor(Math.random() * 11) + 20;
+  console.log(inter)
+  setOpen(!open);
+  setTimeout(handleClose, inter * 1000)
+}
+
+  
+  const [openDialog, setDialogOpen] = React.useState(false);
+
+  const handleDialogOpen = () => {
+    setDialogOpen(true);
   };
 
-  const handleValueChange = event => {
-    setValue(event.target.value)
+  const handleDialogClose = () => {
+    setDialogOpen(false);
   }
+
+  // const handleChange = event => {
+  //   setCurrency(event.target.value);
+  // };
+
+  // const handleValueChange = event => {
+  //   setValue(event.target.value)
+  // }
 
   return(
     <div className = {classes.content}>
-          <FormControl style ={styles.selector}>
+          {/* <FormControl style ={styles.selector}>
                     <InputLabel id="demo-simple-select-label">Choose Cryptocurrency</InputLabel>
                     <Select value={currency} onChange = {handleChange}>
                     <MenuItem value="BTC">BTC</MenuItem>
                     <MenuItem value="ETH">ETH</MenuItem>
                     <MenuItem value="LTC">LTC</MenuItem>
                     </Select>
-                </FormControl>
+                </FormControl> */}
 
-        <FormControl variant="outlined" className={classes.formControl}>
+        {/* <FormControl variant="outlined" className={classes.formControl}>
         
         <TextField
           value = {value}
@@ -151,18 +208,40 @@ const BankWire = () => {
           helperText="Choose Cryptocurrency Amount"
           margin = "normal"
         />
-        </FormControl>
+        </FormControl> */}
               <div className = {classes.footer}>
-              <p>You will pay approximately $28900. Click the button below to proceed</p>
+              {/* <p>You will pay approximately $28900. Click the button below to proceed</p> */}
+              <p>Make a Wire transfer request</p>
               <Button
-                  onClick={''}
                   variant="contained"
                   color="primary"
                   className={classes.button}
+                  onClick = {handleToggle}
                 >
                   Proceed
                 </Button>
                 </div>
+                <Backdrop className={classes.backdrop} open={open}>
+                  <CircularProgress color="inherit" />
+                </Backdrop>
+                <Dialog
+        open={openDialog}
+        onClose={handleDialogClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+            An unexpected error has been encountered while processing your request. Please send an email to 
+            support@csmwealth.com.
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleDialogClose} color="primary" autoFocus>
+            close
+          </Button>
+        </DialogActions>
+      </Dialog>
             </div>
             
   )
@@ -211,6 +290,11 @@ const Bitcoin = () => {
         />
         <Button onClick = {copyToClipboard}>{copySuccess}</Button>
       </ButtonGroup>
+      {/* <QRCode /> */}
+      <div style={{display:"flex",justifyContent:"center",margin:"30px"}}>
+      <img src={QRPng} />
+      </div>
+      
       <div>
         <p style = {{fontWeight:400, fontSize:"80%"}}>Enter your transaction Id for confirmation after payment has been made to credit your account</p>
         <ButtonGroup color="success">

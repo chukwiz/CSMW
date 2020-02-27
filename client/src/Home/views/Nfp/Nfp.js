@@ -51,14 +51,14 @@ const Nfp = () => {
   </button>
   <div className="collapse navbar-collapse" id="navbarNavDropdown">
     <ul className="navbar-nav ml-auto" style={{marginRight:"40px"}}>
-      <li className="nav-item active">
+      <li className="nav-item ">
         <a className="nav-link" href="/">
           HOME <span className="sr-only">(current)</span>
         </a>
       </li>
       <li className="nav-item dropdown">
         <a
-          className="nav-link dropdown-toggle"
+          className="nav-link dropdown-toggle active"
           href="/"
           id="navbarDropdownMenuLink"
           role="button"
@@ -75,22 +75,16 @@ const Nfp = () => {
           <a className="dropdown-item" href="/forex">
             Forex
           </a>
-          <a className="dropdown-item" href="/nfp">
+          <a className="dropdown-item active" href="/nfp">
             Trade Nfp
           </a>
           <a className="dropdown-item" href="/retirement">
             Retirement Income
           </a>
-          <a className="dropdown-item" href="/tradingtools">
-            Trading tools
-          </a>
+          
         </div>
       </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/whyus">
-          WHY CSM
-        </a>
-      </li>
+      
       <li className="nav-item">
         <a className="nav-link" href="/ourteam">
           OUR TEAM
@@ -112,6 +106,9 @@ const Nfp = () => {
           <a className="dropdown-item" href="/aboutus">
             About
           </a>
+          <a className="dropdown-item" href="/vision">
+            Vision
+          </a>
           <a className="dropdown-item" href="/contactus">
             Contact us
           </a>
@@ -128,6 +125,20 @@ const Nfp = () => {
     </ul>
   </div>
 </nav>
+<div className="banner video-background-banner pv-40 dark-translucent-bg hovered" style={{paddingTop: '40px !important', height: '80vh'}}>
+            <div style={{position: 'absolute',opacity:"0.6", zIndex: -1, top: '0px', left: '0px', bottom: '0px', right: '0px', overflow: 'hidden', backgroundImage: 'url("../../static/redesign/images/inner/about/hero3.jpg")', backgroundColor: 'transparent', backgroundSize: 'cover', backgroundPosition: '50% 50%', backgroundRepeat: 'no-repeat'}}>
+
+            </div>
+            <div className="container">
+                <div className="row" style={{display:"flex",justifyContent:"center"}}>
+                  <div className="col-md-5 " style={{color:"#272424",textAlign:"center"}}>
+                    <h2 className="title object-non-visible animated object-visible fadeIn" style={{color:"#272424"}} data-animation-effect="fadeIn" data-effect-delay={100}>Non-farm payroll</h2>
+                    <div className="separator-2 object-non-visible mt-10 animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}  />
+                    <a href="/signup" className="object-non-visible animated object-visible fadeIn btn btn-sm btn-default btn-ocean-green" data-animation-effect="fadeIn" data-effect-delay={100}>Sign up</a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             {/*  */}
             <section className="main-container">
@@ -178,7 +189,7 @@ const Nfp = () => {
                 {/* <div className="row"> */}
                   {/* main content starts */}
                   {/* <div style={{display:"flex",flexDirection:"column", justifyContent:"center"}}> */}
-                  <h3 style={{textAlign:"center", textTransform:"uppercase",fontWeight:"400"}}>Our Non-farm payroll Investors Packages</h3>
+                  <h3 style={{textAlign:"center", textTransform:"uppercase",fontWeight:"400"}}>Our Non-farm payroll Investor's Package</h3>
                     {/*  */}
                     <div className="col-sm-12 col-md-12 col-xs-12" style={{display:"flex",flexDirection:"row",justifyContent:"center"}}>
                     <div className="col-sm-12 col-md-3 col-xs-12">
@@ -203,37 +214,37 @@ const Nfp = () => {
               </div> */}
             </section>
             {/*================== FOOTER starts here =======================*/}
-            <section className="clearfix pv-20 hidden-sm hidden-xs" id="payment-methods" style = {{backgroundColor:"#42ce7a"}}>
+            <section className="clearfix pv-20 hidden-sm hidden-xs" id="paymen-methods" style = {{backgroundColor:"#42ce7a"}}>
 <div className="container">
 <div className="row" style={{display:"flex",justifyContent:"space-around"}}>
 <div className="owl-clients-v1" style={{display:"flex",justifyContent:"space-around",margin:"10px 0px"}}>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/wire-transfer.png" alt="wire-transfer" title="wire-transfer"/></a>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/wire-transfer.png" alt="wire-transfer" title="wire-transfer"/></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/visa-electron.png" alt="visa-electron" title="visa-electron"/></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
+</div>
+{/* <div className="item">
+<a href="/"><img src="../static/redesign/images/payment-methods/maestro.png" alt="maestro" title="maestro"/></a>
+</div> */}
+{/* <div className="item">
+<a href="/"><img src="../static/redesign/images/payment-methods/skrill.png" alt="skrill" title="skrill"/></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
+<a href="/"><img src="../static/redesign/images/payment-methods/neteller.png" alt="neteller" title="neteller"/></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/visa-electron.png" alt="visa-electron" title="visa-electron"/></a>
+<a href="/"><img src="../static/redesign/images/payment-methods/fasapay.png" alt="fasapay" title="fasapay" style={{border: "1px solid #ddd"}} /></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/maestro.png" alt="maestro" title="maestro"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/skrill.png" alt="skrill" title="skrill"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/neteller.png" alt="neteller" title="neteller"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/fasapay.png" alt="fasapay" title="fasapay" style={{border: "1px solid #ddd"}} /></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/vload1.png" alt="vload" title="vload" style={{border: "1px solid #ddd"}}/></a>
-</div>
+<a href="/"><img src="../static/redesign/images/payment-methods/vload1.png" alt="vload" title="vload" style={{border: "1px solid #ddd"}}/></a>
+</div> */}
 </div>
 </div>
 </div>

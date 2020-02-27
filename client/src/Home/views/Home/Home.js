@@ -74,15 +74,8 @@ const Home = () => {
           <a className="dropdown-item" href="/retirement">
             Retirement Income
           </a>
-          <a className="dropdown-item" href="/tradingtools">
-            Trading tools
-          </a>
+          
         </div>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/whyus">
-          WHY CSM
-        </a>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="/ourteam">
@@ -105,9 +98,13 @@ const Home = () => {
           <a className="dropdown-item" href="/aboutus">
             About
           </a>
+          <a className="dropdown-item" href="/vision">
+            Vision
+          </a>
           <a className="dropdown-item" href="/contactus">
             Contact us
           </a>
+          
           <a className="dropdown-item" href="/testimony">
             Testimonials
           </a>
@@ -293,7 +290,7 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 <br clear="all"/>
 {/* <!-- section start -->
 <!-- ================ --> */}
-<section className="pv-30 clearfix" style={{paddingBottom: "22px"}}>
+<section className="pv-30 clearfix" style={{paddingBottom: "22px", backgroundColor:"#1c222d",color:"#d0d0d0"}}>
 <div className="container">
 <div className="row">
 <div className="col-md-7 text-center">
@@ -301,10 +298,10 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 <div
   style={{
     height: 560,
-    backgroundColor: "#FFFFFF",
+    // backgroundColor: "#FFFFFF",
     overflow: "hidden",
     boxSizing: "border-box",
-    border: "1px solid #ffffff",
+    // border: "1px solid #ffffff",
     borderRadius: 4,
     textAlign: "right",
     lineHeight: 14,
@@ -318,7 +315,7 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 >
   <div style={{ height: 540, padding: 0, margin: 0, width: "100%" }}>
     <Iframe
-      src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505"
+      src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1505"
       width="100%"
       height="536px"
       scrolling="auto"
@@ -332,7 +329,7 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 </div>
 </div>
 <div className="col-md-5 col-sm-12 text-center-992">
-<h2 className="mb-15 mt-0">Invest in your success</h2>
+<h2 className="mb-15 mt-0" style={{color:"#d0d0d0"}}>Invest in your success</h2>
 <ul className="list-unstyled" style={{lineHeight: "30px",fontSize:"80%"}}>
 <li><i className="fa fa-check color-blue-light mr-5" style={{color:"#42ce7a"}}></i> Trade with higher leverage up to 1:1000</li>
 <li><i className="fa fa-check color-blue-light mr-5"></i> 100% Credit Bonus and 15% Recovery bonus</li>
@@ -448,7 +445,7 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 <h3 className="font-Playfair">Personalized Client Area</h3>
 <div className="separator clearfix"></div>
 <p >Join now and use our latest client area, which uses all the latest technologies, in order to provide you the most easy and efficient way to handle your accounts.</p>
-<a className="btn btn-gray-transparent radius-50 btn-animated" href="/">Read More <i className="fa fa-angle-double-right"></i></a>
+<a className="btn btn-gray-transparent radius-50 btn-animated" href="/signup">Read More <i className="fa fa-angle-double-right"></i></a>
 </div>
 </div>
 <div className="col-md-4 ">
@@ -457,7 +454,7 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 <h3 className="font-Playfair">Flexible Deposits</h3>
 <div className="separator clearfix"></div>
 <p>With a variety of methods to deposit funds makes it easy with no delays to deposit and start your trading since markets are moving fast.</p>
-<a className="btn btn-gray-transparent radius-50 btn-animated" href="/whyus">Read More <i className="fa fa-angle-double-right"></i></a>
+<a className="btn btn-gray-transparent radius-50 btn-animated" href="/signup">Read More <i className="fa fa-angle-double-right"></i></a>
 </div>
 </div>
 <div className="col-md-4 ">
@@ -466,7 +463,7 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 <h3 className="font-Playfair">Bonus Offerings</h3>
 <div className="separator clearfix"></div>
 <p>Open an account and choose the account plan that suits you most. Enjoy the benefits of the bonus that are offered (100% Credit Bonus or 15% Recovery bonus).</p>
-<a className="btn btn-gray-transparent radius-50 btn-animated" href="/whyus">Read More <i className="fa fa-angle-double-right"></i></a>
+<a className="btn btn-gray-transparent radius-50 btn-animated" href="/signup">Read More <i className="fa fa-angle-double-right"></i></a>
 </div>
 </div>
 </div>
@@ -474,26 +471,26 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 </section>
 
 {/* <!--================== FOOTER starts here =======================--> */}
-<section className="clearfix pv-20 hidden-sm hidden-xs" id="payment-methods" style = {{backgroundColor:"#42ce7a"}}>
+<section className="clearfix pv-20 hidden-sm hidden-xs" id="paymen-methods" style = {{backgroundColor:"#42ce7a"}}>
 <div className="container">
 <div className="row" style={{display:"flex",justifyContent:"space-around"}}>
 <div className="owl-clients-v1" style={{display:"flex",justifyContent:"space-around",margin:"10px 0px"}}>
-<div className="item">
+<div className="item col-md-3">
 <a href="/"><img src="../static/redesign/images/payment-methods/wire-transfer.png" alt="wire-transfer" title="wire-transfer"/></a>
 </div>
-<div className="item">
+<div className="item col-md-3">
 <a href="/"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
 </div>
-<div className="item">
+<div className="item col-md-3">
 <a href="/"><img src="../static/redesign/images/payment-methods/visa-electron.png" alt="visa-electron" title="visa-electron"/></a>
 </div>
-<div className="item">
+<div className="item col-md-3">
 <a href="/"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
 </div>
-<div className="item">
+{/* <div className="item">
 <a href="/"><img src="../static/redesign/images/payment-methods/maestro.png" alt="maestro" title="maestro"/></a>
-</div>
-<div className="item">
+</div> */}
+{/* <div className="item">
 <a href="/"><img src="../static/redesign/images/payment-methods/skrill.png" alt="skrill" title="skrill"/></a>
 </div>
 <div className="item">
@@ -504,7 +501,7 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 </div>
 <div className="item">
 <a href="/"><img src="../static/redesign/images/payment-methods/vload1.png" alt="vload" title="vload" style={{border: "1px solid #ddd"}}/></a>
-</div>
+</div> */}
 </div>
 </div>
 </div>

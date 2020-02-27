@@ -85,11 +85,7 @@ const TradingTools = () => {
           </a>
         </div>
       </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/whyus">
-          WHY CSM
-        </a>
-      </li>
+      
       <li className="nav-item">
         <a className="nav-link active" href="/ourteam">
           OUR TEAM
@@ -110,6 +106,9 @@ const TradingTools = () => {
         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a className="dropdown-item" href="/aboutus">
             About
+          </a>
+          <a className="dropdown-item" href="/vision">
+            Vision
           </a>
           <a className="dropdown-item" href="/contactus">
             Contact us
@@ -364,37 +363,37 @@ const TradingTools = () => {
               </div>
             </section>
             {/*================== FOOTER starts here =======================*/}
-            <section className="clearfix pv-20 hidden-sm hidden-xs" id="payment-methods" style = {{backgroundColor:"#42ce7a"}}>
+            <section className="clearfix pv-20 hidden-sm hidden-xs" id="paymen-methods" style = {{backgroundColor:"#42ce7a"}}>
 <div className="container">
 <div className="row" style={{display:"flex",justifyContent:"space-around"}}>
 <div className="owl-clients-v1" style={{display:"flex",justifyContent:"space-around",margin:"10px 0px"}}>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/wire-transfer.png" alt="wire-transfer" title="wire-transfer"/></a>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/wire-transfer.png" alt="wire-transfer" title="wire-transfer"/></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/visa-electron.png" alt="visa-electron" title="visa-electron"/></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
+</div>
+{/* <div className="item">
+<a href="/"><img src="../static/redesign/images/payment-methods/maestro.png" alt="maestro" title="maestro"/></a>
+</div> */}
+{/* <div className="item">
+<a href="/"><img src="../static/redesign/images/payment-methods/skrill.png" alt="skrill" title="skrill"/></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
+<a href="/"><img src="../static/redesign/images/payment-methods/neteller.png" alt="neteller" title="neteller"/></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/visa-electron.png" alt="visa-electron" title="visa-electron"/></a>
+<a href="/"><img src="../static/redesign/images/payment-methods/fasapay.png" alt="fasapay" title="fasapay" style={{border: "1px solid #ddd"}} /></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/maestro.png" alt="maestro" title="maestro"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/skrill.png" alt="skrill" title="skrill"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/neteller.png" alt="neteller" title="neteller"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/fasapay.png" alt="fasapay" title="fasapay" style={{border: "1px solid #ddd"}} /></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/vload1.png" alt="vload" title="vload" style={{border: "1px solid #ddd"}}/></a>
-</div>
+<a href="/"><img src="../static/redesign/images/payment-methods/vload1.png" alt="vload" title="vload" style={{border: "1px solid #ddd"}}/></a>
+</div> */}
 </div>
 </div>
 </div>

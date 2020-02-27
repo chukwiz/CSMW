@@ -6,13 +6,13 @@ const bcrypt = require('bcryptjs');
 const multer = require('multer');
 const fs = require('fs');
 const _ = require('lodash');
-const sendMail = require('../mail')
+const sendMail = require('../mailer')
 
 // var {authenticate} = require('../middleware/authenticate');
 
 const storage = multer.diskStorage({
     destination:function(req, file, cb){
-        cb(null,'./uploads/');
+        cb(null,'./client/public/uploads');
     },filename:function(req, file, cb){
         cb(null, new Date().toISOString().replace(/:/g, '-') + file.originalname)
     }
@@ -38,8 +38,12 @@ users.post('/register',upload.fields([{name:"documents", maxCount:1},{name:"phot
     let final_image = {
         contentType:req.files.photo[0].mimetype,
         path:req.files.photo[0].path,
+        name:req.files.photo[0].filename,
         image:new Buffer(encoded_image, 'base64')
     }
+    // console.log(req.files.photo[0])
+
+    let image_path = req.files.photo[0].filename
 
     let final_document = {
         contentType:req.files.documents[0].mimetype,
@@ -77,6 +81,7 @@ users.post('/register',upload.fields([{name:"documents", maxCount:1},{name:"phot
         bitaddress:req.body.bitaddress,
         profileImage:final_image,
         userdocument:final_document,
+        imagePath:image_path,
         created:today
     }
     // console.log(userData)
@@ -96,7 +101,12 @@ users.post('/register',upload.fields([{name:"documents", maxCount:1},{name:"phot
         //         res.json({message:'email sent'})
         //     }
         // })
-        // sendMail(email, first_name)
+        sendMail(email, first_name)
+        // .then(() => {
+        //     console.log('sent')
+        // }, (err) => {
+        //     console.log(err)
+        // })
         console.log('user registered')
         res.header('x-auth', token).send(user)
     })
@@ -129,6 +139,16 @@ users.post('/register',upload.fields([{name:"documents", maxCount:1},{name:"phot
     // })
 })
 
+users.get('/pdf',(req,res) => {
+    let file = fs.createReadStream("./public/quotation.pdf");
+    res.writeHead(200,{
+        'Content-Type':'application/pdf',
+        'Content-Disposition':'attachment; filename=quotation.pdf',
+        'Content-Transfer-Encoding':'Binary'
+    })
+    file.pipe(res)
+})
+
 let authenticate = (req, res, next) => {
     let token = req.header('x-auth');
     User.findByToken(token)
@@ -145,8 +165,8 @@ let authenticate = (req, res, next) => {
 }
 
 users.get('/me',authenticate,(req, res) => {
-    let body = _.pick(req.user, ['email','firstName','lastName', 'job','age','city','investorType','accredited','capital','fundsType','bitaddress','profileImage']);
-    // console.log(body)
+    let body = _.pick(req.user, ['email','firstName','lastName', 'job','age','city','investorType','accredited','capital','fundsType','bitaddress','imagePath','profileImage','capitalAmount','profit','total']);
+    console.log(req.user.profit,req.user.total,req.user.capitalAmount)
     res.send(body)
 })
 

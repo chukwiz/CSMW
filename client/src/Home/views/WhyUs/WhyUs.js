@@ -80,15 +80,8 @@ const AboutUs = () => {
           <a className="dropdown-item" href="/retirement">
             Retirement Income
           </a>
-          <a className="dropdown-item" href="/tradingtools">
-            Trading tools
-          </a>
+          
         </div>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link active" href="/whyus">
-          WHY CSM
-        </a>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="/ourteam">
@@ -97,7 +90,7 @@ const AboutUs = () => {
       </li>
       <li className="nav-item dropdown">
         <a
-          className="nav-link dropdown-toggle"
+          className="nav-link dropdown-toggle active"
           href="/"
           id="navbarDropdownMenuLink"
           role="button"
@@ -110,6 +103,9 @@ const AboutUs = () => {
         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a className="dropdown-item" href="/aboutus">
             About
+          </a>
+          <a className="dropdown-item active" href="/vision">
+            Vision
           </a>
           <a className="dropdown-item" href="/contactus">
             Contact us
@@ -137,144 +133,128 @@ const AboutUs = () => {
                 </ol>
               </div>
             </div> */}
-            <div className="banner dark-translucent-bg pt-20" style={{paddingTop: '40px !important', minHeight: '350px', backgroundImage: 'url("../../static/redesign/images/inner/about/Advantages-header-image.jpg")', backgroundPosition: '50% 32%'}}>
+            <div className="banner dark-translucent-bg pt-20" style={{paddingTop: '40px !important', height: '85vh', backgroundImage: 'url("../../static/redesign/images/inner/about/hero2.jpg")', backgroundPosition: '50% 32%'}}>
+              
               <div className="container">
-                <div className="row">
-                  <div className="col-md-5 pv-20">
-                    <h1 className="text-uppercase title object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}>CSM Wealth's <strong>Advantages</strong></h1>
-                    <div className="separator-2 object-non-visible mt-10 animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100} />
-                    <p className="object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}>CSM Wealth offers a variety of tools, education material, contests and bonuses in order to meet traders needs.</p>
+                <div className="row" style={{display:"flex",justifyContent:"center"}}>
+                  <div className="col-md-5 " style={{color:"#ffffff",textAlign:"center"}}>
+                    <h2 className="title object-non-visible animated object-visible fadeIn" style={{color:"#ffffff"}} data-animation-effect="fadeIn" data-effect-delay={100}>Our Mission and Vision</h2>
+                    <div className="separator-2 object-non-visible mt-10 animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}  />
+                    <a href="/signup" className="object-non-visible animated object-visible fadeIn btn btn-sm btn-default btn-ocean-green" data-animation-effect="fadeIn" data-effect-delay={100}>Sign up</a>
                   </div>
                 </div>
               </div>
             </div>
-            <section className="main-container">
+            <section className="main-container" style={{padding:"0"}}>
               <div className="container">
                 <div className="row">
                   {/* main start */}
                   {/* ================ */}
                   <div className="main col-md-12">
-                    <div className="row">
-                      <div className="col-md-4 col-sm-6">
-                        <div className="ph-10 feature-box object-non-visible animated object-visible fadeInDownSmall text-center" data-animation-effect="fadeInDownSmall" data-effect-delay={100}>
-                          <div style={{minHeight: '100px'}}><img src="../../static/redesign/images/inner/about/hat2.png" style={{margin: 'auto', padding: '10px', paddingTop: '30px'}} alt="" /></div>
-                          <a href="../trading-tools/video-tutorials.html"><h4>Comprehensive<br />educational materials</h4></a>
-                        </div>
-                      </div>
-                      <div className="col-md-4 col-sm-6">
-                        <div className="ph-20 feature-box object-non-visible animated object-visible fadeInDownSmall text-center" data-animation-effect="fadeInDownSmall" data-effect-delay={200}>
-                          <div style={{minHeight: '100px'}}><img src="../../static/redesign/images/inner/about/candlestick-charts.png" style={{margin: 'auto', padding: '10px'}} alt="" /></div>
-                          <a href="https://blog.CSM Wealth.com/" target="_blank" rel="noopener noreferrer " ><h4>In-depth Daily<br />Market Analysis</h4></a>
-                        </div>
-                      </div>
-                      <div className="col-md-4 col-sm-6">
-                        <div className="ph-20 feature-box object-non-visible animated object-visible fadeInDownSmall text-center" data-animation-effect="fadeInDownSmall" data-effect-delay={300}>
-                          <div style={{minHeight: '100px'}}><img src="../../static/redesign/images/inner/about/calendar.png" style={{margin: 'auto', padding: '10px', paddingTop: '24px'}} alt="" /></div>
-                          <a href="../trading-tools/economic-calendar.html"><h4>Stay up-to-date with CSM Wealth's<br />Economic Calendar</h4></a>
-                        </div>
-                      </div>
-                      <div className="clearfix visible-md" />
-                      <div className="col-md-4 col-sm-6">
-                        <div className="ph-20 feature-box object-non-visible animated object-visible fadeInDownSmall text-center" data-animation-effect="fadeInDownSmall" data-effect-delay={100}>
-                          <div style={{minHeight: '100px'}}><img src="../../static/redesign/images/inner/about/calculator.png" style={{margin: 'auto', padding: '10px', paddingTop: '25px'}} alt="" /></div>
-                          <a href="../trading-tools/trading-tools.html"><h4>Plan effectively with our useful<br />Trading Calculators</h4></a>
-                        </div>
-                      </div>
-                      <div className="col-md-4 col-sm-6">
-                        <div className="ph-20 feature-box object-non-visible animated object-visible fadeInDownSmall text-center" data-animation-effect="fadeInDownSmall" data-effect-delay={200}>
-                          <div style={{minHeight: '100px'}}><img src="../../static/redesign/images/inner/about/person.png" style={{margin: 'auto', padding: '10px', paddingTop: '25px'}} alt=""/></div>
-                          <a href="https://connect.CSM Wealth.com/" target="_blank" rel="noopener noreferrer " ><h4>Easy online account<br />management portal</h4></a>
-                        </div>
-                      </div>
-                      <div className="col-md-4 col-sm-6">
-                        <div className="ph-20 feature-box object-non-visible animated object-visible fadeInDownSmall text-center" data-animation-effect="fadeInDownSmall" data-effect-delay={300}>
-                          <div style={{minHeight: '100px'}}><img src="../../static/redesign/images/inner/about/devices2.png" style={{margin: 'auto', padding: '10px', paddingTop: '28px'}}alt="" /></div>
-                          <a href="../mt4-terminal/mt4-terminal.html"><h4>Industry-leading MT4 mobile<br />and desktop platforms</h4></a>
-                        </div>
-                      </div>
-                      <div className="clearfix visible-md" />
-                      <div className="col-md-4 col-sm-6">
-                        <div className="ph-20 feature-box object-non-visible animated object-visible fadeInDownSmall text-center" data-animation-effect="fadeInDownSmall" data-effect-delay={100}>
-                          <div style={{minHeight: '100px'}}><img src="../../static/redesign/images/inner/about/hand.png" style={{margin: 'auto', padding: '10px'}} alt="" /></div>
-                          <a href="../mt4-terminal/mt4-terminal.html"><h4>One click trading that<br />is ideal for scalpers</h4></a>
-                        </div>
-                      </div>
-                      <div className="col-md-4 col-sm-6">
-                        <div className="ph-20 feature-box object-non-visible animated object-visible fadeInDownSmall text-center" data-animation-effect="fadeInDownSmall" data-effect-delay={200}>
-                          <div style={{minHeight: '100px'}}><img src="../../static/redesign/images/inner/about/shield2.png" style={{margin: 'auto', padding: '10px', paddingTop: '30px'}} alt="" /></div>
-                          <a href = "/"><h4>Protect your automated<br />startegies with VPS hosting</h4></a>
-                        </div>
-                      </div>
-                      <div className="col-md-4 col-sm-6">
-                        <div className="ph-20 feature-box object-non-visible animated object-visible fadeInDownSmall text-center" data-animation-effect="fadeInDownSmall" data-effect-delay={300}>
-                          <div style={{minHeight: '100px'}}><img src="../../static/redesign/images/inner/about/present.png" style={{margin: 'auto', padding: '10px', paddingTop: '25px'}} alt="" /></div>
-                          <a href="../funding/bonus-offerings.html"><h4>Claim generous<br />bonuses</h4></a>
-                        </div>
-                      </div>
-                    </div>
+                  {/* <p> CSM Wealth is an investment company that helps investors all over the world to achieve financial freedom through their different investment options.
+
+Founded in 2010, we employ more than 40 across our England headquarters and our development office in Netherlands </p> */}
+                    
                   </div>
                   {/* main end */}
                 </div>
               </div>
               <br clear="all" /><br clear="all" />
-              <section className="section background-img-1 dark-translucent-bg bg-dark-blue" style={{backgroundPosition: '50% 42%'}}>
-                <div className="container">
-                  <div className="row">
-                    <div className="col-md-12">
-                      <div className="call-to-action text-center">
-                        <div className="row">
-                          <div className="col-sm-8">
-                            <h1 className="title">Unlimited Options</h1>
-                            <p>Take advantage of our diverse range of products including a wide variety of instruments, industry-leading MT4 mobile and desktop platforms, in depth Daily Market Analysis and several other tools.</p>
-                          </div>
-                          <div className="col-sm-4">
-                            <br />
-                            <p><a href="../account-types/open-account.html" className="btn btn-lg btn-gray-transparent">SIGN UP</a></p>
-                          </div>
-                        </div>
+              <section style={{padding:"0px"}} className="object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}>
+              <div className="full-width-section">
+                <div className="hovered">
+                  <img className="to-right-block" src="../../static/redesign/images/inner/about/people.jpg" alt="" />
+                </div>
+                <div className="full-text-container light-gray-bg border-bottom-clear">
+                  <h2>OUR <strong>VISON</strong></h2>
+                  <div className="separator-2 visible-lg" />
+                  <p> CSM Wealth is an investment company that helps investors all over the world to achieve financial freedom through their different investment options.
+
+Founded in 2010, we employ more than 40 across our Ontario headquarters and our development office in Netherlands.
+We’re the ecosystem giving investors* equal opportunity, where merit alone drives outcomes.
+
+* Trader = he who invests effort, in addition to capital, into capital markets.  </p>
+                  <div className="separator-3 visible-lg" />
+                </div>
+              </div>
+            </section>
+            <section style={{padding:"0px"}} className="object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}>
+              <div className="full-width-section">
+                <div className="full-text-container light-gray-bg border-bottom-clear">
+                  <h2>OUR <strong>MISSION</strong></h2>
+                  <div className="separator-2 visible-lg" />
+                  <p>We fast track Investors aligning their incentives with ours, as well as those of fellow investors, to pool our collective talent, information and capital for private and social benefit.</p>
+                  <div>
+                    <div className="row">
+                    <div className = "col-md-6" style={{textAlign:"center"}} >
+                    <div style={{display:"flex",flexDirection:"row"}}>
+                    <i className="fa fa-check" style={{fontSize:"160%"}}></i>
+                      <h3>Quality Education</h3>
+                    </div>
+                    
+                      <p>certified by CSM Wealth and/or community members</p>
+                    </div>
+                    <div className = "col-md-6" style={{textAlign:"center"}}>
+                    <div style={{display:"flex",flexDirection:"row"}}>
+                    <i className="fa fa-check" style={{fontSize:"160%"}}></i>
+                      <h3>Execution</h3>
                       </div>
+                      <p>to open and close investment on the best terms.</p>
+                    </div>
+                    </div>
+                    <div className="row">
+
+                    <div className = "col-md-6" style={{textAlign:"center"}}>
+                    <div style={{display:"flex",flexDirection:"row"}}>
+                    <i className="fa fa-check" style={{fontSize:"160%"}}></i>
+                      <h3>Information</h3>
+                      </div>
+                      <p>by the community (individual & trader collective), for a fair price.</p>
+                    </div>
+                    <div className = "col-md-6" style={{textAlign:"center"}}>
+                    <div style={{display:"flex",flexDirection:"row"}}>
+                    <i className="fa fa-check" style={{fontSize:"160%"}}></i>
+                      <h3>Investor capital</h3>
+                      </div>
+                      <p>with the highest profit participation in the market.</p>
+                    </div>
                     </div>
                   </div>
+                  <div className="separator-3 visible-lg" />
                 </div>
-              </section>
+                <div className="hovered">
+                  <img className="to-right-block" src="../../static/redesign/images/inner/about/charts.jpg" alt="" />
+                </div>
+              </div>
+            </section>
               <br clear="all" /><br clear="all" />
               <section className="pv-20 padding-bottom-clear clearfix">
-                <div className="container">
-                  <h2 className="text-center">Why you should choose CSM Wealth</h2>
-                  <div className="separator" />
-                  <p className="text-center space-bottom">When it comes to trading, CSM Wealth is the broker you are looking for, an innovative online foreign exchange broker that offers advanced institutional and retail trading conditions to a global audience. We have thought of everything you might need, to ensure a smooth hassle-free trading experience.</p>
-                  <div className="row">
-                    <div className="col-md-6 space-top">
-                      <br />
-                      <div className="feature-box-2 object-non-visible right animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay={100} style={{display:"flex", flexDirection:"row"}}>
-                      <div className="col-md-3 col-sm-3"><img src="../../static/redesign/images/inner/about/cup.png" className="img-center-992" style={{padding: '10px', color:"red"}} alt="" /></div>
-                        
-                        <div className="body col-md-9 col-sm-9 mb-20 text-center-992" style={{marginRight: 0, paddingRight: 0}}>
-                          <h4 className="title">Join exciting trading competitions</h4>
-                          <p>With exciting competitions you can demostrate your trading skills and and win amazing prizes.</p>
-                          <div className="separator-3 hidden-xs" />
-                        </div>
+                <div className = "container">
+                  <div style={{textAlign:"center"}}>
+                    <h3>Values - Our Compass</h3>
+                    <p>What makes our mission worthwhile is that we breathe by these values, every step of the way</p>
+                    <div className = "row" style={{marginTop:"20px"}}>
+                      <div className = "col-md-4">
+                      <div style={{display:"flex",justifyContent:"center"}}>
+                      <img src="../static/redesign/images/settings.png" alt="wire-transfer" width='70' title="wire-transfer"/>
                       </div>
-                      <div className="feature-box-2 object-non-visible right animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay={200}  style={{display:"flex", flexDirection:"row"}}>
-                      <div className="col-md-3 col-sm-3"><img src="../../static/redesign/images/inner/about/head-set.png" className="img-center-992" style={{padding: '10px'}} alt=""/></div>
-                        
-                        <div className="body col-md-9 col-sm-9 mb-20 text-center-992" style={{marginRight: 0, paddingRight: 0}}>
-                          <h4 className="title">24/7 multilingual support</h4>
-                          <p>For any assistance you require chat with our Support Team in one of the languages we offer.</p>
-                          <div className="separator-3 hidden-xs" />
-                        </div>
+                        <h4>Focus on Impact</h4>
+                        <p>Our vision is ambitious, but our time and resources are limited. Every decision, big or small, short or long term, maximises the contribution of our (funds / talent / time) to the vision. Evolution = question the best use of resources, at all times</p>
                       </div>
-                      <div className="feature-box-2 object-non-visible right animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay={300} style={{display:"flex", flexDirection:"row"}}>
-                      <div className="col-md-3 col-sm-3"><img src="../../static/redesign/images/inner/about/leverage.png" className="img-center-992" style={{padding: '10px'}} alt="" /></div>
-                        
-                        <div className="body col-md-9 col-sm-9 mb-20 text-center-992" style={{marginRight: 0, paddingRight: 0}}>
-                          <h4 className="title">Leverage from 1:1 to 1:1000</h4>
-                          <p>Choose among different leverages depending the account you want to open.</p>
-                        </div>
+                      <div className = "col-md-4">
+                      <div style={{display:"flex",justifyContent:"center"}}>
+                      <img src="../static/redesign/images/handyman.png" alt="wire-transfer" width='70' title="wire-transfer"/>
                       </div>
-                    </div>
-                    <div className="col-md-6">
-                      <img src="../../static/redesign/images/inner/about/advantages-photo.jpg" alt="" style={{marginTop: '45px'}} />
+                        <h4>Take calculated risks</h4>
+                        <p>We generate impact because we’re nimble. Agility implies risks, and that’s a good thing. Any risk where client resources (capital, data) are not at stake is worth it if the odds are good enough. Playing it safe is the riskiest gamble.</p>
+                      </div>
+                      <div className = "col-md-4">
+                      <div style={{display:"flex",justifyContent:"center"}}>
+                      <img src="../static/redesign/images/building.png" alt="wire-transfer" width='70' title="wire-transfer"/>
+                      </div>
+                        <h4>Empower clients & employees</h4>
+                        <p>We reward contributions on merit - regardless of who contributes. We do this because we need the best employees devoting their talent & effort to the vision, and the best investors to entrust us their capital and intellectual property.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -282,37 +262,37 @@ const AboutUs = () => {
               <br clear="all" /><br clear="all" />
             </section>{/* main container ends */}
             {/*================== FOOTER starts here =======================*/}
-            <section className="clearfix pv-20 hidden-sm hidden-xs" id="payment-methods" style = {{backgroundColor:"#42ce7a"}}>
+            <section className="clearfix pv-20 hidden-sm hidden-xs" id="paymen-methods" style = {{backgroundColor:"#42ce7a"}}>
 <div className="container">
 <div className="row" style={{display:"flex",justifyContent:"space-around"}}>
 <div className="owl-clients-v1" style={{display:"flex",justifyContent:"space-around",margin:"10px 0px"}}>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/wire-transfer.png" alt="wire-transfer" title="wire-transfer"/></a>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/wire-transfer.png" alt="wire-transfer" title="wire-transfer"/></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/visa-electron.png" alt="visa-electron" title="visa-electron"/></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
+</div>
+{/* <div className="item">
+<a href="/"><img src="../static/redesign/images/payment-methods/maestro.png" alt="maestro" title="maestro"/></a>
+</div> */}
+{/* <div className="item">
+<a href="/"><img src="../static/redesign/images/payment-methods/skrill.png" alt="skrill" title="skrill"/></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
+<a href="/"><img src="../static/redesign/images/payment-methods/neteller.png" alt="neteller" title="neteller"/></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/visa-electron.png" alt="visa-electron" title="visa-electron"/></a>
+<a href="/"><img src="../static/redesign/images/payment-methods/fasapay.png" alt="fasapay" title="fasapay" style={{border: "1px solid #ddd"}} /></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/maestro.png" alt="maestro" title="maestro"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/skrill.png" alt="skrill" title="skrill"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/neteller.png" alt="neteller" title="neteller"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/fasapay.png" alt="fasapay" title="fasapay" style={{border: "1px solid #ddd"}} /></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/vload1.png" alt="vload" title="vload" style={{border: "1px solid #ddd"}}/></a>
-</div>
+<a href="/"><img src="../static/redesign/images/payment-methods/vload1.png" alt="vload" title="vload" style={{border: "1px solid #ddd"}}/></a>
+</div> */}
 </div>
 </div>
 </div>

@@ -81,16 +81,10 @@ const Retirement = () => {
           <a className="dropdown-item active" href="/retirement">
             Retirement Income
           </a>
-          <a className="dropdown-item" href="/tradingtools">
-            Trading tools
-          </a>
+          
         </div>
       </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/whyus">
-          WHY CSM
-        </a>
-      </li>
+      
       <li className="nav-item">
         <a className="nav-link" href="/ourteam">
           OUR TEAM
@@ -112,6 +106,9 @@ const Retirement = () => {
           <a className="dropdown-item" href="/aboutus">
             About
           </a>
+          <a className="dropdown-item" href="/vision">
+            Vision
+          </a>
           <a className="dropdown-item" href="/contactus">
             Contact us
           </a>
@@ -130,116 +127,18 @@ const Retirement = () => {
 </nav>
 
             {/*  */}
-            <div className="slideshow">
-{/* <!-- slider revolution start -->
-<!-- ================ --> */}
-<div className="slider-banner-container">
-<div className="slider-banner-fullwidth">
-<ul className="slides">
-{/* <!-- slide 1 start -->
-<!-- ================ --> */}
-<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="on">
-{/* <!-- main image --> */}
-<img src="../static/redesign/images/slides/retire2.jpg" alt="slidebg1" data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover" />
-{/* <!-- LAYER NR. 1 --> */}
-<div className="tp-caption fadeout large_white font-Playfair"
-data-x="0"
-data-y="90"><b>Trade Everywhere <br/> Everything with one login</b>
-</div>
-{/* <!-- LAYER NR. 2 --> */}
-<div className="tp-caption sfb fadeout large_white tp-resizeme hidden-xs"
-data-x="0"
-data-y="200"><div className="separator-2 light"></div>
-</div>
-{/* <!-- LAYER NR. 3 --> */}
-<div className="tp-caption sfb fadeout medium_white hidden-xs"
-data-x="0"
-data-y="210">You will have to have earned income in order to qualify for a retirement plan
-</div>
-{/* <!-- LAYER NR. 4 --> */}
-<div className="tp-caption fadeout sfb small_white"
-data-x="0"
-data-y="325"><a href="/signup" className="btn btn-default text-center"><b>SIGN UP</b></a>
-</div>
-</li>
-{/* <!-- slide 2 start--> */}
-<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="on">
-<img src="../static/redesign/images/slides/retire1.jpg" alt="slidebg1" data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover" />
-<div className="tp-caption fadeout large_white font-Playfair"
-data-x="0"
-data-y="90"><b style={{color:"##42ce7a"}}>Why Crypto In Retirement?</b>
-</div>
-{/* <div className="tp-caption sfb fadeout large_white tp-resizeme hidden-xs"
-data-x="0"
-data-y="200"><div className="separator-2 light"></div>
-</div>
-<div className="tp-caption sfb fadeout medium_white hidden-xs"
-data-x="0"
-data-y="210"><span style={{color:"#dfdfdfde"}}>-Trade with tight spreads from 0.2 pips<br/>-High leverage of up to 1:1000<br/>-Exceptional 24/7 customer support </span>
-</div> */}
-<div className="tp-caption fadeout sfb small_white"
-data-x="0"
-data-y="200"><a href="/signup" className="btn btn-default text-center"><b>SIGN UP</b></a>
-</div>
-</li>
-{/* <!-- slide 3 start -->
-<!-- ================ --> */}
-<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="on">
-{/* <!-- main image --> */}
-<img src="../static/redesign/images/slides/retire5.jpg" alt="slidebg1" data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover"/>
-{/* <!-- LAYER NR. 1 --> */}
-<div className="tp-caption sfb fadeout large_white font-Playfair"
-data-x="0"
-data-y="90"><b>Trust Your Funds with <br/>a Reliable Broker</b>
-</div>
-{/* <!-- LAYER NR. 2 --> */}
-<div className="tp-caption sfb fadeout large_white tp-resizeme hidden-xs"
-data-x="0"
-data-y="200"><div className="separator-2 light"></div>
-</div>
-{/* <!-- LAYER NR. 3 --> */}
-<div className="tp-caption sfb fadeout medium_white hidden-xs"
-data-x="0"
-data-y="210">-Client Segregated Accounts<br/>-Reputable payment gateway providers<br/>-Funds protection against liquidation
-</div>
-{/* <!-- LAYER NR. 4 --> */}
-<div className="tp-caption fadeout sfb small_white"
-data-x="0"
-data-y="325"><a href="/signup" className="btn btn-default text-center"><b>SIGN UP</b></a>
-</div>
-</li>
-{/* <!-- slide 4 start -->
-<!-- ================ --> */}
-<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="on">
-{/* <!-- main image --> */}
-<img src="../static/redesign/images/slides/retire4.jpg" alt="slidebg1" data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover" />
-{/* <!-- LAYER NR. 1 --> */}
-<div className="tp-caption sfb fadeout large_white font-Playfair"
-data-x="0"
-data-y="90"><b>Helping you rise again<br />15% Recovery Bonus</b>
-</div>
-{/* <!-- LAYER NR. 2 --> */}
-<div className="tp-caption sfb fadeout large_white tp-resizeme hidden-xs"
-data-x="0"
-data-y="200"><div className="separator-2 light"></div>
-</div>
-{/* <!-- LAYER NR. 3 --> */}
-<div className="tp-caption sfb fadeout medium_white hidden-xs"
-data-x="0"
-data-y="210">Our all-new Phoenix bonus<br/>provides you with a Rescue Bonus<br/>in case of loss of your capital
-</div>
-{/* <!-- LAYER NR. 4 --> */}
-<div className="tp-caption fadeout sfb small_white"
-data-x="0"
-data-y="325"><a href="/signup" className="btn btn-default text-center"><b>SIGN UP</b></a>
-</div>
-</li>
-</ul>
-{/* <!--<div className="tp-bannertimer"></div>--> */}
-</div>
-</div>
-{/* <!-- slider revolution end --> */}
-</div>
+            <div className="banner dark-translucent-bg pt-20" style={{paddingTop: '40px !important', height: '85vh', backgroundImage: 'url("../../static/redesign/images/slides/retire1.jpg")', backgroundPosition: '50% 32%'}}>
+              
+              <div className="container">
+                <div className="row" style={{display:"flex",justifyContent:"center"}}>
+                  <div className="col-md-5 " style={{color:"#ffffff",textAlign:"center"}}>
+                    <h2 className="title object-non-visible animated object-visible fadeIn" style={{color:"#ffffff"}} data-animation-effect="fadeIn" data-effect-delay={100}>Invest for your old age today</h2>
+                    <div className="separator-2 object-non-visible mt-10 animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}  />
+                    <a href="/signup" className="object-non-visible animated object-visible fadeIn btn btn-sm btn-default btn-ocean-green" data-animation-effect="fadeIn" data-effect-delay={100}>Sign up</a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <section className="main-container">
               <div className="container">
                 <div className="row">
@@ -304,12 +203,12 @@ data-y="325"><a href="/signup" className="btn btn-default text-center"><b>SIGN U
             <div className= "card text-center">
               <div className = "card header text-light bg-dark" style = {{padding:"15px 0"}}>CSM Compact</div>
               <div className = "card-body" >
-                <p className = "font-bold">$150,000</p>
+                <p className = "font-bold">$50,000</p>
                 <p>Investors:<span className = "text-primary">All type</span></p>
-                <p>Contract:<span className = "text-primary">90 days</span></p>
+                <p>Contract:<span className = "text-primary">1 year</span></p>
                 <p>Low Risk Trade</p>
-                <p>Est ROI:<span className = "text-primary">80%</span></p>
-                <p>Weeekly:<span className = "text-primary">7% - 15%</span></p>
+                <p>Est ROI:<span className = "text-primary">15%</span></p>
+                {/* <p>Weeekly:<span className = "text-primary">7% - 15%</span></p> */}
                 <a href="/signup" className = "btn btn-primary text-light">Sign Up</a>
 
               </div>
@@ -322,37 +221,37 @@ data-y="325"><a href="/signup" className="btn btn-default text-center"><b>SIGN U
               </div> */}
             </section>
             {/*================== FOOTER starts here =======================*/}
-            <section className="clearfix pv-20 hidden-sm hidden-xs" id="payment-methods" style = {{backgroundColor:"#42ce7a"}}>
+            <section className="clearfix pv-20 hidden-sm hidden-xs" id="paymen-methods" style = {{backgroundColor:"#42ce7a"}}>
 <div className="container">
 <div className="row" style={{display:"flex",justifyContent:"space-around"}}>
 <div className="owl-clients-v1" style={{display:"flex",justifyContent:"space-around",margin:"10px 0px"}}>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/wire-transfer.png" alt="wire-transfer" title="wire-transfer"/></a>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/wire-transfer.png" alt="wire-transfer" title="wire-transfer"/></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/visa-electron.png" alt="visa-electron" title="visa-electron"/></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
+</div>
+{/* <div className="item">
+<a href="/"><img src="../static/redesign/images/payment-methods/maestro.png" alt="maestro" title="maestro"/></a>
+</div> */}
+{/* <div className="item">
+<a href="/"><img src="../static/redesign/images/payment-methods/skrill.png" alt="skrill" title="skrill"/></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
+<a href="/"><img src="../static/redesign/images/payment-methods/neteller.png" alt="neteller" title="neteller"/></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/visa-electron.png" alt="visa-electron" title="visa-electron"/></a>
+<a href="/"><img src="../static/redesign/images/payment-methods/fasapay.png" alt="fasapay" title="fasapay" style={{border: "1px solid #ddd"}} /></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/maestro.png" alt="maestro" title="maestro"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/skrill.png" alt="skrill" title="skrill"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/neteller.png" alt="neteller" title="neteller"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/fasapay.png" alt="fasapay" title="fasapay" style={{border: "1px solid #ddd"}} /></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/vload1.png" alt="vload" title="vload" style={{border: "1px solid #ddd"}}/></a>
-</div>
+<a href="/"><img src="../static/redesign/images/payment-methods/vload1.png" alt="vload" title="vload" style={{border: "1px solid #ddd"}}/></a>
+</div> */}
 </div>
 </div>
 </div>

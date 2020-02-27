@@ -21,19 +21,21 @@ const useStyles = makeStyles(theme => ({
       }
   }));
 
-const Balances = () => {
+const Balances = (props) => {
+  console.log(props.values)
+  const {capitalAmount,profit,total} = props.values
     const [spacing, setSpacing] = React.useState(3);
     const classes = useStyles();
     return(
         <Grid container className={classes.root} spacing = {spacing}>
             <Grid item md={4}  xs={12} >
-              <Balance color = "#627a85" icon = {AccountBox} name = "Capital"/>
+              <Balance color = "#627a85" icon = {AccountBox} name = "Capital" value={capitalAmount>999?capitalAmount.toLocaleString():capitalAmount}/>
             </Grid>
             <Grid item md={4}  xs={12} >
-              <Balance color = "#858562" icon = {PaymentOutlined} name = "Profit" />
+              <Balance color = "#858562" icon = {PaymentOutlined} name = "Profit" value={profit>999?profit.toLocaleString():profit} />
             </Grid>
             <Grid item md={4}  xs={12} >
-              <Balance color = "#786285"  icon = {CloudDownload} name = "Total" />
+              <Balance color = "#786285"  icon = {CloudDownload} name = "Total" value={total>999?total.toLocaleString():total} />
             </Grid>
       </Grid>
     )

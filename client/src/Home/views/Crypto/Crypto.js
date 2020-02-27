@@ -96,16 +96,10 @@ class Crypto extends Component   {
           <a className="dropdown-item" href="/retirement">
             Retirement Income
           </a>
-          <a className="dropdown-item" href="/tradingtools">
-            Trading tools
-          </a>
+          
         </div>
       </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/whyus">
-          WHY CSM
-        </a>
-      </li>
+      
       <li className="nav-item">
         <a className="nav-link" href="/ourteam">
           OUR TEAM
@@ -127,6 +121,9 @@ class Crypto extends Component   {
           <a className="dropdown-item" href="/aboutus">
             About
           </a>
+          <a className="dropdown-item" href="/vision">
+            Vision
+          </a>
           <a className="dropdown-item" href="/contactus">
             Contact us
           </a>
@@ -143,6 +140,20 @@ class Crypto extends Component   {
     </ul>
   </div>
 </nav>
+<div className="banner video-background-banner pv-40 dark-translucent-bg hovered" style={{paddingTop: '40px !important', height: '80vh'}}>
+            <div style={{position: 'absolute', zIndex: -1, top: '0px', left: '0px',opacity:"0.6", bottom: '0px', right: '0px', overflow: 'hidden', backgroundImage: 'url("../../static/redesign/images/inner/about/hero6.jpg")', backgroundColor: 'transparent', backgroundSize: 'cover', backgroundPosition: '50% 50%', backgroundRepeat: 'no-repeat'}}>
+
+            </div>
+              <div className="container">
+                <div className="row" style={{display:"flex",justifyContent:"center"}}>
+                  <div className="col-md-5 " style={{color:"#272424",textAlign:"center"}}>
+                    <h2 className="title object-non-visible animated object-visible fadeIn" style={{color:"#272424"}} data-animation-effect="fadeIn" data-effect-delay={100}>Invest in cryptocurrency today</h2>
+                    <div className="separator-2 object-non-visible mt-10 animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}  />
+                    <a href="/signup" className="object-non-visible animated object-visible fadeIn btn btn-sm btn-default btn-ocean-green" data-animation-effect="fadeIn" data-effect-delay={100}>Sign up</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           {/* header-container end */}
           {/* <div className="breadcrumb-container" style={{borderTop: '2px solid #f1f1f1'}}>
             <div className="container">
@@ -183,8 +194,8 @@ class Crypto extends Component   {
           </span>
           {/*  */}
           <div className="accordion" id="accordionExample">
-        <div className="card">
-          <div className="card-header" id="headingOne" style={{backgroundColor:"#202431"}}>
+        <div className="card" style={{borderBottom:"0.5px solid #929292"}}>
+          <div className="card-header" id="headingOne" style={{backgroundColor:"#202431",}}>
             <h2 className="mb-0">
               <button className="btn collapsed" style={{color:"#fff"}} type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 BITCOIN
@@ -220,8 +231,8 @@ class Crypto extends Component   {
             </div>
           </div>
         </div>
-        <div className="card">
-          <div className="card-header" id="headingTwo" style={{backgroundColor:"#202431"}}>
+        <div className="card"  style={{borderBottom:"0.5px solid #929292"}}>
+          <div className="card-header" id="headingTwo" style={{backgroundColor:"#202431",borderBottom:"0.5px solid #000"}}>
             <h2 className="mb-0">
               <button className="btn  collapsed" style={{color:"#fff"}} type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 BITCOIN GOLD
@@ -254,8 +265,8 @@ class Crypto extends Component   {
             </div>
           </div>
         </div>
-        <div className="card">
-          <div className="card-header" id="headingThree" style={{backgroundColor:"#202431"}}>
+        <div className="card" style={{borderBottom:"0.5px solid #929292"}}>
+          <div className="card-header" id="headingThree" style={{backgroundColor:"#202431",borderBottom:"0.5px solid #929292"}}>
             <h2 className="mb-0">
               <button className="btn  collapsed" type="button" style={{color:"#fff"}} data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 BITCOIN CASH
@@ -288,8 +299,8 @@ class Crypto extends Component   {
             </div>
           </div>
         </div>
-        <div className="card">
-          <div className="card-header" id="headingThree" style={{backgroundColor:"#202431"}}>
+        <div className="card"  style={{borderBottom:"0.5px solid #929292"}}>
+          <div className="card-header" id="headingThree" style={{backgroundColor:"#202431",borderBottom:"0.5px solid #929292"}}>
             <h2 className="mb-0">
               <button className="btn  collapsed"  type="button"  style={{color:"#fff"}} data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                 LITECOIN
@@ -310,8 +321,8 @@ class Crypto extends Component   {
             </div>
           </div>
         </div>
-        <div className="card">
-          <div className="card-header" id="headingThree"  style={{backgroundColor:"#202431"}}>
+        <div className="card" style={{borderBottom:"0.5px solid #929292"}}>
+          <div className="card-header" id="headingThree"  style={{backgroundColor:"#202431",borderBottom:"0.5px solid #929292"}}>
             <h2 className="mb-0">
               <button className="btn  collapsed" style={{color:"#fff"}} type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
                 ETHEREUM
@@ -343,8 +354,8 @@ class Crypto extends Component   {
             </div>
           </div>
         </div>
-        <div className="card">
-          <div className="card-header" id="headingThree"  style={{backgroundColor:"#202431"}}>
+        <div className="card" style={{borderBottom:"0.5px solid #929292"}}>
+          <div className="card-header" id="headingThree"  style={{backgroundColor:"#202431",borderBottom:"0.5px solid #929292"}}>
             <h2 className="mb-0">
               <button className="btn  collapsed" style={{color:"#fff"}} type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
                 RIPPLE
@@ -469,37 +480,37 @@ class Crypto extends Component   {
           </section>
           {/* main </section>container ends */}
           {/*================== FOOTER starts here =======================*/}
-          <section className="clearfix pv-20 hidden-sm hidden-xs" id="payment-methods" style = {{backgroundColor:"#42ce7a"}}>
+          <section className="clearfix pv-20 hidden-sm hidden-xs" id="paymen-methods" style = {{backgroundColor:"#42ce7a"}}>
 <div className="container">
 <div className="row" style={{display:"flex",justifyContent:"space-around"}}>
 <div className="owl-clients-v1" style={{display:"flex",justifyContent:"space-around",margin:"10px 0px"}}>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/wire-transfer.png" alt="wire-transfer" title="wire-transfer"/></a>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/wire-transfer.png" alt="wire-transfer" title="wire-transfer"/></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/visa-electron.png" alt="visa-electron" title="visa-electron"/></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
+</div>
+{/* <div className="item">
+<a href="/"><img src="../static/redesign/images/payment-methods/maestro.png" alt="maestro" title="maestro"/></a>
+</div> */}
+{/* <div className="item">
+<a href="/"><img src="../static/redesign/images/payment-methods/skrill.png" alt="skrill" title="skrill"/></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
+<a href="/"><img src="../static/redesign/images/payment-methods/neteller.png" alt="neteller" title="neteller"/></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/visa-electron.png" alt="visa-electron" title="visa-electron"/></a>
+<a href="/"><img src="../static/redesign/images/payment-methods/fasapay.png" alt="fasapay" title="fasapay" style={{border: "1px solid #ddd"}} /></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/maestro.png" alt="maestro" title="maestro"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/skrill.png" alt="skrill" title="skrill"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/neteller.png" alt="neteller" title="neteller"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/fasapay.png" alt="fasapay" title="fasapay" style={{border: "1px solid #ddd"}} /></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/vload1.png" alt="vload" title="vload" style={{border: "1px solid #ddd"}}/></a>
-</div>
+<a href="/"><img src="../static/redesign/images/payment-methods/vload1.png" alt="vload" title="vload" style={{border: "1px solid #ddd"}}/></a>
+</div> */}
 </div>
 </div>
 </div>

@@ -80,16 +80,10 @@ const About = () => {
           <a className="dropdown-item" href="/retirement">
             Retirement Income
           </a>
-          <a className="dropdown-item" href="/tradingtools">
-            Trading tools
-          </a>
+          
         </div>
       </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/whyus">
-          WHY CSM
-        </a>
-      </li>
+      
       <li className="nav-item">
         <a className="nav-link" href="/ourteam">
           OUR TEAM
@@ -110,6 +104,9 @@ const About = () => {
         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a className="dropdown-item active" href="/aboutus">
             About
+          </a>
+          <a className="dropdown-item" href="/vision">
+            Vision
           </a>
           <a className="dropdown-item" href="/contactus">
             Contact us
@@ -137,16 +134,16 @@ const About = () => {
                 </ol>
               </div>
             </div> */}
-            <div className="banner video-background-banner pv-40 dark-translucent-bg hovered" style={{paddingTop: '40px !important', minHeight: '350px'}}>
-            <div style={{position: 'absolute', zIndex: -1, top: '0px', left: '0px', bottom: '0px', right: '0px', overflow: 'hidden', backgroundImage: 'url("../../static/redesign/images/bit6.jpg")', backgroundColor: 'transparent', backgroundSize: 'cover', backgroundPosition: '50% 50%', backgroundRepeat: 'no-repeat'}}>
+            <div className="banner video-background-banner pv-40 dark-translucent-bg hovered" style={{paddingTop: '40px !important', minHeight: '85vh'}}>
+            <div style={{position: 'absolute', zIndex: -1,opacity:"0.7", top: '0px', left: '0px', bottom: '0px', right: '0px', overflow: 'hidden', backgroundImage: 'url("../../static/redesign/images/inner/about/women.jpg")', backgroundColor: 'transparent', backgroundSize: 'cover', backgroundPosition: '50% 50%', backgroundRepeat: 'no-repeat'}}>
 
             </div>
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-5 pv-20">
-                    <h2 className="title object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}>About Us</h2>
-                    <div className="separator-2 object-non-visible mt-10 animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100} />
-                    <p className="object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}>CSM wealth is an innovative online platform which allows institutions as well as individuals to invest in cryptocurrency and attain yields. </p>
+            <div className="container">
+                <div className="row" style={{display:"flex",justifyContent:"center"}}>
+                  <div className="col-md-5 " style={{color:"#ffffff",textAlign:"center"}}>
+                    <h2 className="title object-non-visible animated object-visible fadeIn" style={{color:"#ffffff"}} data-animation-effect="fadeIn" data-effect-delay={100}>All you need to know</h2>
+                    <div className="separator-2 object-non-visible mt-10 animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}  />
+                    <a href="/signup" className="object-non-visible animated object-visible fadeIn btn btn-sm btn-default btn-ocean-green" data-animation-effect="fadeIn" data-effect-delay={100}>Sign up</a>
                   </div>
                 </div>
               </div>
@@ -182,7 +179,7 @@ const About = () => {
                       <div className="clearfix visible-md" />
                       <div className="col-md-4 col-sm-6">
                         <div className="ph-10 feature-box object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay={100}>
-                          <div style={{height: '100px', position: 'relative'}}><a href="../trading-tools/video-tutorials.html"><img src="../../static/redesign/images/inner/about/hat.png" alt="" style={{position: 'absolute', bottom: '10px'}} /></a></div>
+                        <div style={{height: '100px', position: 'relative'}}><a href="../trading-tools/video-tutorials.html"><img src="../../static/redesign/images/inner/about/hat.png" alt="" style={{position: 'absolute', bottom: '10px'}} /></a></div>
                           <h4>Exceptional Educational Resources</h4>
                           <p>Benefit from our education material and gain knowledge for trading.</p>
                         </div>
@@ -204,7 +201,7 @@ const About = () => {
             <section className="object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}>
               <div className="full-width-section">
                 <div className="hovered">
-                  <img className="to-right-block" src="../../static/redesign/images/inner/about/why-choose-lmfx.jpg" alt="" />
+                  <img className="to-right-block" src="../../static/redesign/images/inner/about/why-choose-lmfx.jpg" alt="why us"  />
                 </div>
                 <div className="full-text-container light-gray-bg border-bottom-clear">
                   <h2>Why <strong>Choose Us</strong></h2>
@@ -218,37 +215,37 @@ const About = () => {
               </div>
             </section>
             {/*================== FOOTER starts here =======================*/}
-            <section className="clearfix pv-20 hidden-sm hidden-xs" id="payment-methods" style = {{backgroundColor:"#42ce7a"}}>
+            <section className="clearfix pv-20 hidden-sm hidden-xs" id="paymen-methods" style = {{backgroundColor:"#42ce7a"}}>
 <div className="container">
 <div className="row" style={{display:"flex",justifyContent:"space-around"}}>
 <div className="owl-clients-v1" style={{display:"flex",justifyContent:"space-around",margin:"10px 0px"}}>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/wire-transfer.png" alt="wire-transfer" title="wire-transfer"/></a>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/wire-transfer.png" alt="wire-transfer" title="wire-transfer"/></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/visa-electron.png" alt="visa-electron" title="visa-electron"/></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
+</div>
+{/* <div className="item">
+<a href="/"><img src="../static/redesign/images/payment-methods/maestro.png" alt="maestro" title="maestro"/></a>
+</div> */}
+{/* <div className="item">
+<a href="/"><img src="../static/redesign/images/payment-methods/skrill.png" alt="skrill" title="skrill"/></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
+<a href="/"><img src="../static/redesign/images/payment-methods/neteller.png" alt="neteller" title="neteller"/></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/visa-electron.png" alt="visa-electron" title="visa-electron"/></a>
+<a href="/"><img src="../static/redesign/images/payment-methods/fasapay.png" alt="fasapay" title="fasapay" style={{border: "1px solid #ddd"}} /></a>
 </div>
 <div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/maestro.png" alt="maestro" title="maestro"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/skrill.png" alt="skrill" title="skrill"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/neteller.png" alt="neteller" title="neteller"/></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/fasapay.png" alt="fasapay" title="fasapay" style={{border: "1px solid #ddd"}} /></a>
-</div>
-<div className="item">
-<a href="funding/funding-methods.html"><img src="../static/redesign/images/payment-methods/vload1.png" alt="vload" title="vload" style={{border: "1px solid #ddd"}}/></a>
-</div>
+<a href="/"><img src="../static/redesign/images/payment-methods/vload1.png" alt="vload" title="vload" style={{border: "1px solid #ddd"}}/></a>
+</div> */}
 </div>
 </div>
 </div>

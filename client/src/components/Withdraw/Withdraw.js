@@ -15,6 +15,8 @@ import FormControl from '@material-ui/core/FormControl';
 import Backdrop from '@material-ui/core/Backdrop';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
+import axios from 'axios';
+
 
 
 const useStyles = makeStyles(theme => ({
@@ -80,24 +82,33 @@ const Withdraw = () => {
       setDialogOpen(false);
     }
 
+    const viewHandler = async() => {
+      axios(`http://localhost:4000/users/pdf`,{
+        method:"GET",
+        responseType:"arraybuffer",
+        headers:{
+          Accept:'application/pdf',
+        },
+      })
+      .then((response) => {
+        const file = new Blob([response.data],{
+          type:"application/pdf"
+        })
+        const fileURL = window.URL.createObjectURL(file,{type:"application/pdf"})
+        window.open(fileURL); 
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+    }
+
     return (
         <div className={classes.root1}>
       <Grid container spacing={3} style = {{display:"flex",justifyContent:"center"}}>
         <Grid item xs={12} md={9}>
           <Paper className={classes.paper}>
-          <h6>Enter Withdrawal Amount</h6>
-
-          {/* <FormControl fullWidth className={classes.margin} variant="outlined">
-          <InputLabel htmlFor="outlined-adornment-amount">Amount</InputLabel>
-          <OutlinedInput
-            id="outlined-adornment-amount"
-            value={amount}
-            onChange={handleAmountChange}
-            startAdornment={<InputAdornment position="start">$</InputAdornment>}
-            labelWidth={60}
-          />
-        </FormControl> */}
-        <FormControl fullWidth className={classes.margin} variant="filled">
+          <p>Kindly download and fill the withdrawal form below and email to support@csmwealth.com</p>
+        {/* <FormControl fullWidth className={classes.margin} variant="filled">
           <InputLabel htmlFor="filled-adornment-amount">Amount</InputLabel>
           <FilledInput
             id="filled-adornment-amount"
@@ -105,8 +116,9 @@ const Withdraw = () => {
             onChange={handleAmountChange}
             startAdornment={<InputAdornment position="start">$</InputAdornment>}
           />
-        </FormControl>
-        <Button variant="contained" className = {classes.button} onClick = {handleToggle} >Send Request</Button>
+        </FormControl> */}
+        <Button variant="contained" className = {classes.button} onClick = {viewHandler}>Download</Button>
+        {/* <Button variant="contained" className = {classes.button} onClick = {handleToggle} >Send Request</Button> */}
           </Paper>
         </Grid>
       </Grid>

@@ -168,6 +168,8 @@ const useStyles = makeStyles(theme => ({
 
 const Sidebar = (props) => {
 const values= props.values
+const path = props.path
+// console.log(path)
 
     const match = useRouteMatch()
     const { container } = props;
@@ -271,7 +273,7 @@ const values= props.values
 
   const drawer = (
     <div style={{display:"flex",flexDirection:"column",height:"100%",alignItems:"center",marginTop:20,position:"relative"}}>
-      <Avatar style={{alignSelf: 'center',left:50}} values = {values} />
+      <Avatar style={{alignSelf: 'center',left:50}} values = {values} path={path} />
       {/* <div className={classes.toolbar} /> */}
       <Divider />
       <div style = {{width:"100%"}}>
@@ -301,7 +303,7 @@ const values= props.values
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap style = {{color:"#e5e7e6"}}>
-            Welcome, {values.userData.firstName}
+            Welcome, {values.firstName}
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>

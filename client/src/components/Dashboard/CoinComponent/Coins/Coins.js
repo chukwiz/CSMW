@@ -41,7 +41,7 @@ class Coins extends Component{
     priceChange = (prevCoins,coins) => {
         const diff = prevCoins - coins;
         const change = diff/prevCoins;
-        return (change * 100).toFixed(5);
+        return (change * 100).toFixed(2);
     }
 
     render(){
@@ -65,23 +65,25 @@ class Coins extends Component{
             </Grid>
             <Grid item md={3} sm={6} >
             <Coin color = "linear-gradient(90deg, rgba(185,32,32,1) 0%, rgba(76,62,155,1) 100%)" icon = {ltc} name = "Litecoin">
-            <div>
-                <Typography variant="h6" gutterBottom>${this.state.coins[1]?this.state.coins[1].toLocaleString():""}</Typography>
+            
+                {/*  */}
+                <div>
+                <Typography variant="h6" gutterBottom>${this.state.coins[2]?this.state.coins[2].toLocaleString():""}</Typography>
                 </div>
                 <div >
-                <p style = {{display:"inline", paddingRight:"10px", color:"#868686"}}> {this.priceChange(this.state.prevCoins[1],this.state.coins[1])} </p>
-                <ArrowUpwardRounded  style = {{color:"#464646"}} />
+                <p style = {{display:"inline", paddingRight:"10px", color:"#868686"}}> {this.priceChange(this.state.prevCoins[2],this.state.coins[2])} </p>
+                <ArrowDownwardRounded  style = {{color:"#464646"}} />
                 </div>
             </Coin>
             </Grid>
             <Grid item md={3} sm={6} >
             <Coin color = "linear-gradient(279deg, rgba(58,21,88,1) 0%, rgba(121,68,134,1) 100%)" icon = {Eth} name = "Ethereum">
             <div>
-                <Typography variant="h6" gutterBottom>${this.state.coins[2]?this.state.coins[2].toLocaleString():""}</Typography>
+                <Typography variant="h6" gutterBottom>${this.state.coins[1]?this.state.coins[1].toLocaleString():""}</Typography>
                 </div>
                 <div >
-                <p style = {{display:"inline", paddingRight:"10px", color:"#868686"}}> {this.priceChange(this.state.prevCoins[2],this.state.coins[2])} </p>
-                <ArrowDownwardRounded  style = {{color:"#464646"}} />
+                <p style = {{display:"inline", paddingRight:"10px", color:"#868686"}}> {this.priceChange(this.state.prevCoins[1],this.state.coins[1])} </p>
+                <ArrowUpwardRounded  style = {{color:"#464646"}} />
                 </div>
             </Coin>
             </Grid>

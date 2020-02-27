@@ -31,6 +31,7 @@ class Layout extends Component {
         photo:null,
         photourl:"",
         documents:null,
+        path:"",
         userData:{}
   }
 
@@ -38,21 +39,23 @@ class Layout extends Component {
     const auth = localStorage.getItem("auth");
     profile(auth)
     .then((res) => {
-      this.setState({userData:res})
-      console.log(res)
+      this.setState({userData:res,path:res.profileImage.name})
+      // console.log(res.profileImage.path)
     })
   }
 
   render(){
 
-    const {userData} = this.state
-    const values = {userData}
-    console.log(this.state.userData)
+    const userData = this.state.userData
+    const values = userData
+    const path = this.state.path
+    console.log(values)
     return(
             <Aux>
                 <Sidebar 
                 routes = {routes}
-                values = {values} />
+                values = {values}
+                path = {path} />
                
             </Aux>
     )

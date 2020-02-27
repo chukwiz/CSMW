@@ -32,7 +32,7 @@ function App() {
         <Route path = "/forex" exact component = {Forex} />
         <Route path = "/signup" exact component = {SignUp} />
         <Route path = "/testimony" exact component = {Testimony} />
-        <Route path = "/whyus" exact component = {WhyUs} />
+        <Route path = "/vision" exact component = {WhyUs} />
         <Route path = "/nfp" exact component = {Nfp} />
         <Route path = "/retirement" exact component = {Retirement} />
         <Route path = "/ourteam" exact component = {Team} />

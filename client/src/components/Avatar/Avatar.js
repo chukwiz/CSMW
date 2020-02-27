@@ -63,10 +63,9 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Avatars = (props) => {
-  const values= props.values
+  const {values,path} = props
   const classes = useStyles();
-  let profileimage = values.userData.profileImage;
-  console.log(profileimage)
+  console.log(path)
   
 
   return (
@@ -79,7 +78,8 @@ const Avatars = (props) => {
         }}
         variant="dot"
       >
-        <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" style={{width:100,height:100}} />
+      {/* src="../uploads/2020-02-24T18-18-44.040Zhildag.jpg" */}
+        <Avatar alt={values.firstName} src={`../uploads/${path}`} style={{width:100,height:100}} />
       </StyledBadge>
     </div>
   );

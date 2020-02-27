@@ -12,7 +12,7 @@ import Grid from '@material-ui/core/Grid';
 
 const Profile = (props) => {
   const values= props.values
-  console.log(values.userData.job)
+  console.log(values.job)
     return(
         <div className={classes.root}>
       <Grid container spacing = {2} style = {{display:"flex", alignItems:"center", justifyContent:"center"}}>
@@ -28,14 +28,14 @@ const Profile = (props) => {
           label = "First Name"
           disabled
           id="first-name"
-          value = {values.userData.firstName || ""}
+          value = {values.firstName || ""}
         />
         
         <TextField
         className = {classes.field}
           disabled
           label="Last Name"
-          value = {values.userData.lastName || ""}
+          value = {values.lastName || ""}
         />
         </div>
 
@@ -44,7 +44,7 @@ const Profile = (props) => {
         className = {classes.field}
         label = "Email"
           disabled
-          value={values.userData.email || ""}
+          value={values.email || ""}
         />
         </div>
 
@@ -53,7 +53,7 @@ const Profile = (props) => {
         className = {classes.field}
         label = "Job"
           disabled
-          value={values.userData.job || ""}
+          value={values.job || ""}
         />
         </div>
         <div className = {classes.content}>
@@ -61,7 +61,7 @@ const Profile = (props) => {
         className = {classes.field}
         label = "Age"
           disabled
-          value={values.userData.age || ""}
+          value={values.age || ""}
         />
         </div>
         <div className = {classes.content}>
@@ -69,7 +69,7 @@ const Profile = (props) => {
         className = {classes.field}
         label = "City"
           disabled
-          value={values.userData.city || ""}
+          value={values.city || ""}
         />
         </div>
         <Button
@@ -96,7 +96,7 @@ const Profile = (props) => {
         className = {classes.field}
         label = "Investor Type"
           disabled
-          value={values.userData.investorType || ""}
+          value={values.investorType || ""}
         />
         </div>
         <div className = {classes.content}>
@@ -104,7 +104,7 @@ const Profile = (props) => {
         className = {classes.field}
         label = "Capital"
           disabled
-          value={values.userData.capital || ""}
+          value={values.capital || ""}
         />
         </div>
         <div className = {classes.content}>
@@ -112,7 +112,7 @@ const Profile = (props) => {
         className = {classes.field}
         label = "Funds Type"
           disabled
-          value={values.userData.fundsType || ""}
+          value={values.fundsType || ""}
         />
         </div>
         <div className = {classes.content}>
@@ -120,7 +120,7 @@ const Profile = (props) => {
         className = {classes.field}
         label = "Bitcoin Address"
           disabled
-          value={values.userData.bitaddress || ""}
+          value={values.bitaddress || ""}
         />
         </div>
         <Button

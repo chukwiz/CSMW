@@ -62,7 +62,7 @@ const Balance = (props) => {
         </div>
         <div className = {classes.balanceBottomContent}>
             <Typography style = {{ fontSize : "220%", margin:"10px", fontWeight:"200",wordWrap:"break-word"}}>
-            $18,000
+            ${props.value}
             </Typography>
         </div>
         </div>

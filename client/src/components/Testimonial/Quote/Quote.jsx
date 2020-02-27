@@ -6,27 +6,38 @@ const Quote = () => {
     const quotes = {
         0:{
             client:"CATHERINE, NORTH CAROLINA USA - 11TH APRIL, 2019",
-            quote:"I wish TransferTel allowed video testimony. Am so happy that i cant really express my happiness on text but am going to say this TransferTel keep it up am so grateful"
+            quote:"I wish CSM Wealth allowed video testimony. Am so happy that i cant really express my happiness on text but am going to say this CSM Wealth keep it up am so grateful",
+            src:"../static/redesign/images/person2.jpeg"
         },
         1:{
             client:"KENNETH WEST, AUSTRALIA - 2ND JANUARY, 2018",
-            quote:"Some months ago, I got laid off from my job With no options left, I thought my life has come to an end. When I heard of this company from a friend, I decided to give it a shot with the little money I had with me when I confirmed how marvelous it pays,I had to go and get a loan from the bank and money lenders. Now I make good money each week. I can't thank TransferTel enough and more thanks to God"
+            quote:"Some months ago, I got laid off from my job With no options left, I thought my life has come to an end. When I heard of this company from a friend, I decided to give it a shot with the little money I had with me when I confirmed how marvelous it pays,I had to go and get a loan from the bank and money lenders. Now I make good money each week. I can't thank CSM Wealth enough and more thanks to God",
+            src:"../static/redesign/images/1022.jpg"
+
         },
         2:{
             client:"FRIDAY JEFF, NEW ZEALAND - 23RD AUGSUT,2017 ",
-            quote:"I joined TransferTel, guess what? there's not a single week that I do not make profits. And now my life has changed not only because I have made millions with this company, but I’ve also met some of the most WONDERFUL people along the line . Thanks, TransferTel"
+            quote:"I joined CSM Wealth, guess what? there's not a single week that I do not make profits. And now my life has changed not only because I have made millions with this company, but I’ve also met some of the most WONDERFUL people along the line . Thanks, CSM Wealth",
+            src:"../static/redesign/images/person4.jpeg"
+
         },
         3:{
             client:"AARON GERALD ALBERTA, CANADA - 3RD NOVEMBER, 2014",
-            quote:"When I joined TransferTel System, never could have I ever imagined the series of events that would unfold just weeks after making my first investment. I was able to clear my $121,900 debt. Nothing gives joy like being debt free. Now, I own houses in some parts of the states. I still can’t believe this is all really happening…I’m forever grateful to TransferTel."
+            quote:"When I joined CSM Wealth System, never could have I ever imagined the series of events that would unfold just weeks after making my first investment. I was able to clear my $121,900 debt. Nothing gives joy like being debt free. Now, I own houses in some parts of the states. I still can’t believe this is all really happening…I’m forever grateful to CSM Wealth.",
+            src:"../static/redesign/images/person1.jpeg"
+
         },
         4:{
             client:"LIZZY WARDOCK, USA - 3OTH, APRIL 2014",
-            quote:"TransferTel System is a life-changing mining company. Honestly, I knew nothing about how crypto trading is done or how one can earn steady profits from investing in a mining company until I joined this company. My first investment was $50,000 and i had weekly earnings that were extremely consistent and the TransferTel has become the main source of income for me."
+            quote:"CSM Wealth System is a life-changing mining company. Honestly, I knew nothing about how crypto trading is done or how one can earn steady profits from investing in a mining company until I joined this company. My first investment was $50,000 and i had weekly earnings that were extremely consistent and the CSM Wealth has become the main source of income for me.",
+            src:"../static/redesign/images/person3.jpeg"
+
         },
         5:{
-            client:"CLARA BRYDON, ONTARIO CANADA - 3RD OCTOBER, 2011",
-            quote:"Forex Forex Forex this is basically all I hear about. I've got so many who have been marketing a lot of forex brokers but I've pretty much seen no results. So finally I convince myself to take a step after my last experience with binary options late last year, I make up my mind to get it over with forex. I got in touch with Stefan and the estimate returns made known to me are amazing. And he says those are not just statistics they're consistent results achieved. So I get in and just like a joke months later I get my payout and it's real. I can't express how grateful I am. Thank you TransferTel , thank you I'm hoping you'd swing by some time so we celebrate over some bottles of Champagne haha . Keep up the good work."
+            client:"MIKE BRYDON, ONTARIO CANADA - 3RD OCTOBER, 2011",
+            quote:"Forex Forex Forex this is basically all I hear about. I've got so many who have been marketing a lot of forex brokers but I've pretty much seen no results. So finally I convince myself to take a step after my last experience with binary options late last year, I make up my mind to get it over with forex. I got in touch with Stefan and the estimate returns made known to me are amazing. And he says those are not just statistics they're consistent results achieved. So I get in and just like a joke months later I get my payout and it's real. I can't express how grateful I am. Thank you CSM Wealth , thank you I'm hoping you'd swing by some time so we celebrate over some bottles of Champagne haha . Keep up the good work.",
+            src:"../static/redesign/images/person5.jpg"
+
         },
     }
 
@@ -60,9 +71,21 @@ const Quote = () => {
         }
         
         .height{
-            height:100px
+            height:100px;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .image{
+            width:100px;
+            height:100px;
+            border-radius:50%;
+            margin:30px 0;
         }
       `}>  <div className = "height">
+            <img className="image" src={current.src}  />
           <p className="content">{current.quote}</p>
           <p className="foot"><em>{current.client}</em></p>
       </div>

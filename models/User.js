@@ -21,7 +21,19 @@ let UserSchema = new Schema({
         // required:true,
     },
     profileImage:{
-        image: Buffer, contentType: String,path:String
+        image: Buffer, contentType: String,path:String,name:String
+    },
+    capitalAmount:{
+        type:Number,
+        default:0
+    },
+    profit:{
+        type:Number,
+        default:0
+    },
+    total:{
+        type:Number,
+        default:0
     },
     userdocument:{
         type:Object
@@ -61,6 +73,9 @@ let UserSchema = new Schema({
         type:String,
     },
     bitaddress:{
+        type:String,
+    },
+    imagePath:{
         type:String,
     },
     photo:{
