@@ -49,6 +49,7 @@ const drawerWidth = 260;
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
+    // backgroundColor:"#000"
   },
   drawer: {
     [theme.breakpoints.up('sm')]: {
@@ -104,7 +105,9 @@ const useStyles = makeStyles(theme => ({
   },
   content: {
     flexGrow: 1,
-    marginTop:5
+    marginTop:5,
+    // backgroundColor:"#000",
+    height:"100%"
     // padding: theme.spacing(3),
   },
 
@@ -428,7 +431,7 @@ const path = props.path
   </div>
   
 </div>
-<div style = {{margin: "0px 10px"}}>
+<div style = {{margin: "0px 0px"}}>
         <Switch>
                     <Route path = {`${match.path}/home`} exact render = {(props) => (<Dashboard {...props} values = {values} />)} />
                     <Route path = {`${match.path}/user`} exact render = {(props) => (<Profile {...props} values = {values} />)} />

@@ -3,7 +3,7 @@ import "./Faq.css"
 
 const Faq = () => {
     return(
-        <div style={{fontSize:"85%"}}>
+        <div style={{fontSize:"100%"}}>
           {/*[if lt IE 9]>
   <div style="text-align:center; padding: 6px 0; background: #cc0000; font-size: 18px; color: #fff; font-weight: 500;">You are using an old version of Internet Explorer. For a better experience, keep your browser up to date. <a href="http://windows.microsoft.com/ie" target="_blank" class="btn btn-sm btn-info"><i class="fa fa-edge"></i> Get the latest IE</a></div>
   <![endif]*/}
@@ -20,7 +20,7 @@ const Faq = () => {
     <img src="../csmwhitelogo.png" alt="logo" />
 </a>
   <ul className="list-inline">
-<li ><i className="fa fa-phone "></i>International: +44 2035192105</li>
+{/* <li ><i className="fa fa-phone "></i>International: +44 2035192105</li> */}
 <li className="">&nbsp;|&nbsp;</li>
 <li><a href="mailto:support@csmwealth.com" target="_blank" rel = "noopener noreferrer"><i className="fa fa-envelope"></i> support@csmwealth.com</a></li>
 <li className="">&nbsp;|&nbsp;</li>
@@ -314,7 +314,7 @@ const Faq = () => {
                 <div className="collapse" id="accordion-tab-3-content-3" aria-labelledby="accordion-tab-3-heading-3" data-parent="#accordion-tab-3">
                   <div className="card-body">
                     <p>Maintenance Margin is the minimum amount of Bitcoin you must hold to keep a position open. If your margin balance on CSM Wealth drops below this level your position will be taken over by the Liquidation Engine and be Liquidated.</p>
-                    <p><strong>Example: </strong>Man, I'm sore all over. I feel like I just went ten rounds with mighty Thor.</p>
+                    {/* <p><strong>Example: </strong>Man, I'm sore all over. I feel like I just went ten rounds with mighty Thor.</p> */}
                   </div>
                 </div>
               </div>
@@ -500,7 +500,7 @@ const Faq = () => {
 <a href="/"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
 </div>
 <div className="item col-md-3">
-<a href="/"><img src="../static/redesign/images/payment-methods/visa-electron.png" alt="visa-electron" title="visa-electron"/></a>
+<a href="/"><img src="../static/redesign/images/payment-methods/btc.png" alt="mastercard" title="mastercard"/></a>
 </div>
 <div className="item col-md-3">
 <a href="/"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
@@ -539,13 +539,13 @@ const Faq = () => {
 <div className="col-md-3 color-offwhite" style={{paddingTop:"2px"}}>
 <i className="fa fa-lock pr-10 color-white"></i> Secured by: GeoTrust Inc
 </div>
-<div className="col-md-3 color-offwhite" style={{paddingTop:"2px"}}>
+{/* <div className="col-md-3 color-offwhite" style={{paddingTop:"2px"}}>
 <i className="fa fa-phone pr-10 color-white"></i> Telephone: +44 2035192105
-</div>
-<div className="col-md-2 color-offwhite" style = {{paddingTop:"2px",display:"flex", flexDirection:"row"}}>
+</div> */}
+<div className="col-md-6 color-offwhite" style = {{paddingTop:"2px"}}>
 <i className="fa fa-envelope-o pr-10 color-white"></i>support@csmwealth.com
 </div>
-<div className="col-md-4 color-offwhite">
+<div className="col-md-3 color-offwhite">
 <ul className="social-links circle animated-effect-1" style={{marginTop:"0px",marginBottom:"2px",float:"right"}}>
 <li className="facebook"><a target="_blank" rel="noopener noreferrer" href="/"><i className="fa fa-facebook"></i></a></li>
 <li className="twitter"><a target="_blank" rel="noopener noreferrer" href="/"><i className="fa fa-twitter"></i></a></li>
@@ -560,20 +560,22 @@ const Faq = () => {
 <div className="row">
 <div className="col-md-12">
 <div className="separator-2"></div>
-<p className="color-offwhite" style={{fontSize:"11px"}}>
-<b>CSM Wealth Ltd. Reg number 07659758</b>
+<p className="color-offwhite" style={{fontSize:"14px"}}>
+<b></b>
 </p>
-<p className="color-offwhite" style={{fontSize:"11px"}}>
+<p className="color-offwhite" style={{fontSize:"14px"}}>
 <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>Registered office address</a> <br />
 1 Windsor Road, Northam, Bideford, Devon, England, EX39 1EN
 </p>
-<p className="color-offwhite" style={{fontSize:"11px"}}>
-<b>Risk Warning:</b> Contracts for Difference (‘CFDs’) are complex financial products that are traded on margin. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage.
+<p className="color-offwhite" style={{fontSize:"14px"}}>
+CSM Wealth holds a Financial Services Licence which authorizes us to issue and act as a responsible entity to <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>registered </a> managed investment schemes and to act as trustee to wholesale unregistered investment schemes worldwide.
+<p><b>Risk Warning:</b> Contracts for Difference (‘CFDs’) are complex financial products that are traded on margin. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage.
 <br/>
 As a result, CFDs may not be suitable for all investors because you may lose all your invested capital. You should not risk more than you are prepared to lose. Before deciding to trade, you need to ensure that you understand the risks involved taking into account your investment objectives and level of experience. All information on this website is not directed toward soliciting citizens or residents of the United States, United Kingdom, Japan or any other jurisdiction that would be contrary to local law or regulation.
 <br/>
 Past performance of CFDs is not a reliable indicator of future results. Most CFDs have no set maturity date. Hence, a CFD position matures on the date you choose to close an existing open position. Seek independent advice, if necessary. Please read CSM Wealth’s full ‘Risk Disclosure Statement’.
 </p>
+<br/></p>
 </div>
 </div>
 </div>

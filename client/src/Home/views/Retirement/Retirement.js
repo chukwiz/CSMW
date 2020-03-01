@@ -2,7 +2,7 @@ import React from 'react';
 
 const Retirement = () => {
     return (
-        <div style={{fontSize:"85%"}}>
+        <div style={{fontSize:"100%"}}>
           {/*[if lt IE 9]>
   <div style="text-align:center; padding: 6px 0; background: #cc0000; font-size: 18px; color: #fff; font-weight: 500;">You are using an old version of Internet Explorer. For a better experience, keep your browser up to date. <a href="http://windows.microsoft.com/ie" target="_blank" class="btn btn-sm btn-info"><i class="fa fa-edge"></i> Get the latest IE</a></div>
   <![endif]*/}
@@ -14,13 +14,13 @@ const Retirement = () => {
           <div className="page-wrapper">
             {/* header-container start */}
 
-            <nav className="navbar  navbar-light bg-white">
-  {/* <a className="navbar-brand" href="/">Sticky top</a> */}
-  <a className="navbar-brand" href="/">
+            <nav className="navbar  navbar-light bg-white" style={{fontSize:"100%"}}>
+<a className="navbar-brand" href="/">
     <img src="../csmwhitelogo.png" alt="logo" />
 </a>
+  {/* <a className="navbar-brand" href="/">Sticky top</a> */}
   <ul className="list-inline">
-<li ><i className="fa fa-phone "></i>International: +44 2035192105</li>
+{/* <li ><i className="fa fa-phone "></i>International: +44 2035192105</li> */}
 <li className="">&nbsp;|&nbsp;</li>
 <li><a href="mailto:support@csmwealth.com" target="_blank" rel = "noopener noreferrer"><i className="fa fa-envelope"></i> support@csmwealth.com</a></li>
 <li className="">&nbsp;|&nbsp;</li>
@@ -127,14 +127,15 @@ const Retirement = () => {
 </nav>
 
             {/*  */}
-            <div className="banner dark-translucent-bg pt-20" style={{paddingTop: '40px !important', height: '85vh', backgroundImage: 'url("../../static/redesign/images/slides/retire1.jpg")', backgroundPosition: '50% 32%'}}>
+            <div className="banner dark-translucent-bg pt-20" style={{paddingTop: '40px !important',display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center", height: '65vh', backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../../static/redesign/images/slides/retire1.jpg")', backgroundPosition: '50% 32%',marginBottom:"7%"}}>
               
               <div className="container">
-                <div className="row" style={{display:"flex",justifyContent:"center"}}>
-                  <div className="col-md-5 " style={{color:"#ffffff",textAlign:"center"}}>
-                    <h2 className="title object-non-visible animated object-visible fadeIn" style={{color:"#ffffff"}} data-animation-effect="fadeIn" data-effect-delay={100}>Invest for your old age today</h2>
+                <div className="row" style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
+                  <div className="col-md-12 " style={{color:"#ffffff",textAlign:"center"}}>
+                  <h4 className="title object-non-visible animated object-visible fadeIn" style={{color:"#d8d8d8"}} data-animation-effect="fadeIn" data-effect-delay={100}>Investing in Retirement Income?</h4>
+                    <h2 className="title object-non-visible animated object-visible fadeIn" style={{color:"#d6d6d6"}} data-animation-effect="fadeIn" data-effect-delay={100} style={{fontSize:"300%"}}>retirement income</h2>
                     <div className="separator-2 object-non-visible mt-10 animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}  />
-                    <a href="/signup" className="object-non-visible animated object-visible fadeIn btn btn-sm btn-default btn-ocean-green" data-animation-effect="fadeIn" data-effect-delay={100}>Sign up</a>
+                    <a href="/signup" className="object-non-visible animated object-visible fadeIn btn btn-sm btn-default btn-ocean-green" data-animation-effect="fadeIn" data-effect-delay={100}>Create Account</a>
                   </div>
                 </div>
               </div>
@@ -232,7 +233,7 @@ const Retirement = () => {
 <a href="/"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
 </div>
 <div className="item col-md-3">
-<a href="/"><img src="../static/redesign/images/payment-methods/visa-electron.png" alt="visa-electron" title="visa-electron"/></a>
+<a href="/"><img src="../static/redesign/images/payment-methods/btc.png" alt="mastercard" title="mastercard"/></a>
 </div>
 <div className="item col-md-3">
 <a href="/"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
@@ -271,13 +272,13 @@ const Retirement = () => {
 <div className="col-md-3 color-offwhite" style={{paddingTop:"2px"}}>
 <i className="fa fa-lock pr-10 color-white"></i> Secured by: GeoTrust Inc
 </div>
-<div className="col-md-3 color-offwhite" style={{paddingTop:"2px"}}>
+{/* <div className="col-md-3 color-offwhite" style={{paddingTop:"2px"}}>
 <i className="fa fa-phone pr-10 color-white"></i> Telephone: +44 2035192105
-</div>
-<div className="col-md-2 color-offwhite" style = {{paddingTop:"2px",display:"flex", flexDirection:"row"}}>
+</div> */}
+<div className="col-md-6 color-offwhite" style = {{paddingTop:"2px"}}>
 <i className="fa fa-envelope-o pr-10 color-white"></i>support@csmwealth.com
 </div>
-<div className="col-md-4 color-offwhite">
+<div className="col-md-3 color-offwhite">
 <ul className="social-links circle animated-effect-1" style={{marginTop:"0px",marginBottom:"2px",float:"right"}}>
 <li className="facebook"><a target="_blank" rel="noopener noreferrer" href="/"><i className="fa fa-facebook"></i></a></li>
 <li className="twitter"><a target="_blank" rel="noopener noreferrer" href="/"><i className="fa fa-twitter"></i></a></li>
@@ -292,20 +293,22 @@ const Retirement = () => {
 <div className="row">
 <div className="col-md-12">
 <div className="separator-2"></div>
-<p className="color-offwhite" style={{fontSize:"11px"}}>
-<b>CSM Wealth Ltd. Reg number 07659758</b>
+<p className="color-offwhite" style={{fontSize:"14px"}}>
+<b></b>
 </p>
-<p className="color-offwhite" style={{fontSize:"11px"}}>
+<p className="color-offwhite" style={{fontSize:"14px"}}>
 <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>Registered office address</a> <br />
 1 Windsor Road, Northam, Bideford, Devon, England, EX39 1EN
 </p>
-<p className="color-offwhite" style={{fontSize:"11px"}}>
-<b>Risk Warning:</b> Contracts for Difference (‘CFDs’) are complex financial products that are traded on margin. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage.
+<p className="color-offwhite" style={{fontSize:"14px"}}>
+CSM Wealth holds a Financial Services Licence which authorizes us to issue and act as a responsible entity to <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>registered </a> managed investment schemes and to act as trustee to wholesale unregistered investment schemes worldwide.
+<p><b>Risk Warning:</b> Contracts for Difference (‘CFDs’) are complex financial products that are traded on margin. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage.
 <br/>
 As a result, CFDs may not be suitable for all investors because you may lose all your invested capital. You should not risk more than you are prepared to lose. Before deciding to trade, you need to ensure that you understand the risks involved taking into account your investment objectives and level of experience. All information on this website is not directed toward soliciting citizens or residents of the United States, United Kingdom, Japan or any other jurisdiction that would be contrary to local law or regulation.
 <br/>
 Past performance of CFDs is not a reliable indicator of future results. Most CFDs have no set maturity date. Hence, a CFD position matures on the date you choose to close an existing open position. Seek independent advice, if necessary. Please read CSM Wealth’s full ‘Risk Disclosure Statement’.
 </p>
+<br/></p>
 </div>
 </div>
 </div>

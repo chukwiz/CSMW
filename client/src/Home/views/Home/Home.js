@@ -1,19 +1,19 @@
 import React from 'react';
 import Iframe from 'react-iframe';
-
+import Carousel from '../../components/Carousel/Carousel';
 const Home = () => {
     return(
         <div className="no-trans front-page">
 
 <div className="scrollToTop circle"><i className="icon-up-open-big"></i></div>
 <div className="page-wrapper">
-<nav className="navbar  navbar-light bg-white" style={{fontSize:"80%"}}>
+<nav className="navbar  navbar-light bg-white" style={{fontSize:"100%"}}>
 <a className="navbar-brand" href="/">
     <img src="../csmwhitelogo.png" alt="logo" />
 </a>
   {/* <a className="navbar-brand" href="/">Sticky top</a> */}
   <ul className="list-inline">
-<li ><i className="fa fa-phone "></i>International: +44 2035192105</li>
+{/* <li ><i className="fa fa-phone "></i>International: +44 2035192105</li> */}
 <li className="">&nbsp;|&nbsp;</li>
 <li><a href="mailto:support@csmwealth.com" target="_blank" rel = "noopener noreferrer"><i className="fa fa-envelope"></i> support@csmwealth.com</a></li>
 <li className="">&nbsp;|&nbsp;</li>
@@ -26,7 +26,7 @@ const Home = () => {
 </ul>
 
 </nav>
-<nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" style={{fontSize:"80%"}}>
+<nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
   
   <a className="navbar-brand" href="/">
     {/* <img src="../csmdarklogo.png" alt="logo" style={{height:44,width:120}} /> */}CSM
@@ -131,126 +131,76 @@ const Home = () => {
 -->
 <!-- banner start -->
 <!-- ================ --> */}
-<div className="banner clearfix" style={{backgroundColor: "#111924"}}>
-{/* <!-- slideshow start -->
-<!-- ================ --> */}
-<div className="slideshow">
-{/* <!-- slider revolution start -->
-<!-- ================ --> */}
-<div className="slider-banner-container">
-<div className="slider-banner-fullwidth">
-<ul className="slides">
-{/* <!-- slide 1 start -->
-<!-- ================ --> */}
-<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="on">
-{/* <!-- main image --> */}
-<img src="../static/redesign/images/slides/slide10.jpg" alt="slidebg1" data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover" />
-{/* <!-- LAYER NR. 1 --> */}
-<div className="tp-caption fadeout large_white font-Playfair"
-data-x="0"
-data-y="90"><b>Trade Everywhere <br/> Everything with one login</b>
+<div style={{height:""}}>
+<Carousel />
 </div>
-{/* <!-- LAYER NR. 2 --> */}
-<div className="tp-caption sfb fadeout large_white tp-resizeme hidden-xs"
-data-x="0"
-data-y="200"><div className="separator-2 light"></div>
-</div>
-{/* <!-- LAYER NR. 3 --> */}
-<div className="tp-caption sfb fadeout medium_white hidden-xs"
-data-x="0"
-data-y="210">-Equity CFDs<br/>-Forex<br/>-7 Platforms
-</div>
-{/* <!-- LAYER NR. 4 --> */}
-<div className="tp-caption fadeout sfb small_white"
-data-x="0"
-data-y="325"><a href="account-types/open-account.html" className="btn btn-default text-center"><b>SIGN UP</b></a>
-</div>
-</li>
-{/* <!-- slide 2 start--> */}
-<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="on">
-<img src="../static/redesign/images/slides/slide3.jpg" alt="slidebg1" data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover" />
-<div className="tp-caption fadeout large_white font-Playfair"
-data-x="0"
-data-y="90"><b style={{color:"##42ce7a"}}>Unveil Tight<br/> Spread Trading</b>
-</div>
-<div className="tp-caption sfb fadeout large_white tp-resizeme hidden-xs"
-data-x="0"
-data-y="200"><div className="separator-2 light"></div>
-</div>
-<div className="tp-caption sfb fadeout medium_white hidden-xs"
-data-x="0"
-data-y="210"><span style={{color:"#dfdfdfde"}}>-Trade with tight spreads from 0.2 pips<br/>-High leverage of up to 1:1000<br/>-Exceptional 24/7 customer support </span>
-</div>
-<div className="tp-caption fadeout sfb small_white"
-data-x="0"
-data-y="325"><a href="account-types/open-account.html" className="btn btn-default text-center"><b>SIGN UP</b></a>
-</div>
-</li>
-{/* <!-- slide 3 start -->
-<!-- ================ --> */}
-<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="on">
-{/* <!-- main image --> */}
-<img src="../static/redesign/images/slides/slide5.jpg" alt="slidebg1" data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover"/>
-{/* <!-- LAYER NR. 1 --> */}
-<div className="tp-caption sfb fadeout large_white font-Playfair"
-data-x="0"
-data-y="90"><b>Trust Your Funds with <br/>a Reliable Broker</b>
-</div>
-{/* <!-- LAYER NR. 2 --> */}
-<div className="tp-caption sfb fadeout large_white tp-resizeme hidden-xs"
-data-x="0"
-data-y="200"><div className="separator-2 light"></div>
-</div>
-{/* <!-- LAYER NR. 3 --> */}
-<div className="tp-caption sfb fadeout medium_white hidden-xs"
-data-x="0"
-data-y="210">-Client Segregated Accounts<br/>-Reputable payment gateway providers<br/>-Funds protection against liquidation
-</div>
-{/* <!-- LAYER NR. 4 --> */}
-<div className="tp-caption fadeout sfb small_white"
-data-x="0"
-data-y="325"><a href="account-types/open-account.html" className="btn btn-default text-center"><b>SIGN UP</b></a>
-</div>
-</li>
-{/* <!-- slide 4 start -->
-<!-- ================ --> */}
-<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="on">
-{/* <!-- main image --> */}
-<img src="../static/redesign/images/slides/slide6.jpg" alt="slidebg1" data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover" />
-{/* <!-- LAYER NR. 1 --> */}
-<div className="tp-caption sfb fadeout large_white font-Playfair"
-data-x="0"
-data-y="90"><b>Helping you rise again<br />15% Recovery Bonus</b>
-</div>
-{/* <!-- LAYER NR. 2 --> */}
-<div className="tp-caption sfb fadeout large_white tp-resizeme hidden-xs"
-data-x="0"
-data-y="200"><div className="separator-2 light"></div>
-</div>
-{/* <!-- LAYER NR. 3 --> */}
-<div className="tp-caption sfb fadeout medium_white hidden-xs"
-data-x="0"
-data-y="210">Our all-new Phoenix bonus<br/>provides you with a Rescue Bonus<br/>in case of loss of your capital
-</div>
-{/* <!-- LAYER NR. 4 --> */}
-<div className="tp-caption fadeout sfb small_white"
-data-x="0"
-data-y="325"><a href="account-types/open-account.html" className="btn btn-default text-center"><b>SIGN UP</b></a>
-</div>
-</li>
-</ul>
-{/* <!--<div className="tp-bannertimer"></div>--> */}
-</div>
-</div>
-{/* <!-- slider revolution end --> */}
-</div>
-{/* <!-- slideshow end --> */}
-</div>
+
 {/* <!-- banner end --> */}
 <div id="page-start"></div>
 {/* <!-- section start -->
 <!-- ================ --> */}
-<section className="section light-gray-bg clearfix">
+<div
+  style={{
+    // height: 62,
+    backgroundColor: "#FFFFFF",
+    overflow: "hidden",
+    boxSizing: "border-box",
+    // border: "1px solid #56667F",
+    borderRadius: 0,
+    textAlign: "right",
+    // lineHeight: 14,
+    blockSize: 37,
+    fontSize: 12,
+    fontFeatureSettings: "normal",
+    textSizeAdjust: "100%",
+    // boxShadow: "inset 0 -20px 0 0 #56667F",
+    padding: 0,
+    margin: 0,
+    width: "100%"
+  }}
+>
+  <div style={{ height: 30, padding: 0, margin: 0, width: "100%" }}>
+    <Iframe
+      src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=light&pref_coin_id=1505&invert_hover="
+      width="100%"
+      height="30px"
+      scrolling="auto"
+      marginWidth={0}
+      marginHeight={0}
+      frameBorder={0}
+      border={0}
+      style={{ border: 0, margin: 0, padding: 0 }}
+    />
+  </div>
+  {/* <div
+    style={{
+      color: "#FFFFFF",
+      lineHeight: 14,
+      fontWeight: 400,
+      fontSize: 11,
+      boxSizing: "border-box",
+      padding: "2px 6px",
+      width: "100%",
+      fontFamily: "Verdana, Tahoma, Arial, sans-serif"
+    }}
+  >
+    <a
+      href="https://coinlib.io"
+      target="_blank"
+      style={{
+        fontWeight: 500,
+        color: "#FFFFFF",
+        textDecoration: "none",
+        fontSize: 11
+      }}
+    >
+      Cryptocurrency Prices
+    </a>
+    &nbsp;by Coinlib
+  </div> */}
+</div>
+
+<section className="section light-gray-bg clearfix" style={{padding:"0px"}}>
 <div className="container">
 <div className="row">
 <div className="col-md-2 col-sm-6 text-center">
@@ -293,9 +243,9 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 <section className="pv-30 clearfix" style={{paddingBottom: "22px", backgroundColor:"#1c222d",color:"#d0d0d0"}}>
 <div className="container">
 <div className="row">
-<div className="col-md-7 text-center">
+<div className="col-md-6 text-center">
 {/* <img alt="Benefits" className="main mt-15" src="../static/redesign/images/bit7.jpg" style={{marginLeft:"-40px"}} /> */}
-<div
+{/* <div
   style={{
     height: 560,
     // backgroundColor: "#FFFFFF",
@@ -326,11 +276,12 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
       style={{ border: 0, margin: 0, padding: 0, lineHeight: 14 }}
     />
   </div>
+</div> */}
+<div class="btcwdgt-chart" bw-cash="true" bw-noshadow="true"></div>
 </div>
-</div>
-<div className="col-md-5 col-sm-12 text-center-992">
+<div className="col-md-6 col-sm-12 text-center-992" style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
 <h2 className="mb-15 mt-0" style={{color:"#d0d0d0"}}>Invest in your success</h2>
-<ul className="list-unstyled" style={{lineHeight: "30px",fontSize:"80%"}}>
+<ul className="list-unstyled" style={{lineHeight: "30px",fontSize:"90%"}}>
 <li><i className="fa fa-check color-blue-light mr-5" style={{color:"#42ce7a"}}></i> Trade with higher leverage up to 1:1000</li>
 <li><i className="fa fa-check color-blue-light mr-5"></i> 100% Credit Bonus and 15% Recovery bonus</li>
 <li><i className="fa fa-check color-blue-light mr-5"></i> Stay up-to-date with CSM Wealth’s Economic Calendar</li>
@@ -370,7 +321,7 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 </section>
 {/* <!-- section start -->
 <!-- ================ --> */}
-<section className="clearfix light-gray-bg pv-60" style={{fontSize:"80%"}}>
+<section className="clearfix light-gray-bg pv-60" style={{fontSize:"100%"}}>
 <div className="container">
 <div className="row grid-space-10">
 <div className="col-sm-6 col-md-3">
@@ -382,7 +333,7 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 <h4 className="font-Playfair">Security of Funds</h4>
 <div className="separator"></div>
 <p>In CSM Wealth we have taken extraordinary measures in order to ensure a very high level of fund safety as our priority.</p>
-<a href="/whyus" className="color-blue"><b>Read More</b></a>
+<a href="/vision" className="color-blue"><b>Read More</b></a>
 </div>
 </div>
 </div>
@@ -395,7 +346,7 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 <h4 className="font-Playfair">Education</h4>
 <div className="separator"></div>
 <p>Our Webinars are presented by highly-experienced industry professionals who will guide you through key trading topics.</p>
-<a href="/whyus" className="color-blue"><b>Read More</b></a>
+<a href="/vision" className="color-blue"><b>Read More</b></a>
 </div>
 </div>
 </div>
@@ -408,7 +359,7 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 <h4 className="font-Playfair">Become a Partner</h4>
 <div className="separator"></div>
 <p>The best commission structure and tailor-made products we can help you achieve your revenue expectations.</p>
-<a href="/whyus" className="color-blue"><b>Read More</b></a>
+<a href="/vision" className="color-blue"><b>Read More</b></a>
 </div>
 </div>
 </div>
@@ -421,7 +372,7 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 <h4 className="font-Playfair">Contests</h4>
 <div className="separator"></div>
 <p>Check our variety of contests that are currently live and join now and get a chance to win cash prizes & many more.</p>
-<a href="/whyus" className="color-blue"><b>Read More</b></a>
+<a href="/vision" className="color-blue"><b>Read More</b></a>
 </div>
 </div>
 </div>
@@ -431,7 +382,7 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 {/* <!-- section end -->
 <!-- section start -->
 <!-- ================ --> */}
-<section className="dark-translucent-bg pv-10" style={{background:"linear-gradient(rgba(0,0,0, .8),rgba(0,0,0, .8)),url(../static/redesign/images/bit3.png)",padding:"0px auto",fontSize:"80%",fontWeight:400}} id="home-advantages">
+<section className="dark-translucent-bg pv-10" style={{background:"linear-gradient(rgba(0,0,0, .8),rgba(0,0,0, .8)),url(../static/redesign/images/bit3.png)",padding:"0px auto",fontSize:"100%",fontWeight:200}} id="home-advantages">
 <div className="container">
 <div className="row">
 <div className="col-md-8 offset-md-2">
@@ -481,11 +432,14 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 <div className="item col-md-3">
 <a href="/"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
 </div>
-<div className="item col-md-3">
+{/* <div className="item col-md-3">
 <a href="/"><img src="../static/redesign/images/payment-methods/visa-electron.png" alt="visa-electron" title="visa-electron"/></a>
-</div>
+</div> */}
 <div className="item col-md-3">
 <a href="/"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
+</div>
+<div className="item col-md-3">
+<a href="/"><img src="../static/redesign/images/payment-methods/btc.png" alt="mastercard" title="mastercard"/></a>
 </div>
 {/* <div className="item">
 <a href="/"><img src="../static/redesign/images/payment-methods/maestro.png" alt="maestro" title="maestro"/></a>
@@ -521,13 +475,13 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 <div className="col-md-3 color-offwhite" style={{paddingTop:"2px"}}>
 <i className="fa fa-lock pr-10 color-white"></i> Secured by: GeoTrust Inc
 </div>
-<div className="col-md-3 color-offwhite" style={{paddingTop:"2px"}}>
+{/* <div className="col-md-3 color-offwhite" style={{paddingTop:"2px"}}>
 <i className="fa fa-phone pr-10 color-white"></i> Telephone: +44 2035192105
-</div>
-<div className="col-md-2 color-offwhite" style = {{paddingTop:"2px",display:"flex", flexDirection:"row"}}>
+</div> */}
+<div className="col-md-6 color-offwhite" style = {{paddingTop:"2px"}}>
 <i className="fa fa-envelope-o pr-10 color-white"></i>support@csmwealth.com
 </div>
-<div className="col-md-4 color-offwhite">
+<div className="col-md-3 color-offwhite">
 <ul className="social-links circle animated-effect-1" style={{marginTop:"0px",marginBottom:"2px",float:"right"}}>
 <li className="facebook"><a target="_blank" rel="noopener noreferrer" href="/"><i className="fa fa-facebook"></i></a></li>
 <li className="twitter"><a target="_blank" rel="noopener noreferrer" href="/"><i className="fa fa-twitter"></i></a></li>
@@ -542,20 +496,22 @@ data-y="325"><a href="account-types/open-account.html" className="btn btn-defaul
 <div className="row">
 <div className="col-md-12">
 <div className="separator-2"></div>
-<p className="color-offwhite" style={{fontSize:"11px"}}>
-<b>CSM Wealth Ltd. Reg number 07659758</b>
+<p className="color-offwhite" style={{fontSize:"14px"}}>
+<b></b>
 </p>
-<p className="color-offwhite" style={{fontSize:"11px"}}>
+<p className="color-offwhite" style={{fontSize:"14px"}}>
 <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>Registered office address</a> <br />
 1 Windsor Road, Northam, Bideford, Devon, England, EX39 1EN
 </p>
-<p className="color-offwhite" style={{fontSize:"11px"}}>
-<b>Risk Warning:</b> Contracts for Difference (‘CFDs’) are complex financial products that are traded on margin. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage.
+<p className="color-offwhite" style={{fontSize:"14px"}}>
+CSM Wealth holds a Financial Services Licence which authorizes us to issue and act as a responsible entity to <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>registered </a> managed investment schemes and to act as trustee to wholesale unregistered investment schemes worldwide.
+<p><b>Risk Warning:</b> Contracts for Difference (‘CFDs’) are complex financial products that are traded on margin. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage.
 <br/>
 As a result, CFDs may not be suitable for all investors because you may lose all your invested capital. You should not risk more than you are prepared to lose. Before deciding to trade, you need to ensure that you understand the risks involved taking into account your investment objectives and level of experience. All information on this website is not directed toward soliciting citizens or residents of the United States, United Kingdom, Japan or any other jurisdiction that would be contrary to local law or regulation.
 <br/>
 Past performance of CFDs is not a reliable indicator of future results. Most CFDs have no set maturity date. Hence, a CFD position matures on the date you choose to close an existing open position. Seek independent advice, if necessary. Please read CSM Wealth’s full ‘Risk Disclosure Statement’.
 </p>
+<br/></p>
 </div>
 </div>
 </div>

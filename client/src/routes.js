@@ -55,13 +55,13 @@ const dashboardRoutes = [
     component: NotificationsPage,
     // layout: "/admin"
   },
-  {
-    path: "transactions",
-    name: "Transactions",
-    icon: ShopTwo,
-    component: Transactions,
-    // layout: "/admin"
-  }
+  // {
+  //   path: "transactions",
+  //   name: "Transactions",
+  //   icon: ShopTwo,
+  //   component: Transactions,
+  //   // layout: "/admin"
+  // }
 
 ];
 

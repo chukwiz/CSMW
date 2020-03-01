@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import axios from 'axios';
 import classes from './Crypto.module.css';
+import Iframe from 'react-iframe';
 
 class Crypto extends Component   {
 
@@ -18,7 +19,7 @@ class Crypto extends Component   {
   render(){
     
     return (
-      <div style={{fontSize:"85%"}}>
+      <div style={{fontSize:"100%"}}>
         {/*[if lt IE 9]>
 <div style="text-align:center; padding: 6px 0; background: #cc0000; font-size: 18px; color: #fff; font-weight: 500;">You are using an old version of Internet Explorer. For a better experience, keep your browser up to date. <a href="http://windows.microsoft.com/ie" target="_blank" rel="noopener noreferrer"  class="btn btn-sm btn-info"><i class="fa fa-edge"></i> Get the latest IE</a></div>
 <![endif]*/}
@@ -35,7 +36,7 @@ class Crypto extends Component   {
     <img src="../csmwhitelogo.png" alt="logo" />
 </a>
   <ul className="list-inline">
-<li ><i className="fa fa-phone "></i>International: +44 2035192105</li>
+{/* <li ><i className="fa fa-phone "></i>International: +44 2035192105</li> */}
 <li className="">&nbsp;|&nbsp;</li>
 <li><a href="mailto:support@csmwealth.com" target="_blank" rel = "noopener noreferrer"><i className="fa fa-envelope"></i> support@csmwealth.com</a></li>
 <li className="">&nbsp;|&nbsp;</li>
@@ -140,16 +141,17 @@ class Crypto extends Component   {
     </ul>
   </div>
 </nav>
-<div className="banner video-background-banner pv-40 dark-translucent-bg hovered" style={{paddingTop: '40px !important', height: '80vh'}}>
-            <div style={{position: 'absolute', zIndex: -1, top: '0px', left: '0px',opacity:"0.6", bottom: '0px', right: '0px', overflow: 'hidden', backgroundImage: 'url("../../static/redesign/images/inner/about/hero6.jpg")', backgroundColor: 'transparent', backgroundSize: 'cover', backgroundPosition: '50% 50%', backgroundRepeat: 'no-repeat'}}>
+<div className="banner video-background-banner pv-40 dark-translucent-bg hovered" style={{paddingTop: '40px !important', height: '65vh',marginBottom:"10%",display:"flex",justifyContent:"center"}}>
+            <div style={{position: 'absolute', zIndex: -1, top: '0px', left: '0px', bottom: '0px', right: '0px', overflow: 'hidden', backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),url("../../static/redesign/images/inner/about/enter.jpg")', backgroundSize: 'cover', backgroundPosition: '50% 50%', backgroundRepeat: 'no-repeat'}}>
 
             </div>
               <div className="container">
-                <div className="row" style={{display:"flex",justifyContent:"center"}}>
-                  <div className="col-md-5 " style={{color:"#272424",textAlign:"center"}}>
-                    <h2 className="title object-non-visible animated object-visible fadeIn" style={{color:"#272424"}} data-animation-effect="fadeIn" data-effect-delay={100}>Invest in cryptocurrency today</h2>
-                    <div className="separator-2 object-non-visible mt-10 animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}  />
-                    <a href="/signup" className="object-non-visible animated object-visible fadeIn btn btn-sm btn-default btn-ocean-green" data-animation-effect="fadeIn" data-effect-delay={100}>Sign up</a>
+                <div className="row" style={{display:"flex",width:"100%",justifyContent:"center"}}>
+                  <div className="col-md-12 " style={{color:"#272424",textAlign:"center",width:"100%"}}>
+                    <h4 className="title object-non-visible animated object-visible fadeIn" style={{color:"#e0e0e0"}} data-animation-effect="fadeIn" data-effect-delay={200} style={{width:"100%"}} >Investing in cryptocurrency?</h4>
+                    <h1 className="title object-non-visible animated object-visible fadeIn" style={{color:"#e0e0e0"}} data-animation-effect="fadeIn" data-effect-delay={200} style={{fontSize:"300%"}}>INVEST IN CRYPTOCURRENCY TODAY</h1>
+                    <div className="separator-2 object-non-visible mt-10 animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={300}  />
+                    <a href="/signup" className="object-non-visible animated object-visible fadeIn btn btn-sm btn-default btn-ocean-green" data-animation-effect="fadeIn" data-effect-delay={300} style={{fontSize:"100%"}}>Create Account</a>
                   </div>
                 </div>
               </div>
@@ -164,22 +166,52 @@ class Crypto extends Component   {
               </ol>
             </div>
           </div> */}
-          <section className = "main-container" style={{padding:"0px 60px",textAlign:"center"}}>
+          <section className = "main-container" style={{padding:"0px 60px",textAlign:"center",display:"flex",flexDirection:"column", justifyContent:"center"}} >
           <span style={{display:"block", margin:"30px"}}>
           <h2>What are crypto-currencies</h2>A cryptocurrency is a digital coin, designed to be transferred between people in virtual transactions. Cryptocurrencies exist only as data and not as physical objects; you cannot actually hold a Bitcoin in your hand or keep Ethereum in your safe. Owning a Bitcoin means you have the collective agreement of each and every computer on the Bitcoin network that it is currently owned by you and – more importantly – that it was legitimately created by a miner
           </span>
-          <div style = {{display:"flex",justifyContent:"center"}}>
-          <div style={{height: 560, backgroundColor: '#fff', overflow: 'hidden', boxSizing: 'border-box', lineHeight: 14, fontSize: 12, fontFeatureSettings: 'normal',textAlign:"center", textSizeAdjust: '100%', padding: 0, margin: 0, width: '60%',}}>
-          {/* <div style={{height: 540, padding: 0, margin: 0, width: '100%'}}>
-          <iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1505" width="100%" height="536px" scrolling="auto" marginWidth={0} marginHeight={0} frameBorder={0} border={0} style={{border: 0, margin: 0, padding: 0, lineHeight: 14}} /> 
-          </div> */}
-          
-          {/* <div style={{color: '#626B7F', lineHeight: 14, fontWeight: 400, fontSize: 11, boxSizing: 'border-box', padding: '2px 6px', width: '100%', fontFamily: 'Verdana, Tahoma, Arial, sans-serif'}}>
-          <a href="https://coinlib.io/widgets" target="_blank" style={{fontWeight: 500, color: '#626B7F', textDecoration: 'none', fontSize: 11}}></a>
-          </div> */}
-          <div className="btcwdgt-chart" bw-cash="true" bw-noshadow="true"  />
+          <div className="container">
+<div className="row" >
+<div className="col-md-12 text-center" style={{display:"flex",justifyContent:"center"}}>
+          {/* <div style = {{display:"flex",justifyContent:"center",backgroundColor:"#343a40"}}> */}
+          {/* <div
+  style={{
+    height: 560,
+    // backgroundColor: "#FFFFFF",
+    overflow: "hidden",
+    boxSizing: "border-box",
+    // border: "1px solid #ffffff",
+    borderRadius: 4,
+    textAlign: "right",
+    lineHeight: 14,
+    fontSize: 12,
+    fontFeatureSettings: "normal",
+    textSizeAdjust: "100%",
+    padding: 0,
+    margin: 0,
+    width: "100%"
+  }}
+>
+  <div style={{ height: 540, padding: 0, margin: 0, width: "100%" }}>
+    <Iframe
+      src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1505"
+      width="100%"
+      height="536px"
+      scrolling="auto"
+      marginWidth={0}
+      marginHeight={0}
+      frameBorder={0}
+      border={0}
+      style={{ border: 0, margin: 0, padding: 0, lineHeight: 14 }}
+    />
+  </div>
+</div> */}
+<div  style={{width:"60%"}}>
+<div class="btcwdgt-chart" bw-cash="true" bw-noshadow="true"></div>
+</div>
+
           </div>
-          </div>
+          </div></div>
           </section>
 
           {/* <section className = "main-container" style={{padding:"60px",display:"flex",justifyContent:"center"}}>
@@ -194,8 +226,8 @@ class Crypto extends Component   {
           </span>
           {/*  */}
           <div className="accordion" id="accordionExample">
-        <div className="card" style={{borderBottom:"0.5px solid #929292"}}>
-          <div className="card-header" id="headingOne" style={{backgroundColor:"#202431",}}>
+        <div className="card" style={{borderBottom:"1px solid #929292"}}>
+          <div className="card-header" id="headingOne" style={{backgroundColor:"#202431"}}>
             <h2 className="mb-0">
               <button className="btn collapsed" style={{color:"#fff"}} type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 BITCOIN
@@ -231,8 +263,8 @@ class Crypto extends Component   {
             </div>
           </div>
         </div>
-        <div className="card"  style={{borderBottom:"0.5px solid #929292"}}>
-          <div className="card-header" id="headingTwo" style={{backgroundColor:"#202431",borderBottom:"0.5px solid #000"}}>
+        <div className="card"  style={{borderBottom:"1px solid #929292"}}>
+          <div className="card-header" id="headingTwo" style={{backgroundColor:"#202431"}}>
             <h2 className="mb-0">
               <button className="btn  collapsed" style={{color:"#fff"}} type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 BITCOIN GOLD
@@ -265,8 +297,8 @@ class Crypto extends Component   {
             </div>
           </div>
         </div>
-        <div className="card" style={{borderBottom:"0.5px solid #929292"}}>
-          <div className="card-header" id="headingThree" style={{backgroundColor:"#202431",borderBottom:"0.5px solid #929292"}}>
+        <div className="card" style={{borderBottom:"1px solid #929292"}}>
+          <div className="card-header" id="headingThree" style={{backgroundColor:"#202431"}}>
             <h2 className="mb-0">
               <button className="btn  collapsed" type="button" style={{color:"#fff"}} data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 BITCOIN CASH
@@ -299,8 +331,8 @@ class Crypto extends Component   {
             </div>
           </div>
         </div>
-        <div className="card"  style={{borderBottom:"0.5px solid #929292"}}>
-          <div className="card-header" id="headingThree" style={{backgroundColor:"#202431",borderBottom:"0.5px solid #929292"}}>
+        <div className="card"  style={{borderBottom:"1px solid #929292"}}>
+          <div className="card-header" id="headingThree" style={{backgroundColor:"#202431"}}>
             <h2 className="mb-0">
               <button className="btn  collapsed"  type="button"  style={{color:"#fff"}} data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                 LITECOIN
@@ -321,8 +353,8 @@ class Crypto extends Component   {
             </div>
           </div>
         </div>
-        <div className="card" style={{borderBottom:"0.5px solid #929292"}}>
-          <div className="card-header" id="headingThree"  style={{backgroundColor:"#202431",borderBottom:"0.5px solid #929292"}}>
+        <div className="card" style={{borderBottom:"1px solid #929292"}}>
+          <div className="card-header" id="headingThree"  style={{backgroundColor:"#202431"}}>
             <h2 className="mb-0">
               <button className="btn  collapsed" style={{color:"#fff"}} type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
                 ETHEREUM
@@ -354,8 +386,8 @@ class Crypto extends Component   {
             </div>
           </div>
         </div>
-        <div className="card" style={{borderBottom:"0.5px solid #929292"}}>
-          <div className="card-header" id="headingThree"  style={{backgroundColor:"#202431",borderBottom:"0.5px solid #929292"}}>
+        <div className="card" style={{borderBottom:"1px solid #929292"}}>
+          <div className="card-header" id="headingThree"  style={{backgroundColor:"#202431"}}>
             <h2 className="mb-0">
               <button className="btn  collapsed" style={{color:"#fff"}} type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
                 RIPPLE
@@ -491,7 +523,7 @@ class Crypto extends Component   {
 <a href="/"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
 </div>
 <div className="item col-md-3">
-<a href="/"><img src="../static/redesign/images/payment-methods/visa-electron.png" alt="visa-electron" title="visa-electron"/></a>
+<a href="/"><img src="../static/redesign/images/payment-methods/btc.png" alt="mastercard" title="mastercard"/></a>
 </div>
 <div className="item col-md-3">
 <a href="/"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
@@ -530,13 +562,13 @@ class Crypto extends Component   {
 <div className="col-md-3 color-offwhite" style={{paddingTop:"2px"}}>
 <i className="fa fa-lock pr-10 color-white"></i> Secured by: GeoTrust Inc
 </div>
-<div className="col-md-3 color-offwhite" style={{paddingTop:"2px"}}>
+{/* <div className="col-md-3 color-offwhite" style={{paddingTop:"2px"}}>
 <i className="fa fa-phone pr-10 color-white"></i> Telephone: +44 2035192105
-</div>
-<div className="col-md-2 color-offwhite" style = {{paddingTop:"2px",display:"flex", flexDirection:"row"}}>
+</div> */}
+<div className="col-md-6 color-offwhite" style = {{paddingTop:"2px"}}>
 <i className="fa fa-envelope-o pr-10 color-white"></i>support@csmwealth.com
 </div>
-<div className="col-md-4 color-offwhite">
+<div className="col-md-3 color-offwhite">
 <ul className="social-links circle animated-effect-1" style={{marginTop:"0px",marginBottom:"2px",float:"right"}}>
 <li className="facebook"><a target="_blank" rel="noopener noreferrer" href="/"><i className="fa fa-facebook"></i></a></li>
 <li className="twitter"><a target="_blank" rel="noopener noreferrer" href="/"><i className="fa fa-twitter"></i></a></li>
@@ -551,20 +583,22 @@ class Crypto extends Component   {
 <div className="row">
 <div className="col-md-12">
 <div className="separator-2"></div>
-<p className="color-offwhite" style={{fontSize:"11px"}}>
-<b>CSM Wealth Ltd. Reg number 07659758</b>
+<p className="color-offwhite" style={{fontSize:"14px"}}>
+<b></b>
 </p>
-<p className="color-offwhite" style={{fontSize:"11px"}}>
+<p className="color-offwhite" style={{fontSize:"14px"}}>
 <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>Registered office address</a> <br />
 1 Windsor Road, Northam, Bideford, Devon, England, EX39 1EN
 </p>
-<p className="color-offwhite" style={{fontSize:"11px"}}>
-<b>Risk Warning:</b> Contracts for Difference (‘CFDs’) are complex financial products that are traded on margin. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage.
+<p className="color-offwhite" style={{fontSize:"14px"}}>
+CSM Wealth holds a Financial Services Licence which authorizes us to issue and act as a responsible entity to <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>registered </a> managed investment schemes and to act as trustee to wholesale unregistered investment schemes worldwide.
+<p><b>Risk Warning:</b> Contracts for Difference (‘CFDs’) are complex financial products that are traded on margin. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage.
 <br/>
 As a result, CFDs may not be suitable for all investors because you may lose all your invested capital. You should not risk more than you are prepared to lose. Before deciding to trade, you need to ensure that you understand the risks involved taking into account your investment objectives and level of experience. All information on this website is not directed toward soliciting citizens or residents of the United States, United Kingdom, Japan or any other jurisdiction that would be contrary to local law or regulation.
 <br/>
 Past performance of CFDs is not a reliable indicator of future results. Most CFDs have no set maturity date. Hence, a CFD position matures on the date you choose to close an existing open position. Seek independent advice, if necessary. Please read CSM Wealth’s full ‘Risk Disclosure Statement’.
 </p>
+<br/></p>
 </div>
 </div>
 </div>
