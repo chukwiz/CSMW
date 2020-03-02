@@ -266,14 +266,14 @@ const SignUp = () => {
 <div className="row">
 <div className="col-md-12">
 <div className="separator-2"></div>
-<p className="color-offwhite" style={{fontSize:"14px"}}>
+<p className="color-offwhite" style={{fontSize:"12px"}}>
 <b></b>
 </p>
-<p className="color-offwhite" style={{fontSize:"14px"}}>
+<p className="color-offwhite" style={{fontSize:"12px"}}>
 <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>Registered office address</a> <br />
 1 Windsor Road, Northam, Bideford, Devon, England, EX39 1EN
 </p>
-<p className="color-offwhite" style={{fontSize:"14px"}}>
+<p className="color-offwhite" style={{fontSize:"12px"}}>
 CSM Wealth holds a Financial Services Licence which authorizes us to issue and act as a responsible entity to <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>registered </a> managed investment schemes and to act as trustee to wholesale unregistered investment schemes worldwide.
 <p><b>Risk Warning:</b> Contracts for Difference (‘CFDs’) are complex financial products that are traded on margin. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage.
 <br/>

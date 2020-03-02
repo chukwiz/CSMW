@@ -154,7 +154,7 @@ const Forex =() => {
                 <div className="row">
                   {/* main content starts */}
                   <div className="col-md-12 ar-reverse">
-                    <h1 className="page-title">Forex Trading</h1>
+                    <h1 className="page-title" style={{color:"#3e3e3e"}}>Forex Trading</h1>
                     <div className="separator-2" />
                     <p>At CSM Wealth we try to provide you with the best possible spreads at every opportunity. We provide you with the option of choosing how you want to see the pricing. Variable through the premium account; fixed through the FIX Account or tight spreads plus commission through the Zero Account, we have the ability to give you what you want.</p>
                     <p>Whilst the table below shows you the currency pairs you can trade and the associated trading variables such as SWAPs; Margin; in order to see the spreads associated to each of our account types use the link below.</p>
@@ -273,8 +273,11 @@ const Forex =() => {
               </div>{/* container ends */}
             </section>
             {/*  */}
-            <section className = "main-container" style={{padding:"10px 100px", textAlign:"center",display:"flex",flexDirection:"column",justifyContent:"center"}}>
-                  <div style={{display:"block", margin:"30px"}}>
+            <section className = "main-container" style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
+            <div className="container">
+                <div className="row">
+                <div className = "col-md-12">
+                  <div style={{display:"block"}}>
                   <h2>About Forex Trading</h2>
                   <p>Forex trading, or currency trading, or FX trading, as it can be also abbreviated, are all 
                   terms that describe the currency exchange market as we know it today, which in simple language 
@@ -286,9 +289,14 @@ const Forex =() => {
                     and correlated to the reserves of gold in possession of the two countries that were the originators
                      of the actual currencies related to a transaction.</p>
                   </div>
+                  </div>
+                  </div></div>
             </section>
-            <section className = "main-container" style={{padding:"10px 100px", textAlign:"center",flexDirection:"column",justifyContent:"center"}}>
-                  <div style={{display:"block", margin:"30px"}}>
+            <section className = "main-container" style={{flexDirection:"column",justifyContent:"center"}}>
+            <div className="container">
+                <div className="row">
+                <div className = "col-md-12">
+                  <div style={{display:"block"}}>
                   <h2>Forex Trading Marketplace</h2>
                   <p>The forex trading marketplace, as it stands today, is the world’s largest and most liquid market due to
                    a number of factors which include, but are not limited to, ease of performing transactions over the internet,
@@ -299,9 +307,16 @@ const Forex =() => {
                      determined a growing forex trading marketplace, which will only continue to grow and become more dynamic, 
                      liquid and responsive.</p>
                   </div>
+                  </div>
+                  </div>
+                  </div>
+
             </section>
-            <section className = "main-container" style={{padding:"10px 100px", textAlign:"center",display:"flex",flexDirection:"column",justifyContent:"center"}}>
-                  <div style={{display:"block", margin:"30px"}}>
+            <section className = "main-container" style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
+            <div className="container">
+                <div className="row">
+                <div className = "col-md-12">
+                  <div style={{display:"block"}}>
                   <h2>Online Forex Trading</h2>
                   <p>Among the main participants of the forex trading market, one of the most growing segments of the 
                   total pool of participants of the marketplace, are retail foreign exchange traders (individuals) who
@@ -312,19 +327,30 @@ const Forex =() => {
                       of the region where the client is domiciled), and the client will have the opportunity to buy and sell currencies
                        both online and over the phone with the goal of deriving profit.</p>
                   </div>
+                  </div>
+                  </div>
+                  </div>
             </section>
-            <section className = "main-container" style={{padding:"10px 100px", textAlign:"center",display:"flex",flexDirection:"column",justifyContent:"center"}}>
-                  <div style={{display:"block", margin:"30px"}}>
+            <section className = "main-container" style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
+            <div className="container">
+                <div className="row">
+                <div className = "col-md-12">
+                  <div style={{display:"block"}}>
                   <h2>Forex Trading via a Broker</h2>
                   <p>Participating in the forex trading marketplace via a broker like CSM Wealth means that the client receives access 
                   to real-time pricing of the forex marketplace and is quoted buy and sell prices for a number of instruments via
                    an online trading platform (or via the phone). The client has the freedom to decide at which price they decide 
                    to buy or sell, and vice versa, and can execute a transaction at any time they wish.</p>
                   </div>
+                  </div>
+                  </div>
+                  </div>
             </section>
             {/*  */}
-            <section className = "main-container" style={{padding:"10px 100px", textAlign:"center",display:"flex",flexDirection:"column",justifyContent:"center"}}>
-          <div style={{display:"block", margin:"30px"}}>
+            <section className = "main-container" style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
+            <div className="container">
+                <div className="">
+                <div className = "col-md-12">
           <h2>Our investment Packages</h2>
           </div>
           <div className = "row">
@@ -391,8 +417,13 @@ const Forex =() => {
           </div>
           {/*  */}
           </div>
+          </div>
+          </div>
           </section>
-          <section className = "main-container" style={{padding:"60px",display:"flex",flexDirection:"column",justifyContent:"center"}}>
+          <section className = "main-container" style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
+            <div className="container">
+                <div className="rw">
+                <div className = "col-md-12"></div>
           <div className="accordion" id="accordionExample">
         <div className="card" style={{borderBottom:"1px solid #a7a7a7"}}>
           <div className="card-header" id="headingOne"  style={{backgroundColor:"#202431",}}>
@@ -562,6 +593,8 @@ Major pairs include: EUR/USD, USD/JPY, GBP/USD, USD/CHF, USD/CAD, AUD/USD, NZD/U
           </div>
         </div>
       </div>
+      </div>
+      </div>
           </section>
             {/* main container ends */}
             {/*================== FOOTER starts here =======================*/}
@@ -636,14 +669,14 @@ Major pairs include: EUR/USD, USD/JPY, GBP/USD, USD/CHF, USD/CAD, AUD/USD, NZD/U
 <div className="row">
 <div className="col-md-12">
 <div className="separator-2"></div>
-<p className="color-offwhite" style={{fontSize:"14px"}}>
+<p className="color-offwhite" style={{fontSize:"12px"}}>
 <b></b>
 </p>
-<p className="color-offwhite" style={{fontSize:"14px"}}>
+<p className="color-offwhite" style={{fontSize:"12px"}}>
 <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>Registered office address</a> <br />
 1 Windsor Road, Northam, Bideford, Devon, England, EX39 1EN
 </p>
-<p className="color-offwhite" style={{fontSize:"14px"}}>
+<p className="color-offwhite" style={{fontSize:"12px"}}>
 CSM Wealth holds a Financial Services Licence which authorizes us to issue and act as a responsible entity to <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>registered </a> managed investment schemes and to act as trustee to wholesale unregistered investment schemes worldwide.
 <p><b>Risk Warning:</b> Contracts for Difference (‘CFDs’) are complex financial products that are traded on margin. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage.
 <br/>

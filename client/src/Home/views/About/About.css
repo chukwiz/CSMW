@@ -156,6 +156,16 @@ select.list-dt:focus {
     position: relative
 }
 
+@media only screen and (max-width: 768px) {
+    #progressbar li {
+        list-style-type: none;
+        font-size: 12px;
+        width: 100%;
+        /* float: left; */
+        position: relative
+    }
+  }
+  
 #progressbar #account:before {
     font-family: FontAwesome;
     content: "\f023"

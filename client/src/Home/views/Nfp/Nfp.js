@@ -144,7 +144,7 @@ const Nfp = () => {
             {/*  */}
             <section className="main-container">
               <div className="container">
-                <div className="row">
+                <div className="rw">
                   {/* main content starts */}
                   <div style={{display:"flex",flexDirection:"column", justifyContent:"center"}}>
                   <h3 style = {{textAlign:"center", textTransform:"uppercase",fontWeight:"400"}}>How To Trade Non-Farm Payroll As A Forex Trader – The Non-Farm Payroll forex trading guide</h3>
@@ -157,7 +157,7 @@ const Nfp = () => {
             </section>
             <section className="main-container">
               <div className="container">
-                <div className="row">
+                <div className="rw">
                   {/* main content starts */}
                   <div style={{display:"flex",flexDirection:"column", justifyContent:"center"}}>
                   <h3 style = {{textAlign:"center", textTransform:"uppercase",fontWeight:"400"}}>What is Non-Farm Payroll</h3>
@@ -169,12 +169,12 @@ const Nfp = () => {
             </section>
             <section className="main-container">
               <div className="container">
-                <div className="row">
+                <div className="rw">
                   {/* main content starts */}
                   <div style={{display:"flex",flexDirection:"column", justifyContent:"center"}}>
-                  <h3 style = {{textAlign:"center", textTransform:"uppercase",fontWeight:"400"}}>Non-Farm Payroll and the Economy</h3>
+                  <h3 style = {{textAlign:"center", textTransform:"uppercase"}}>Non-Farm Payroll and the Economy</h3>
                   <p>There are three parts and news releases for each Non-Farm Payroll day:</p>
-                  <ol>
+                  <ol style={{padding:"30px"}}>
                     <li>The Non-Farm Payroll numbers: how many new jobs have been created/lost</li>
                     <li>The hourly wages: how much workers are earning on average</li>
                     <li>The unemployment rate: the overall unemployment rate</li>
@@ -186,11 +186,11 @@ const Nfp = () => {
               </div>
             </section>
             <section className = "main-container" style={{textAlign:"center"}}>
-              <div style={{display:"block", margin:"30px"}}>
+              <div style={{display:"block"}}>
                 {/* <div className="row"> */}
                   {/* main content starts */}
                   {/* <div style={{display:"flex",flexDirection:"column", justifyContent:"center"}}> */}
-                  <h3 style={{textAlign:"center", textTransform:"uppercase",fontWeight:"400"}}>Our Non-farm payroll Investor's Package</h3>
+                  <h3 style={{textAlign:"center", textTransform:"uppercase",fontWeight:"400"}}>Our Non-farm payroll Investors' Package</h3>
                     {/*  */}
                     <div className="col-sm-12 col-md-12 col-xs-12" style={{display:"flex",flexDirection:"row",justifyContent:"center"}}>
                     <div className="col-sm-12 col-md-3 col-xs-12">
@@ -286,14 +286,14 @@ const Nfp = () => {
 <div className="row">
 <div className="col-md-12">
 <div className="separator-2"></div>
-<p className="color-offwhite" style={{fontSize:"14px"}}>
+<p className="color-offwhite" style={{fontSize:"12px"}}>
 <b></b>
 </p>
-<p className="color-offwhite" style={{fontSize:"14px"}}>
+<p className="color-offwhite" style={{fontSize:"12px"}}>
 <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>Registered office address</a> <br />
 1 Windsor Road, Northam, Bideford, Devon, England, EX39 1EN
 </p>
-<p className="color-offwhite" style={{fontSize:"14px"}}>
+<p className="color-offwhite" style={{fontSize:"12px"}}>
 CSM Wealth holds a Financial Services Licence which authorizes us to issue and act as a responsible entity to <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>registered </a> managed investment schemes and to act as trustee to wholesale unregistered investment schemes worldwide.
 <p><b>Risk Warning:</b> Contracts for Difference (‘CFDs’) are complex financial products that are traded on margin. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage.
 <br/>

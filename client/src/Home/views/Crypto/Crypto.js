@@ -166,52 +166,22 @@ class Crypto extends Component   {
               </ol>
             </div>
           </div> */}
-          <section className = "main-container" style={{padding:"0px 60px",textAlign:"center",display:"flex",flexDirection:"column", justifyContent:"center"}} >
-          <span style={{display:"block", margin:"30px"}}>
+          <section className = "main-container" style={{textAlign:"center",display:"flex",flexDirection:"column", justifyContent:"center"}} >
+          <div className="container">
+          <span style={{display:"block"}}>
           <h2>What are crypto-currencies</h2>A cryptocurrency is a digital coin, designed to be transferred between people in virtual transactions. Cryptocurrencies exist only as data and not as physical objects; you cannot actually hold a Bitcoin in your hand or keep Ethereum in your safe. Owning a Bitcoin means you have the collective agreement of each and every computer on the Bitcoin network that it is currently owned by you and – more importantly – that it was legitimately created by a miner
           </span>
           <div className="container">
 <div className="row" >
 <div className="col-md-12 text-center" style={{display:"flex",justifyContent:"center"}}>
-          {/* <div style = {{display:"flex",justifyContent:"center",backgroundColor:"#343a40"}}> */}
-          {/* <div
-  style={{
-    height: 560,
-    // backgroundColor: "#FFFFFF",
-    overflow: "hidden",
-    boxSizing: "border-box",
-    // border: "1px solid #ffffff",
-    borderRadius: 4,
-    textAlign: "right",
-    lineHeight: 14,
-    fontSize: 12,
-    fontFeatureSettings: "normal",
-    textSizeAdjust: "100%",
-    padding: 0,
-    margin: 0,
-    width: "100%"
-  }}
->
-  <div style={{ height: 540, padding: 0, margin: 0, width: "100%" }}>
-    <Iframe
-      src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1505"
-      width="100%"
-      height="536px"
-      scrolling="auto"
-      marginWidth={0}
-      marginHeight={0}
-      frameBorder={0}
-      border={0}
-      style={{ border: 0, margin: 0, padding: 0, lineHeight: 14 }}
-    />
-  </div>
-</div> */}
 <div  style={{width:"60%"}}>
 <div class="btcwdgt-chart" bw-cash="true" bw-noshadow="true"></div>
 </div>
 
           </div>
           </div></div>
+          </div>
+          
           </section>
 
           {/* <section className = "main-container" style={{padding:"60px",display:"flex",justifyContent:"center"}}>
@@ -220,8 +190,9 @@ class Crypto extends Component   {
           <div className="coinlore-list-widget" data-mcurrency="eur" data-top={10} data-cwidth="100%" data-bcolor="#fff" data-coincolor="#428bca" data-pricecolor="#4c4c4c" />
           </div>
           </section> */}
-          <section className = "main-container" style={{padding:"0px 60px",color:"#4e4e4e"}}>
-          <span style={{display:"block", margin:"30px"}}>
+          <section className = "main-container" style={{color:"#4e4e4e"}}>
+          <div className="container">
+          <span style={{display:"block"}}>
           <h2>Cryptocurrencies we offer</h2>A cryptocurrency is a digital coin, designed to be transferred between people in virtual transactions. Cryptocurrencies exist only as data and not as physical objects; you cannot actually hold a Bitcoin in your hand or keep Ethereum in your safe. Owning a Bitcoin means you have the collective agreement of each and every computer on the Bitcoin network that it is currently owned by you and – more importantly – that it was legitimately created by a miner
           </span>
           {/*  */}
@@ -439,10 +410,13 @@ class Crypto extends Component   {
           </div>
         </div> */}
       </div>
+          </div>
+          
           {/*  */}
           </section>
-          <section className = "main-container" style={{padding:"60px",display:"flex",flexDirection:"column",justifyContent:"center"}}>
-          <div style={{display:"block", margin:"30px"}}>
+          <section className = "main-container" style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
+          <div className="container">
+          <div style={{display:"block"}}>
           <h2>Our Crypto investment Packages</h2>
           </div>
           <div className = "row">
@@ -509,6 +483,8 @@ class Crypto extends Component   {
           </div>
           {/*  */}
           </div>
+          </div>
+          
           </section>
           {/* main </section>container ends */}
           {/*================== FOOTER starts here =======================*/}
@@ -583,14 +559,14 @@ class Crypto extends Component   {
 <div className="row">
 <div className="col-md-12">
 <div className="separator-2"></div>
-<p className="color-offwhite" style={{fontSize:"14px"}}>
+<p className="color-offwhite" style={{fontSize:"12px"}}>
 <b></b>
 </p>
-<p className="color-offwhite" style={{fontSize:"14px"}}>
+<p className="color-offwhite" style={{fontSize:"12px"}}>
 <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>Registered office address</a> <br />
 1 Windsor Road, Northam, Bideford, Devon, England, EX39 1EN
 </p>
-<p className="color-offwhite" style={{fontSize:"14px"}}>
+<p className="color-offwhite" style={{fontSize:"12px"}}>
 CSM Wealth holds a Financial Services Licence which authorizes us to issue and act as a responsible entity to <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>registered </a> managed investment schemes and to act as trustee to wholesale unregistered investment schemes worldwide.
 <p><b>Risk Warning:</b> Contracts for Difference (‘CFDs’) are complex financial products that are traded on margin. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage.
 <br/>

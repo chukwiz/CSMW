@@ -3,7 +3,7 @@ import Iframe from 'react-iframe';
 import Carousel from '../../components/Carousel/Carousel';
 const Home = () => {
     return(
-        <div className="no-trans front-page">
+        <div className="no-trans front-page" style={{fontWeight:"100"}}>
 
 <div className="scrollToTop circle"><i className="icon-up-open-big"></i></div>
 <div className="page-wrapper">
@@ -244,39 +244,6 @@ const Home = () => {
 <div className="container">
 <div className="row">
 <div className="col-md-6 text-center">
-{/* <img alt="Benefits" className="main mt-15" src="../static/redesign/images/bit7.jpg" style={{marginLeft:"-40px"}} /> */}
-{/* <div
-  style={{
-    height: 560,
-    // backgroundColor: "#FFFFFF",
-    overflow: "hidden",
-    boxSizing: "border-box",
-    // border: "1px solid #ffffff",
-    borderRadius: 4,
-    textAlign: "right",
-    lineHeight: 14,
-    fontSize: 12,
-    fontFeatureSettings: "normal",
-    textSizeAdjust: "100%",
-    padding: 0,
-    margin: 0,
-    width: "100%"
-  }}
->
-  <div style={{ height: 540, padding: 0, margin: 0, width: "100%" }}>
-    <Iframe
-      src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1505"
-      width="100%"
-      height="536px"
-      scrolling="auto"
-      marginWidth={0}
-      marginHeight={0}
-      frameBorder={0}
-      border={0}
-      style={{ border: 0, margin: 0, padding: 0, lineHeight: 14 }}
-    />
-  </div>
-</div> */}
 <div class="btcwdgt-chart" bw-cash="true" bw-noshadow="true"></div>
 </div>
 <div className="col-md-6 col-sm-12 text-center-992" style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
@@ -382,7 +349,7 @@ const Home = () => {
 {/* <!-- section end -->
 <!-- section start -->
 <!-- ================ --> */}
-<section className="dark-translucent-bg pv-10" style={{background:"linear-gradient(rgba(0,0,0, .8),rgba(0,0,0, .8)),url(../static/redesign/images/bit3.png)",padding:"0px auto",fontSize:"100%",fontWeight:200}} id="home-advantages">
+<section className="dark-translucent-bg pv-10" style={{background:"linear-gradient(rgba(0,0,0, .8),rgba(0,0,0, .8)),url(../static/redesign/images/bit3.png)",padding:"0px auto",fontSize:"100%"}} id="home-advantages">
 <div className="container">
 <div className="row">
 <div className="col-md-8 offset-md-2">
@@ -460,7 +427,7 @@ const Home = () => {
 </div>
 </div>
 </section>
-<footer id="footer" className="clearfix dark">
+<footer id="footer" className="clearfix dark" >
 <div className="footer">
 <div className="container">
 <div className="footer-inner">
@@ -496,14 +463,14 @@ const Home = () => {
 <div className="row">
 <div className="col-md-12">
 <div className="separator-2"></div>
-<p className="color-offwhite" style={{fontSize:"14px"}}>
+<p className="color-offwhite" style={{fontSize:"12px",fontWeight:"100"}}>
 <b></b>
 </p>
-<p className="color-offwhite" style={{fontSize:"14px"}}>
+<p className="color-offwhite" style={{fontSize:"12px"}}>
 <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>Registered office address</a> <br />
 1 Windsor Road, Northam, Bideford, Devon, England, EX39 1EN
 </p>
-<p className="color-offwhite" style={{fontSize:"14px"}}>
+<p className="color-offwhite" style={{fontSize:"12px"}}>
 CSM Wealth holds a Financial Services Licence which authorizes us to issue and act as a responsible entity to <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>registered </a> managed investment schemes and to act as trustee to wholesale unregistered investment schemes worldwide.
 <p><b>Risk Warning:</b> Contracts for Difference (‘CFDs’) are complex financial products that are traded on margin. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage.
 <br/>
