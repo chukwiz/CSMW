@@ -1,4 +1,5 @@
 import React from 'react';
+import './WhyUs.module.css';
 
 const AboutUs = () => {
     return (
@@ -237,21 +238,21 @@ We’re the ecosystem giving investors* equal opportunity, where merit alone dri
                     <div className = "row" style={{marginTop:"20px"}}>
                       <div className = "col-md-4">
                       <div style={{display:"flex",justifyContent:"center"}}>
-                      <img src="../static/redesign/images/settings.png" alt="wire-transfer" width='70' title="wire-transfer"/>
+                      <img src="../static/redesign/images/settings.png" alt="wire-transfer" style={{width:'70px', height:'70px'}}  title="wire-transfer"/>
                       </div>
                         <h4>Focus on Impact</h4>
                         <p>Our vision is ambitious, but our time and resources are limited. Every decision, big or small, short or long term, maximises the contribution of our (funds / talent / time) to the vision. Evolution = question the best use of resources, at all times</p>
                       </div>
                       <div className = "col-md-4">
                       <div style={{display:"flex",justifyContent:"center"}}>
-                      <img src="../static/redesign/images/handyman.png" alt="wire-transfer" width='70' title="wire-transfer"/>
+                      <img src="../static/redesign/images/handyman.png" alt="wire-transfer" style={{width:'70px', height:'70px'}} title="wire-transfer"/>
                       </div>
                         <h4>Take calculated risks</h4>
                         <p>We generate impact because we’re nimble. Agility implies risks, and that’s a good thing. Any risk where client resources (capital, data) are not at stake is worth it if the odds are good enough. Playing it safe is the riskiest gamble.</p>
                       </div>
                       <div className = "col-md-4">
                       <div style={{display:"flex",justifyContent:"center"}}>
-                      <img src="../static/redesign/images/building.png" alt="wire-transfer" width='70' title="wire-transfer"/>
+                      <img src="../static/redesign/images/building.png" alt="wire-transfer" style={{width:'70px', height:'70px'}} title="wire-transfer"/>
                       </div>
                         <h4>Empower clients & employees</h4>
                         <p>We reward contributions on merit - regardless of who contributes. We do this because we need the best employees devoting their talent & effort to the vision, and the best investors to entrust us their capital and intellectual property.</p>

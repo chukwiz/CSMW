@@ -1,4 +1,4 @@
-.item{
+/* .item{
     margin:10px;
     height:50px;
     border:1px solid #eee;
@@ -6,4 +6,17 @@
     width:auto;
     color:#202431;
     color:#cfcfcf;
-}
+} */
+
+@media only screen and (max-width: 780px) {
+    h1{
+        font-size:200%
+    }
+  }
+
+  @media only screen and (min-width: 781px) {
+    h1{
+        font-size:300%
+    }
+  }
+  

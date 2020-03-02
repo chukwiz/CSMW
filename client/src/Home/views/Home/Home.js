@@ -3,7 +3,7 @@ import Iframe from 'react-iframe';
 import Carousel from '../../components/Carousel/Carousel';
 const Home = () => {
     return(
-        <div className="no-trans front-page" style={{fontWeight:"100"}}>
+        <div className="no-trans front-page">
 
 <div className="scrollToTop circle"><i className="icon-up-open-big"></i></div>
 <div className="page-wrapper">
@@ -246,7 +246,7 @@ const Home = () => {
 <div className="col-md-6 text-center">
 <div class="btcwdgt-chart" bw-cash="true" bw-noshadow="true"></div>
 </div>
-<div className="col-md-6 col-sm-12 text-center-992" style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
+<div className="col-md-6 col-sm-12 text-cener-992" style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
 <h2 className="mb-15 mt-0" style={{color:"#d0d0d0"}}>Invest in your success</h2>
 <ul className="list-unstyled" style={{lineHeight: "30px",fontSize:"90%"}}>
 <li><i className="fa fa-check color-blue-light mr-5" style={{color:"#42ce7a"}}></i> Trade with higher leverage up to 1:1000</li>

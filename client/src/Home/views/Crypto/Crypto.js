@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import axios from 'axios';
-import classes from './Crypto.module.css';
+import './Crypto.module.css';
 import Iframe from 'react-iframe';
 
 class Crypto extends Component   {
@@ -149,7 +149,7 @@ class Crypto extends Component   {
                 <div className="row" style={{display:"flex",width:"100%",justifyContent:"center"}}>
                   <div className="col-md-12 " style={{color:"#272424",textAlign:"center",width:"100%"}}>
                     <h4 className="title object-non-visible animated object-visible fadeIn" style={{color:"#e0e0e0"}} data-animation-effect="fadeIn" data-effect-delay={200} style={{width:"100%"}} >Investing in cryptocurrency?</h4>
-                    <h1 className="title object-non-visible animated object-visible fadeIn" style={{color:"#e0e0e0"}} data-animation-effect="fadeIn" data-effect-delay={200} style={{fontSize:"300%"}}>INVEST IN CRYPTOCURRENCY TODAY</h1>
+                    <h1 className="title object-non-visible animated object-visible fadeIn" style={{color:"#e0e0e0"}} data-animation-effect="fadeIn" data-effect-delay={200} >INVEST IN CRYPTOCURRENCY TODAY</h1>
                     <div className="separator-2 object-non-visible mt-10 animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={300}  />
                     <a href="/signup" className="object-non-visible animated object-visible fadeIn btn btn-sm btn-default btn-ocean-green" data-animation-effect="fadeIn" data-effect-delay={300} style={{fontSize:"100%"}}>Create Account</a>
                   </div>

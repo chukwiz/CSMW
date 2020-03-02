@@ -200,6 +200,7 @@ const About = () => {
               </div>
             </section>
             <section className="object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}>
+            <div className="container">
               <div className="full-width-section row" style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
                 <div className="hovered item col-md-6" style={{background:"black"}}>
                   <img className="to-right-block" src="../../static/redesign/images/inner/about/conclusion.jpg" alt="why us" style={{objectFit:"cover",opacity:"0.4"}}  />
@@ -213,6 +214,7 @@ const About = () => {
                   <p>CSM Wealth delivers what Investors in today’s financial markets need the most! From fast execution and prompt payouts to automated withdrawals of Investment profits and ensuring funds are deposited securely in segregated accounts, we are on call 24 hours a day, 5 days a week to help our clients with their investment needs.</p>
                   <div className="separator-3 visible-lg" />
                 </div>
+              </div>
               </div>
             </section>
             {/* new */}
