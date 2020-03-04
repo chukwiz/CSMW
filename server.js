@@ -28,7 +28,7 @@ app.use(bodyParser.json());
 
 app.use('/users',Users)
 // app.use(/^\/(?!admin).*/, express.urlencoded({ extended: false }));
-app.use('/admin',adminRouter);
+// app.use('/admin',adminRouter);
 
 if(process.env.NODE_ENV === "production"){
     app.disable('x-powered-by')

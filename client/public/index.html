@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="viewport" content="width=1024">
+    <meta name="viewport" content="width=1024" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <!-- <meta name="viewport" content="width=1024"> -->
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -94,6 +95,16 @@ opacity: 0.7 !important;
 <script type="text/javascript" src="../c.mql5.com/js/widgets/calendar/widget1679.js?6"></script>
 <script async charset="utf-8" src="https://widgets.fxempire.com/widget.js" ></script>
 
+<script>
+  $(window).resize(function() {
+      var mobileWidth =  (window.innerWidth > 0) ?
+          window.innerWidth :
+          screen.width;
+      var viewport = (mobileWidth > 600) ?
+          'width=1200':'';
+      $("meta[name=viewport]").attr('content', viewport);
+  }).resize();
+</script>
 
 <script>
   (function(b,i,t,C,O,I,N) {
