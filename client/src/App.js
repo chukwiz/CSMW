@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch,Redirect} from 'react-router-dom';
 
 import Layout from './components/Layout/Layout';
 
@@ -30,7 +30,8 @@ function App() {
         <Route path = "/contactus" exact component = {ContactUs} />
         <Route path = "/faq" exact component = {Faq} />
         <Route path = "/forex" exact component = {Forex} />
-        <Route path = "/signup" exact component = {SignUp} />
+        <Route path = "/signup" exact render={(props) => <SignUp {...props} />} />
+        {/* <Route path = "/signup" exact component = {SignUp} /> */}
         <Route path = "/testimony" exact component = {Testimony} />
         <Route path = "/vision" exact component = {WhyUs} />
         <Route path = "/nfp" exact component = {Nfp} />

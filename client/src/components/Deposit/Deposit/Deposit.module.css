@@ -12,6 +12,12 @@
       padding:10px;
   }
 
+  .heading{
+    font-size:140%;
+    padding:15px;
+    border-bottom: 1px solid #e4e4e4;
+  }
+
   .content{
     padding:16px;
     display: flex;

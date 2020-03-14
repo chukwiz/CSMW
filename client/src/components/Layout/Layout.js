@@ -40,7 +40,7 @@ class Layout extends Component {
     profile(auth)
     .then((res) => {
       this.setState({userData:res,path:res.profileImage.name})
-      // console.log(res.profileImage.path)
+      console.log(res.profileImage.name)
     })
   }
 

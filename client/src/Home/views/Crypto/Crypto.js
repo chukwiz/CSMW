@@ -141,7 +141,7 @@ class Crypto extends Component   {
     </ul>
   </div>
 </nav>
-<div className="banner video-background-banner pv-40 dark-translucent-bg hovered" style={{paddingTop: '40px !important', height: '65vh',marginBottom:"10%",display:"flex",justifyContent:"center"}}>
+<div className="banner video-background-banner pv-40 dark-translucent-bg hovered" style={{paddingTop: '40px !important',marginBottom:"10%",display:"flex",justifyContent:"center"}}>
             <div style={{position: 'absolute', zIndex: -1, top: '0px', left: '0px', bottom: '0px', right: '0px', overflow: 'hidden', backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),url("../../static/redesign/images/inner/about/enter.jpg")', backgroundSize: 'cover', backgroundPosition: '50% 50%', backgroundRepeat: 'no-repeat'}}>
 
             </div>

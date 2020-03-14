@@ -9,6 +9,8 @@ import './Login.css';
 import {login} from '../UserFunctions/UserFunctions';
 import history from '../../../history';
 
+import axios from 'axios';
+
 
 class Login extends Component{
 
@@ -16,6 +18,7 @@ state = {
   email:"",
   password:"",
   auth:"",
+  error:"",
   loading:false
 }
 
@@ -35,11 +38,29 @@ onSubmit = (e) => {
   login(User)
   .then(res => {
     if(res) {
-      this.setState({loading:false})
+      // console.log(res.data)
+      if( res.data.error){
+        this.setState({loading:false,error:res.data.error})
+      }else{
+        if(res.data.admin){
+          // history.push('/admin')
+          // history.replace('http://localhost:4000/admin')
+          axios.get('/admin')
+        } else{
+          this.setState({loading:false})
       localStorage.setItem('auth', res.headers['x-auth'] )
       this.setState({auth:res.headers['x-auth']})
       history.push('/dashboard')
+        }
+        
+      }
     }
+    else{
+      this.setState({loading:false,error:'Incorrect Login details'})
+    }
+  })
+  .catch(error => {
+    console.log(error)
   })
 }
 
@@ -57,6 +78,8 @@ onSubmit = (e) => {
       <h1>Please, Login</h1>
     </hgroup>
     <form onSubmit = {this.onSubmit}>
+    {this.state.error?<p style={{color:"#fff", backgroundColor:"#df2525",borderRadius:"4px",padding:"10px"}}>{this.state.error}</p>:""}
+
       <div className="group">
       <label htmlFor = "email" >Email</label>
         <input type="email" className="" name="email" value = {this.state.email} onChange = {this.onChange} />

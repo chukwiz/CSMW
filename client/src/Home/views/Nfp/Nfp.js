@@ -125,7 +125,7 @@ const Nfp = () => {
     </ul>
   </div>
 </nav>
-<div className="banner video-background-banner pv-40 dark-translucent-bg hovered" style={{paddingTop: '40px !important', height: '65vh',marginBottom:"7%"}}>
+<div className="banner video-background-banner pv-40 dark-translucent-bg hovered" style={{paddingTop: '40px !important',marginBottom:"7%"}}>
             <div style={{position: 'absolute', zIndex: -1, top: '0px', left: '0px', bottom: '0px', right: '0px', overflow: 'hidden', backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../../static/redesign/images/inner/about/enterp.jpg")', backgroundColor: 'transparent', backgroundSize: 'cover', backgroundPosition: '50% 50%', backgroundRepeat: 'no-repeat'}}>
 
             </div>

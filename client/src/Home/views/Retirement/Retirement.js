@@ -127,7 +127,7 @@ const Retirement = () => {
 </nav>
 
             {/*  */}
-            <div className="banner dark-translucent-bg pt-20" style={{paddingTop: '40px !important',display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center", height: '65vh', backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../../static/redesign/images/slides/retire1.jpg")', backgroundPosition: '50% 32%',marginBottom:"7%"}}>
+            <div className="banner dark-translucent-bg pt-20" style={{paddingTop: '40px !important',display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center", backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../../static/redesign/images/slides/retire1.jpg")', backgroundPosition: '50% 32%',marginBottom:"7%"}}>
               
               <div className="container">
                 <div className="row" style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}>

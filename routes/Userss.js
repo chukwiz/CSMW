@@ -51,10 +51,6 @@ users.post('/register',upload.fields([{name:"documents", maxCount:1},{name:"phot
         image:new Buffer(encoded_documents, 'base64')
     }
 
-    let referralID = new Date().getTime().toString(36) + Math.random().toString(36).slice(2);
-    let referrer = req.body.referredBy;
-    // console.log(referralID);
-
     // yourSchema.findById(id, function (err, doc) {
     //     if (err)console.log(err);
 
@@ -83,68 +79,61 @@ users.post('/register',upload.fields([{name:"documents", maxCount:1},{name:"phot
         fundsType:req.body.fundsType,
         liketoKnow:req.body.liketoKnow,
         bitaddress:req.body.bitaddress,
-        referralID:referralID,
         profileImage:final_image,
         userdocument:final_document,
         imagePath:image_path,
         created:today
     }
     // console.log(userData)
-    // let user = new User(userData)
-    // user.save()
-    // .then(() => {
+    let user = new User(userData)
+    user.save()
+    .then(() => {
         
-    //     return user.generateAuthToken();
+        return user.generateAuthToken();
         
-    // })
-    // .then((token) => {
-    //     sendMail(email, first_name)
-    //     console.log('user registered')
-    //     res.header('x-auth', token).send(user)
-    // })
-    // .catch((err) => {
-    //     // res.status(400).send(err)
-    //     console.log(err)
-    // })
+    })
+    .then((token) => {
+        sendMail(email, first_name)
+        console.log('user registered')
+        res.header('x-auth', token).send(user)
+    })
+    .catch((err) => {
+        res.status(400).send(err)
+    })
 
-if(referrer !== ""){
-    User.findOne({
-        referralID:referrer
-    })
-    .then(user => {
-        if(!user){
-            res.json({error:'cannot find referrer'})
-        }else{
-            // console.log(user.re)
-            user.referrals += 1
-            user.save()
-        }
-    })
-}
-
-    User.findOne({
-        email:req.body.email
-    })
-    .then(user => {
-        if(!user){
-            bcrypt.hash(req.body.password,10,(err,hash) => {
-                userData.password = hash
-                User.create(userData)
-                .then(user => {
-                    res.json({status:user.email + ' registered'})
-                })
-                .catch(err => {
-                    res.send('error:' +err)
-                })
-            })
-        }else{
-            res.json({error:'User already exists'})
-        }
-    })
-    .catch(err => {
-        res.send('error:' + err)
-    })
+    // User.findOne({
+    //     email:req.body.email
+    // })
+    // .then(user => {
+    //     if(!user){
+    //         bcrypt.hash(req.body.password,10,(err,hash) => {
+    //             userData.password = hash
+    //             User.create(userData)
+    //             .then(user => {
+    //                 res.json({status:user.email + ' registered'})
+    //                 return user.generateAuthToken();
+    //             })
+    //             .then(token => {
+    //                 sendMail(email, first_name)
+    //                 res.header('x-auth', token).send(user)
+    //             })
+    //             .catch(err => {
+    //                 console.log(err)
+    //             })
+    //             .catch(err => {
+    //                 res.send('error:' +err)
+    //             })
+    //         })
+    //     }else{
+    //         res.json({error:'User already exists'})
+    //     }
+    // })
+    // .catch(err => {
+    //     res.send('error:' + err)
+    // })
 })
+
+
 
 users.get('/pdf',(req,res) => {
     let file = fs.createReadStream("./public/quotation.pdf");
@@ -171,11 +160,39 @@ let authenticate = (req, res, next) => {
     })
 }
 
+// users.get('/',(req,res,next) => {
+//   User.find((err, users) => {
+//     if (err) return next(err);
+//     console.log(users)
+//     res.json(users)
+//   })  
+// })
+
+// users.get('/:id',(req, res, next) => {
+//     User.findById(req.params.id,(err, user) => {
+//         if(err) return next(err);
+//         res.json(user)
+//     })
+// })
+
+// users.put('/:id', function(req, res, next) {
+//     User.findByIdAndUpdate(req.params.id, req.body, function (err, user) {
+//       if (err) return next(err);
+//       res.json(user);
+//     });
+//   });
+
+//   users.delete('/:id', function(req, res, next) {
+//     User.findByIdAndRemove(req.params.id, req.body, function (err, user) {
+//       if (err) return next(err);
+//       res.json(user);
+//     });
+//   });
+
 users.get('/me',authenticate,(req, res) => {
-    let body = _.pick(req.user, ['email','firstName','lastName', 'job','age','city','investorType','accredited','capital','fundsType','bitaddress','imagePath','profileImage','capitalAmount','profit','total','referrals','referralID']);
-    // console.log(req.user.profit,req.user.total,req.user.capitalAmount)
-    console.log(body)
-    res.send(body)
+    // let body = _.pick(req.user, ['email','firstName','lastName', 'job','age','city','investorType','accredited','capital','fundsType','bitaddress','imagePath','profileImage','capitalAmount','profit','total']);
+    console.log(req.user.profit,req.user.total,req.user.capitalAmount)
+    // res.send(body)
 })
 
 users.delete('/me/logout', authenticate, (req, res) => {
@@ -186,7 +203,6 @@ users.delete('/me/logout', authenticate, (req, res) => {
         res.status(400).send()
     }); 
 })
-
 
 
 // users.post('/login', (req, res) => {
@@ -223,21 +239,10 @@ users.post('/login', (req,res) => {
     let body = _.pick(req.body, ['email', 'password']);
     User.findByCredentials(body.email, body.password)
     .then((user) => {
-        if (user.activated !== 0){
-            // if(user.isAdmin !== 0){
-            //     return res.json({admin:true})
-            // }
-            // console.log(user.isAdmin)
-            // else{
-                return user.generateAuthToken()
+       return user.generateAuthToken()
         .then((token) => {
             res.header('x-auth', token).send(user)
         })
-            // }
-            
-        }else{
-            res.json({error:'Your account has not being activated'})
-        }
     }).catch((e) => {
         res.status(400).send();
     })

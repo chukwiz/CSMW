@@ -134,7 +134,7 @@ const AboutUs = () => {
                 </ol>
               </div>
             </div> */}
-            <div className="banner dark-translucent-bg pt-20" style={{paddingTop: '40px !important', display:"flex",justifyContent:"center",flexDirection:"column",height: '65vh', backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../../static/redesign/images/inner/about/career.jpg")', backgroundPosition: '50% 32%',marginBottom:"7%"}}>
+            <div className="banner dark-translucent-bg pt-20" style={{paddingTop: '40px !important', display:"flex",justifyContent:"center",flexDirection:"column", backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../../static/redesign/images/inner/about/career.jpg")', backgroundPosition: '50% 32%',marginBottom:"7%"}}>
               
               <div className="container" style={{display:"flex",justifyContent:"center",flexDirection:"column"}}>
                 <div className="row" style={{display:"flex",justifyContent:"center"}}>

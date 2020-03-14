@@ -1,12 +1,40 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Iframe from 'react-iframe';
+import $ from 'jquery';
 import Carousel from '../../components/Carousel/Carousel';
 const Home = () => {
+
+  const [dimensions, setDimensions] = React.useState({
+    height:window.innerHeight,
+    width:window.innerWidth
+  })
+
+  
+useEffect(() => {
+//   $(window).resize(function() {
+//     var mobileWidth =  (window.innerWidth > 0) ?
+//         window.innerWidth :
+//         Screen.width;
+//     var viewport = (mobileWidth > 600) ?
+//         'width=1200':'';
+//     $("meta[name=viewport]").attr('content', viewport);
+// }).resize();
+function handleResize() {
+  // console.log('resized to ', window.innerWidth, 'x', window.innerHeight)
+  setDimensions({
+    height:window.innerHeight,
+    width:window.innerWidth
+  })
+  window.addEventListener('resize', handleResize)
+}
+  }, [])
     return(
         <div className="no-trans front-page">
 
 <div className="scrollToTop circle"><i className="icon-up-open-big"></i></div>
 <div className="page-wrapper">
+{/* <div id="google_translate_element"></div> */}
+    {/* <p>ij</p> */}
 <nav className="navbar  navbar-light bg-white" style={{fontSize:"100%"}}>
 <a className="navbar-brand" href="/">
     <img src="../csmwhitelogo.png" alt="logo" />

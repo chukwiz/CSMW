@@ -429,6 +429,33 @@ tbody {
   border-bottom: 2px solid #f1f1f1;
   background-color: #fcfcfc;
 }
+
+/* .header {
+  border-top: 1px solid #000000;
+  border-bottom: 2px solid #000000;
+  /* background-color: #000000; */
+  height:85vh;
+  width:100vw;
+  position: relative;
+  text-align: center;
+  background: black;
+  overflow: hidden;
+} */
+
+/* @media only screen and (max-width:780px){
+  
+  .header {
+    border-top: 1px solid #000000;
+    border-bottom: 2px solid #000000;
+    height:35vh;
+    width:100vw;
+    position: relative;
+    text-align: center;
+    background: black;
+    overflow: hidden;
+  }
+} */
+
 .header.dark {
   background-color: #394245;
   border-top-color: #394245;
@@ -502,6 +529,16 @@ tbody {
 .banner.banner-big-height {
   min-height: 550px;
   padding-top: 100px;
+  height: 65vh;
+
+}
+/* .banner{
+  height: 65vh;
+} */
+@media only screen and (max-width:780px){
+  .banner{
+    height: 25vh;
+  }
 }
 .banner.video-background-banner {
   min-height: 400px;

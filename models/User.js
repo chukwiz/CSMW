@@ -20,6 +20,10 @@ let UserSchema = new Schema({
         type:String,
         // required:true,
     },
+    activated:{
+        type:Number,
+        default:0
+    },
     profileImage:{
         image: Buffer, contentType: String,path:String,name:String
     },
@@ -27,11 +31,16 @@ let UserSchema = new Schema({
         type:Number,
         default:0
     },
+
     profit:{
         type:Number,
         default:0
     },
     total:{
+        type:Number,
+        default:0
+    },
+    isAdmin:{
         type:Number,
         default:0
     },
@@ -75,9 +84,16 @@ let UserSchema = new Schema({
     bitaddress:{
         type:String,
     },
-    imagePath:{
-        type:String,
+    referrals:{
+        type:Number,
+        default:0
     },
+    referralID:{
+        type:String
+    },
+    // imagePath:{
+    //     type:String,
+    // },
     photo:{
         type:String,
     },
@@ -98,12 +114,12 @@ let UserSchema = new Schema({
     admin:Boolean
 })
 
-UserSchema.methods.toJSON = function (){
-    let user = this;
-    let userObject = user.toObject();
+// UserSchema.methods.toJSON = function (){
+//     let user = this;
+//     let userObject = user.toObject();
 
-    return _.pick(userObject,['_id','email']);
-}
+//     return _.pick(userObject,['_id','email']);
+// }
 
 UserSchema.methods.generateAuthToken = function(){
     let user = this;
@@ -162,19 +178,19 @@ UserSchema.statics.findByCredentials = function(email,password){
     })
 }
 
-UserSchema.pre('save',function(next){
-    let user = this;
-    if(user.isModified('password')){
-        bcrypt.genSalt(10,(err, salt ) => {
-            bcrypt.hash(user.password, salt, (err,hash) => {
-                user.password = hash;
-                next();
-            })
-        });
-    }else{
-        next();
-    }
-})
+// UserSchema.pre('save',function(next){
+//     let user = this;
+//     if(user.isModified('password')){
+//         bcrypt.genSalt(10,(err, salt ) => {
+//             bcrypt.hash(user.password, salt, (err,hash) => {
+//                 user.password = hash;
+//                 next();
+//             })
+//         });
+//     }else{
+//         next();
+//     }
+// })
 
 let User = mongoose.model('User',UserSchema);
 module.exports = User;

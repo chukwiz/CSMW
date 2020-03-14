@@ -135,7 +135,7 @@ const About = () => {
                 </ol>
               </div>
             </div> */}
-            <div className="banner video-background-banner pv-40 dark-translucent-bg hovered" style={{paddingTop: '40px !important', minHeight: '65vh',marginBottom:"6%"}}>
+            <div className="banner video-background-banner pv-40 dark-translucent-bg hovered" style={{paddingTop: '40px !important',marginBottom:"6%"}}>
             <div style={{position: 'absolute', zIndex: -1,opacity:"1.0", top: '0px', left: '0px', bottom: '0px', right: '0px', overflow: 'hidden', backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../../static/redesign/images/inner/about/about.jpg")', backgroundColor: 'transparent', backgroundSize: 'cover', backgroundPosition: '50% 50%', backgroundRepeat: 'no-repeat'}}>
 
             </div>
@@ -201,11 +201,11 @@ const About = () => {
             </section>
             <section className="object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}>
             <div className="container">
-              <div className="full-width-section row" style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+              <div className="full-width-section row" style={{display:"flex",justifyContent:"center"}}>
                 <div className="hovered item col-md-6" style={{background:"black"}}>
-                  <img className="to-right-block" src="../../static/redesign/images/inner/about/conclusion.jpg" alt="why us" style={{objectFit:"cover",opacity:"0.4"}}  />
+                  <img className="to-right-block" src="../../static/redesign/images/inner/about/conclusion.jpg" height="100%" alt="why us" style={{objectFit:"cover",opacity:"0.4"}}  />
                 </div>
-                <div className="full-text-container item col-md-6 light-gray-bg border-bottom-clear">
+                <div className="full-text-container item col-md-6 light-gray-bg border-bottom-clear" style={{fontSize:"70%"}}>
                   <h2>Why <strong>Choose Us</strong></h2>
                   <div className="separator-2 visible-lg" />
                   <p>CSM Wealth is an innovative online solution that offers advanced institutional and crypto investment conditions to a global audience. We believe in the importance of building strong, secure foundations and the cornerstone of our mission is to provide the full spectrum of cutting-edge investment services that our clients require to succeed in the world’s most liquid market.</p>

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 import history from '../../../history';
+import { instanceOf } from 'prop-types';
+import {withCookies,Cookies} from "react-cookie";
 
 import {register} from "../UserFunctions/UserFunctions";
 
@@ -13,11 +15,10 @@ import Bitcoin from "./Bitcoin";
 import Uploads from "./Uploads";
 import Uploadd from "./Uploadp";
 
-import Backdrop from '@material-ui/core/Backdrop';
-import CircularProgress from '@material-ui/core/CircularProgress';
-import { makeStyles } from '@material-ui/core/styles';
-
 class UserForm extends Component {
+    static propTypes = {
+        cookies: instanceOf(Cookies).isRequired
+      };
     state = {
         step:1,
         firstName:"",
@@ -40,8 +41,19 @@ class UserForm extends Component {
         photourl:"",
         documents:null,
         documentsurl:"",
+        referredBy: this.props.cookies.get('referrer') || '',
         finished:null,
         loading:false
+    }
+
+
+    componentDidMount(){
+        let url = window.location.search
+        const searchParams = new URLSearchParams(url);
+        let query = searchParams.get('ref') || ''
+        const { cookies } = this.props;
+        cookies.set('referrer',query,{path: "/"})
+
     }
 
 
@@ -66,6 +78,7 @@ class UserForm extends Component {
         for(let name in this.state){
             data.append(name,this.state[name])
         }
+        console.log(this.state)
         register(data)
         .then(history.push('/login'),(err) => {
             this.setState({loading:false})
@@ -180,4 +193,4 @@ class UserForm extends Component {
     
 }
 
-export default UserForm
+export default withCookies(UserForm);

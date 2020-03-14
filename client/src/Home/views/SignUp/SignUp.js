@@ -150,6 +150,20 @@ const SignUp = () => {
     </ul>
   </div>
 </nav>
+<div className="banner video-background-banner pv-40 dark-translucent-bg hovered" style={{paddingTop: '40px !important',marginBottom:"6%"}}>
+            <div style={{position: 'absolute', zIndex: -1,opacity:"1.0", top: '0px', left: '0px', bottom: '0px', right: '0px', overflow: 'hidden', backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../../static/redesign/images/inner/about/register.jpg")', backgroundColor: 'transparent', backgroundSize: 'cover', backgroundPosition: '50% 50%', backgroundRepeat: 'no-repeat'}}>
+
+            </div>
+            <div className="container" >
+                <div className="row" style={{display:"flex",justifyContent:"center"}}>
+                  <div className="col-md-10 " style={{color:"#ffffff",textAlign:"center"}}>
+                    <h2 className="title object-non-visible animated object-visible fadeIn" style={{color:"#ffffff"}} data-animation-effect="fadeIn" data-effect-delay={100} style={{fontSize:"400%"}}>create an account</h2>
+                    <div className="separator-2 object-non-visible mt-10 animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}  />
+                    {/* <a href="/signup" className="object-non-visible animated object-visible fadeIn btn btn-sm btn-default btn-ocean-green" data-animation-effect="fadeIn" data-effect-delay={100}>Create Account</a> */}
+                  </div>
+                </div>
+              </div>
+            </div>
             {/* header-container end */}
             {/* <div className="breadcrumb-container" style={{borderTop: '2px solid #f1f1f1'}}>
               <div className="container">
