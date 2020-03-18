@@ -6,6 +6,7 @@
     "npm": "6.13.7",
     "node": "12.7.0"
   },
+  "homepage": "http://csmwealth.com",
   "dependencies": {
     "@babel/core": "7.7.4",
     "@material-ui/core": "^4.8.2",
