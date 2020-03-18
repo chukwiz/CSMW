@@ -6,7 +6,10 @@ const bcrypt = require('bcryptjs');
 const multer = require('multer');
 const fs = require('fs');
 const _ = require('lodash');
-const sendMail = require('../mailer')
+const sendMail = require('../welcomeMail');
+const passConfirmMail = require('../passConfirmMail');
+const sendResetMail = require('../sendResetMail');
+
 
 // var {authenticate} = require('../middleware/authenticate');
 
@@ -218,6 +221,83 @@ users.delete('/me/logout', authenticate, (req, res) => {
 //         res.send('error'+ err)
 //     })
 // })
+
+users.post('/send',(req, res) => {
+    sendMail('wymastyle@gmail.com','wisdom')
+})
+
+users.post('/recover', (req, res) => {
+    let email = req.body.email
+    User.findOne({email:email})
+    .then(user => {
+        if(user){
+            let firstName = user.firstName
+            let email = user.email
+            user.generatePasswordReset();
+            // 
+            user.save()
+                .then(user => {
+                    // send email
+                    let link = "http://" + req.headers.host + "/users/reset/" + user.resetPasswordToken;
+                    res.status(200).json({res:"ok"})
+                    console.log(link)
+                    sendResetMail(email,firstName,link)
+
+                    
+                    
+                    // .then((res) => {
+                    //     res.status(200).json({message: 'A reset email has been sent to ' + user.email + '.'});
+                    // })
+                })
+                .catch(err => res.status(500).json({message: err.message}));
+        }else{
+            return res.status(401).json({message:'The email address ' + req.body.email + ' is not associated with any account. Double-check your email address and try again.'})
+        }
+    })
+})
+
+users.get('/reset/:token', (req, res) => {
+    User.findOne({resetPasswordToken: req.params.token, resetPasswordExpires: {$gt: Date.now()}})
+    .then((user) => {
+        if (!user) return res.status(401).json({message: 'Password reset token is invalid or has expired.'});
+
+        //Redirect user to form with the email address
+        // res.render('reset', {user});
+        res.render('reset', {user});
+
+    })
+    .catch(err => res.status(500).json({message: err.message}));
+})
+
+users.post('/reset/:token', (req, res) => {
+    User.findOne({resetPasswordToken: req.params.token, resetPasswordExpires: {$gt: Date.now()}})
+    .then(user => {
+        if (!user) return res.status(401).json({message: 'Password reset token is invalid or has expired.'});
+        //Set the new password
+        newpass = bcrypt.hashSync(req.body.password,10)
+            user.password = newpass;
+            user.resetPasswordToken = undefined;
+            user.resetPasswordExpires = undefined;
+
+        user.save((err) => {
+            if (err) return res.status(500).json({message: err.message});
+            passConfirmMail(user.email,user.firstName)
+            // .then((res) => {
+                res.status(200).json({status : 'success', message : 'Success! Your password has been changed.'})
+            // })
+            // sendconfirmationmail(user.firstName,user.email)
+            // const mailOptions = {
+            //     to: user.email,
+            //     from: process.env.FROM_EMAIL,
+            //     subject: "Your password has been changed",
+            //     text: `Hi ${user.username} \n 
+            //     This is a confirmation that the password for your account ${user.email} has just been changed.\n`
+            // };
+
+        })
+    })
+})
+
 
 users.post('/login', (req,res) => {
     let body = _.pick(req.body, ['email', 'password']);

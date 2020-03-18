@@ -3,6 +3,7 @@ let Schema = mongoose.Schema;
 let jwt = require('jsonwebtoken');
 let _ = require('lodash');
 const bcrypt = require('bcryptjs');
+const crypto = require('crypto')
 
 process.env.SECRET_KEY = "secretssshy";
 
@@ -111,6 +112,15 @@ let UserSchema = new Schema({
             required:true
         }
     }],
+    resetPasswordToken: {
+        type: String,
+        required: false
+    },
+
+    resetPasswordExpires: {
+        type: Date,
+        required: false
+    },
     admin:Boolean
 })
 
@@ -131,6 +141,12 @@ UserSchema.methods.generateAuthToken = function(){
     .then(() => {
         return token;
     })
+};
+
+UserSchema.methods.generatePasswordReset = function() {
+    let user = this;
+    user.resetPasswordToken = crypto.randomBytes(20).toString('hex');
+    user.resetPasswordExpires = Date.now() + 3600000; //expires in an hour
 };
 
 UserSchema.methods.removeToken = function(token){

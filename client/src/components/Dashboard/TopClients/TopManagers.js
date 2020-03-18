@@ -39,7 +39,7 @@ export default function TopManagers() {
   return (
 
     <TableContainer component={Paper}>
-    <h4 style = {{fontWeight:400}}>Top Managers</h4>
+    <h4 style = {{fontWeight:400,padding:20}}>Top Managers</h4>
     <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>

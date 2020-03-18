@@ -23,7 +23,7 @@ input {color:#42ce7a;  font-size: 14px;  padding: 10px 10px 10px 5px;  -webkit-a
 input:focus { outline: none; }
 
 /* Label */
-label {  color: #3d3d3d;   font-size: 18px;  font-weight: lighter;}
+label {  color: #3d3d3d;   font-size: 15px;  font-weight: lighter;}
 
 /* active */
 

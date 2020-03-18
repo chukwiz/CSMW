@@ -41,7 +41,7 @@ export default function TopClients() {
     <Grid container className={classes.root} spacing={2}>
       <Grid item md={6} xs = {12}>
     <TableContainer component={Paper}>
-    <h4 style = {{fontWeight:400}}>Top Clients</h4>
+    <h4 style = {{fontWeight:400,padding:20}}>Top Clients</h4>
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>

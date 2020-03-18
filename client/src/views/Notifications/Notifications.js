@@ -41,7 +41,7 @@ class Notifications extends Component {
     render(){
         // console.log(this.state.topNews)
         let content = this.state.loading ? (
-            <Skeleton animation="wave"  width="100%" height="100%" />
+            <Skeleton animation="wave"  width="100%" height="100vh" />
           ) :  (this.state.topNews.map((news) => {
             return(
                 <Card style={styles.root}>

@@ -113,7 +113,7 @@ const Deposit = () => {
   };
 
   return (
-    <div >
+    <div style={{height:"100vh"}} >
       <Grid container spacing={3} style={{justifyContent:"center"}}>
         <Grid item xs={12} md={9} >
           <Paper className={classes.paper} elevation = {1}>

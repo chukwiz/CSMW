@@ -76,7 +76,7 @@ const Chart = () => {
   }}
 >
   <div style={{ height: 315, padding: 0, margin: 0, width: "100%" }}>
-  <h5 style = {{textTransform:"uppercase", fontWeight:400}}>Crypto Currency Converter</h5>
+  <h5 style = {{textTransform:"uppercase", fontWeight:400,padding:13}}>Crypto Currency Converter</h5>
     <Iframe
       src="https://widget.coinlib.io/widget?type=converter&theme=light"
       width={250}

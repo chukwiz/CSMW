@@ -165,7 +165,7 @@ const Team = () => {
   <p>Jan, David and Lucas had successful careers as a financial consultant, civil engineer and telecommunications engineer respectively. In 2012, they gave it all up to follow their entrepreneurial dream and change financial markets as we know them</p>
   <div className="row">
     {/* Team member */}
-    <div className="col-xs-12 col-sm-6 col-md-6">
+    <div className="col-xs-12 col-sm-12 col-md-12">
       <div
         className="image-flip"
         ontouchstart="this.classList.toggle('hover');"
@@ -237,7 +237,7 @@ David Pence combines his formal training and knowledge as an Economist with his 
     </div>
     {/* ./Team member */}
     {/* Team member */}
-    <div className="col-xs-12 col-sm-6 col-md-6">
+    <div className="col-xs-12 col-sm-12 col-md-12">
       <div
         className="image-flip"
         ontouchstart="this.classList.toggle('hover');"
@@ -307,7 +307,7 @@ David Pence combines his formal training and knowledge as an Economist with his 
     </div>
     {/* ./Team member */}
     {/* Team member */}
-    <div className="col-xs-12 col-sm-6 col-md-6">
+    <div className="col-xs-12 col-sm-12 col-md-12">
       <div
         className="image-flip"
         ontouchstart="this.classList.toggle('hover');"
@@ -379,7 +379,7 @@ In addition to his CFP® Certificate, and RICP® designation, jan holds his Seri
     </div>
     {/* ./Team member */}
     {/* Team member */}
-    <div className="col-xs-12 col-sm-6 col-md-6">
+    <div className="col-xs-12 col-sm-12 col-md-12">
       <div
         className="image-flip"
         ontouchstart="this.classList.toggle('hover');"
@@ -451,7 +451,7 @@ zweig is one of CSM’s longest tenured advisors and fully embraces the Csm Proc
     </div>
     {/* ./Team member */}
     {/* Team member */}
-    <div className="col-xs-12 col-sm-6 col-md-6">
+    <div className="col-xs-12 col-sm-12 col-md-12">
       <div
         className="image-flip"
         ontouchstart="this.classList.toggle('hover');"
@@ -524,7 +524,7 @@ Prior to joining CSM, Mr. David was a research analyst at MarketPsy Group, where
     </div>
     {/* ./Team member */}
     {/* Team member */}
-    <div className="col-xs-12 col-sm-6 col-md-6">
+    <div className="col-xs-12 col-sm-12 col-md-12">
       <div
         className="image-flip"
         ontouchstart="this.classList.toggle('hover');"

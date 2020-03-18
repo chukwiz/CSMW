@@ -106,7 +106,7 @@ const useStyles = makeStyles(theme => ({
   content: {
     flexGrow: 1,
     marginTop:5,
-    // backgroundColor:"#000",
+    backgroundColor:"#d7e2d6",
     height:"100%"
     // padding: theme.spacing(3),
   },

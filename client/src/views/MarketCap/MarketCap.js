@@ -4,7 +4,7 @@ import Iframe from 'react-iframe';
 class MarketCap extends Component{
   render(){
     return(
-      <div style = {{maxHeight:600}}><div
+      <div ><div
       style={{
         height: 3029,
         backgroundColor: "#FFF",
@@ -35,7 +35,7 @@ class MarketCap extends Component{
           border={0}
           style={{ border: 0, margin: 0, padding: 0 }}
         />
-      </div>>
+      </div>
     </div>;
     </div>
     )

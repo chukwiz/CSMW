@@ -22,6 +22,7 @@ import axios from 'axios';
 const useStyles = makeStyles(theme => ({
     root1: {
       flexGrow: 1,
+      height:"100vh"
     },
     backdrop: {
         zIndex: theme.zIndex.drawer + 1,

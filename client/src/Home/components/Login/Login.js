@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 
 import './Login.css';
-import {login} from '../UserFunctions/UserFunctions';
+import {login,forgot} from '../UserFunctions/UserFunctions';
 import history from '../../../history';
 
 import axios from 'axios';
@@ -19,11 +19,26 @@ state = {
   password:"",
   auth:"",
   error:"",
+  forgotemail:"",
+  forgoterror:"",
   loading:false
 }
 
 onChange = (e) => {
   this.setState({[e.target.name]: e.target.value})
+}
+
+onforgotSubmit = (e) => {
+  e.preventDefault()
+  const forgotemail = this.state.forgotemail
+  this.setState({loading:true})
+  forgot(forgotemail)
+  .then((res) => {
+    this.setState({loading:false,forgoterror:`A password reset link has been sent to ${this.state.forgotemail}`})
+  })
+  .catch(err => {
+    this.setState({loading:false,forgoterror:"an error occured"})
+  })
 }
 
 onSubmit = (e) => {
@@ -100,11 +115,35 @@ onSubmit = (e) => {
         <div className="ripples buttonRipples">
           <span className="ripplesCircle" />
         </div>
-      </button>
+      </button><br /><br />
+      <a href="forgotpassword" data-toggle="modal" data-target="#exampleModal">Forgot Password?</a>
     </form>
     <div className="powered">
-      copyright <a href="/">csmwealth</a>
+      {/* copyright <a href="/">csmwealth</a> */}
+      Don't have an account? <a href="/signup">Sign Up</a>
     </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Password Recovery</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      {this.state.forgoterror?<p>{this.state.forgoterror}</p>:""}
+      A password reset link will be sent to your email<br />
+       <label>Email</label>
+       <input name="forgotemail" value = {this.state.forgotemail} onChange = {this.onChange} />
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-primary" onClick={this.onforgotSubmit}>Submit</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
   </div>
 </div>
         )

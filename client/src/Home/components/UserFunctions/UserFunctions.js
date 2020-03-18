@@ -47,3 +47,12 @@ export const logout = (token) => {
         console.log('not deleted')
     })
 }
+
+export const forgot = (email) => {
+    return axios
+    .post('users/forgotpassword',email
+    )
+    .then(res=> {
+        console.log(email)
+    })
+}
