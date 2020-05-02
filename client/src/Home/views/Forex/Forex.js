@@ -5,6 +5,11 @@ import Header from '../../components/Includes/Header';
 import Footer from '../../components/Includes/Footer';
 
 class Forex extends Component{
+
+  // componentDidMount(){
+  //   window.location.reload();
+  // }
+
     render(){
         return(
             <div className="page-wrapper">
@@ -37,7 +42,7 @@ class Forex extends Component{
         </div>
       </div>
     </div>
-    <div className="row" style={{display:"flex",alignItems:"center"}}>
+    <div className="row">
       <div className="col col-md-6">
         <div className="about-details">
           <p>
