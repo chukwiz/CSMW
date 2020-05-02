@@ -1,361 +1,161 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Header from '../../components/Includes/Header'; 
+import Footer from '../../components/Includes/Footer'; 
+import Iframe from 'react-iframe';
 
 const ContactUs = () => {
-    return (
-        <div style={{fontSize:"100%"}}>
-          {/*[if lt IE 9]>
-  <div style="text-align:center; padding: 6px 0; background: #cc0000; font-size: 18px; color: #fff; font-weight: 500;">You are using an old version of Internet Explorer. For a better experience, keep your browser up to date. <a href="http://windows.microsoft.com/ie" target="_blank" rel="noopener noreferrer"  class="btn btn-sm btn-info"><i class="fa fa-edge"></i> Get the latest IE</a></div>
-  <![endif]*/}
-          {/* scrollToTop */}
-          {/* ================ */}
-          <div className="scrollToTop circle"><i className="icon-up-open-big" /></div>
-          {/* page wrapper start */}
-          {/* ================ */}
-          <div className="page-wrapper">
-            {/* header-container start */}
-            <nav className="navbar  navbar-light bg-white">
-  {/* <a className="navbar-brand" href="/">Sticky top</a> */}
-  <a className="navbar-brand" href="/">
-    <img src="../csmwhitelogo.png" alt="logo" />
-</a>
-  <ul className="list-inline">
-{/* <li ><i className="fa fa-phone "></i>International: +44 2035192105</li> */}
-<li className="">&nbsp;|&nbsp;</li>
-<li><a href="mailto:support@csmwealth.com" target="_blank" rel = "noopener noreferrer"><i className="fa fa-envelope"></i> support@csmwealth.com</a></li>
-<li className="">&nbsp;|&nbsp;</li>
-{/* <li><a href="/" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-default-login" style={{margin:"0"}}><b>LOGIN</b></a></li> */}
-</ul>
-
-<ul className="ml-auto list-inline" style={{marginRight:"40px"}}>
-<li className="hidden-xs"><a href="/login" className="btn btn-sm btn-white" style={{margin:"0", padding:"8px 20px 6px 20px"}}><b>CLIENT LOGIN</b></a></li>
-<li><a href="/signup" className="btn btn-sm btn-default btn-ocean-green" style={{margin:"0"}}><b>SIGN UP</b></a></li>
-</ul>
-
-</nav>
-<nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-  
-  <a className="navbar-brand" href="/">
-    CSM
-  </a>
-  <button
-    className="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNavDropdown"
-    aria-controls="navbarNavDropdown"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span className="navbar-toggler-icon" />
-  </button>
-  <div className="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul className="navbar-nav ml-auto" style={{marginRight:"40px"}}>
-      <li className="nav-item">
-        <a className="nav-link" href="/">
-          HOME <span className="sr-only">(current)</span>
-        </a>
-      </li>
-      <li className="nav-item dropdown">
-        <a
-          className="nav-link  dropdown-toggle"
-          href="/"
-          id="navbarDropdownMenuLink"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          PORTFOLIO
-        </a>
-        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a className="dropdown-item" href="/crypto">
-            Crypto
-          </a>
-          <a className="dropdown-item" href="/forex">
-            Forex
-          </a>
-          <a className="dropdown-item" href="/nfp">
-            Trade Nfp
-          </a>
-          <a className="dropdown-item" href="/retirement">
-            Retirement Income
-          </a>
-          
+    return(
+      <div className="page-wrapper">
+          <Header/>
+          <section className="page-title">
+    <div className="container">
+      <div className="row">
+        <div className="col col-xs-12">
+          <h2>Contact Us</h2>
+          <ol className="breadcrumb">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>Contact Us</li>
+          </ol>
         </div>
-      </li>
-      
-      <li className="nav-item">
-        <a className="nav-link" href="/ourteam">
-          OUR TEAM
-        </a>
-      </li>
-      <li className="nav-item dropdown">
-        <a
-          className="nav-link active dropdown-toggle"
-          href="/"
-          id="navbarDropdownMenuLink"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          ABOUT
-        </a>
-        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a className="dropdown-item" href="/aboutus">
-            About
-          </a>
-          <a className="dropdown-item" href="/vision">
-            Vision
-          </a>
-          <a className="dropdown-item active" href="/contactus">
-            Contact us
-          </a>
-          <a className="dropdown-item" href="/testimony">
-            Testimonials
-          </a>
-        </div>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/faq">
-          FAQ
-        </a>
-      </li>
-    </ul>
+      </div>{" "}
+      {/* end row */}
+    </div>{" "}
+    {/* end container */}
+  </section>
+
+  <section className="section-padding about-section-s4">
+  <div className="container">
+    <div className="row">
+    <div className="col col-xs-12">
+      <div className="col-md-4" style={{textAlign:"center"}}>
+        <i className="fa fa-phone" style={{marginRight:"15px"}}></i>+123 (4567) 890
+      </div>
+      <div className="col-md-4" style={{textAlign:"center"}}>
+        <i className="fa fa-home" style={{marginRight:"15px"}}></i>info@csmwealth.com
+      </div>
+      <div className="col-md-4" style={{textAlign:"center"}}>
+        <i className="fa fa-envelope" style={{marginRight:"15px"}}></i>380 St Ndiala Road, Enugu Trans 6486, Lagos.
+      </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section className="section-padding about-section-s4">
+  <div className="container">
+    <div className="row">
+    <div className="mapouter">
+  <div className="gmap_canvas">
+    <Iframe
+      width="100%"
+      height={500}
+      id="gmap_canvas"
+      src="https://maps.google.com/maps?q=1%20Windsor%20Road%2C%20Northam%2C%20Bideford%2C%20Devon%2C%20England%2C%20EX39%201EN&t=&z=17&ie=UTF8&iwloc=&output=embed"
+      frameBorder={0}
+      scrolling="no"
+      marginHeight={0}
+      marginWidth={0}
+    />
+    <a href="https://www.embedgooglemap.net/blog/private-internet-access-coupon/">
+      pia coupon
+    </a>
   </div>
-</nav>
+  <style
+    dangerouslySetInnerHTML={{
+      __html:
+        ".mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}"
+    }}
+  />
+</div>
+    </div>
+    </div>
+    </section>
 
-<div className="banner video-background-banner pv-40 dark-translucent-bg hovered" style={{paddingTop: '40px !important',marginBottom:"10%"}}>
-            <div style={{position: 'absolute', zIndex: -1, top: '0px', left: '0px', bottom: '0px', right: '0px', overflow: 'hidden', backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../../static/redesign/images/inner/about/phone.jpg")', backgroundColor: 'transparent', backgroundSize: 'cover', backgroundPosition: '50% 50%', backgroundRepeat: 'no-repeat'}}>
-
-            </div>
-              <div className="container">
-                <div className="row" style={{display:"flex",justifyContent:"center"}}>
-                  <div className="col-md-5 " style={{color:"#272424",textAlign:"center"}}>
-                    <h2 className="title object-non-visible animated object-visible fadeIn" style={{color:"#dadada"}} data-animation-effect="fadeIn" data-effect-delay={100}>Contact us</h2>
-                    <div className="separator-2 object-non-visible mt-10 animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay={100}  />
-                    <a href="/signup" className="object-non-visible animated object-visible fadeIn btn btn-sm btn-default btn-ocean-green" data-animation-effect="fadeIn" data-effect-delay={100}>Create Account</a>
-                  </div>
+    <section className="contact-section section-padding">
+    <div className="container">
+      <div className="row">
+        <div className="col col-md-6">
+          <div className="contact-location-map" id="map" />
+        </div>
+        <div className="col col-md-6">
+          <div className="section-title-s4">
+            <h2>Request a call back</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do
+              eiusmod tempor incidi dunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div className="contact-form">
+            <form
+              method="post"
+              id="contact-form"
+              className="form row contact-validation-active"
+            >
+              <div className="col col-sm-6">
+                <label htmlFor="name">Full Name</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="name"
+                  name="name"
+                />
+              </div>
+              <div className="col col-sm-6">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div className="col col-sm-6">
+                <label htmlFor="phone">Phone No</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="phone"
+                  name="phone"
+                />
+              </div>
+              <div className="col col-sm-6">
+                <label htmlFor="business">Business Type</label>
+                <select name="business" id="business" className="form-control">
+                  <option selected disabled>
+                    Select one
+                  </option>
+                  <option>Select number 1</option>
+                  <option>Select number 2</option>
+                  <option>Select number 3</option>
+                </select>
+              </div>
+              <div className="col col-xs-12 submit-btn">
+                <button type="submit">Submit</button>
+                <div id="loader">
+                  <i className="fa fa-refresh fa-spin fa-3x fa-fw" />
                 </div>
               </div>
-            </div>
-            {/* header-container end */}
-            {/* <div className="breadcrumb-container" style={{borderTop: '2px solid #f1f1f1'}}>
-              <div className="container">
-                <ol className="breadcrumb">
-                  <li><a href="index.html"><i className="fa fa-home" /></a></li>
-                  <li><a href="about-us/about-us.html">About</a></li>
-                  <li className="active">Contact Us</li>
-                </ol>
+              <div className="error-handling-messages">
+                <div id="success">Thank you</div>
+                <div id="error">
+                  {" "}
+                  Error occurred while sending email. Please try again later.{" "}
+                </div>
               </div>
-            </div> */}
-            <section className="main-container">
-              <div className="container">
-                <div className="row">
-                  {/* main content starts */}
-                  <div className="col-md-12" style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
-                    <h1 className="page-title" style={{color:"#343a40"}}>Contact Us</h1>
-                    <div className="separator-2" />
-                    <p>For any assistance you require, complete and submit the form below or contact us via any of the listed methods.</p>
-                    <br clear="all" />
-                    <div className="row">
-                      <div className="col-md-6">
-                        <table cellSpacing={5} cellPadding={0}>
-                          <tbody><tr>
-                              <td valign="top" style={{paddingBottom: '10px'}}>Telephone:</td>
-                              <td valign="top" style={{paddingLeft: '20px', paddingBottom: '10px', lineHeight: '1.6'}}>+44 2035192105</td>
-                            </tr>
-                            <tr>
-                              <td valign="top" style={{paddingBottom: '10px'}}>Customer Support:</td>
-                              <td valign="top" style={{paddingLeft: '20px', paddingBottom: '10px', lineHeight: '1.6'}}><a href="mailto:support@csmwealth.com">support@csmwealth.com</a><br />+44 2035192105</td>
-                            </tr>
-                          </tbody></table>
-                      </div>
-                      <div className="col-md-6">
-                        <table cellSpacing={5} cellPadding={0}>
-                          <tbody><tr>
-                              <td valign="top" style={{paddingBottom: '10px'}}>Sales Department:</td>
-                              <td valign="top" style={{paddingLeft: '20px', paddingBottom: '10px', lineHeight: '1.6'}}><a href="mailto:sales@csmwealth.com">sales@csmwealth.com</a><br />+44 2035192105</td>
-                            </tr>
-                            <tr>
-                              <td valign="top" style={{paddingBottom: '10px'}}>Affiliates Department:</td>
-                              <td valign="top" style={{paddingLeft: '20px', paddingBottom: '10px', lineHeight: '1.6'}}><a href="mailto:affiliates@csmwealth.com">affiliates@csmwealth.com</a></td>
-                            </tr>
-                            {/*
-  <tr>
-  <td valign="top" style="padding-bottom:10px">PAMM Department:</td>
-  <td valign="top" style="padding-left:20px;padding-bottom:10px;line-height:1.6"><a href="mailto:pamm@csmwealth.com">pamm@csmwealth.com</a></td>
-  </tr>
-  */}
-                          </tbody></table>
-                      </div>
-                    </div>
-                    <br clear="all" />
-                    <br clear="all" />
-                    <h3 style={{textAlign:"center"}} >Contact Form</h3>
-                    <div className="separator-2" />
-                    <div>
-                    <div className="col-md-" style={{textAlign:"center"}}>
-  <div className="form-row">
-    <div className="col-md-12 mb-3">
-      <p htmlFor="validationDefault01">First name</p>
-      <input
-        type="text"
-        className="form-control"
-        id="validationDefault01"
-        required
-      />
-    </div>
-    <div className="col-md-12 mb-3">
-      <p htmlFor="validationDefault02">Last name</p>
-      <input
-        type="text"
-        className="form-control"
-        id="validationDefault02"
-        required
-      />
-    </div>
-    
-  </div>
-  <div className="form-row">
-    <div className="col-md-12 mb-3">
-      <p htmlFor="validationDefault03">City</p>
-      <input
-        type="text"
-        className="form-control"
-        id="validationDefault03"
-        required
-      />
-    </div>
-    <div className="col-md-12 mb-3">
-      <p htmlFor="validationDefault04">State</p>
-      <input
-        type="text"
-        className="form-control"
-        id="validationDefaut03"
-        required
-      />
-    </div>
-  </div>
-  <div className="form-row">
-    <div className="col-md-12 mb-3">
-    <p htmlFor="validationfault03">Message or question</p>
-    <textarea class="form-control" aria-label="With textarea"></textarea>
-    </div>
-  </div>
-  
-  <button className="btn btn-primary" type="submit">
-    Submit form
-  </button>
-  </div>
-</div>
-                    
-                  </div>
-                  {/* main content ends */}
-                  {/* sidebar starts */}
-                  
-                  {/* sidebar ends */}
-                </div>{/* row ends */}
-              </div>{/* container ends */}
-            </section>{/* main container ends */}
-            {/*================== FOOTER starts here =======================*/}
-            <section className="clearfix pv-20 hidden-sm hidden-xs" id="paymen-methods" style = {{backgroundColor:"#42ce7a"}}>
-<div className="container">
-<div className="row" style={{display:"flex",justifyContent:"space-around"}}>
-<div className="owl-clients-v1" style={{display:"flex",justifyContent:"space-around",margin:"10px 0px"}}>
-<div className="item col-md-3">
-<a href="/"><img src="../static/redesign/images/payment-methods/wire-transfer.png" alt="wire-transfer" title="wire-transfer"/></a>
-</div>
-<div className="item col-md-3">
-<a href="/"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
-</div>
-<div className="item col-md-3">
-<a href="/"><img src="../static/redesign/images/payment-methods/btc.png" alt="mastercard" title="mastercard"/></a>
-</div>
-<div className="item col-md-3">
-<a href="/"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
-</div>
-{/* <div className="item">
-<a href="/"><img src="../static/redesign/images/payment-methods/maestro.png" alt="maestro" title="maestro"/></a>
-</div> */}
-{/* <div className="item">
-<a href="/"><img src="../static/redesign/images/payment-methods/skrill.png" alt="skrill" title="skrill"/></a>
-</div>
-<div className="item">
-<a href="/"><img src="../static/redesign/images/payment-methods/neteller.png" alt="neteller" title="neteller"/></a>
-</div>
-<div className="item">
-<a href="/"><img src="../static/redesign/images/payment-methods/fasapay.png" alt="fasapay" title="fasapay" style={{border: "1px solid #ddd"}} /></a>
-</div>
-<div className="item">
-<a href="/"><img src="../static/redesign/images/payment-methods/vload1.png" alt="vload" title="vload" style={{border: "1px solid #ddd"}}/></a>
-</div> */}
-</div>
-</div>
-</div>
-</section>
-<footer id="footer" className="clearfix dark">
-<div className="footer">
-<div className="container">
-<div className="footer-inner">
-<div className="row">
-
-</div>
-<div className="row">
-<div className="col-md-12">
-<div className="footer-content" style={{padding:"0px"}}>
-<div className="separator-2"></div>
-<div className="row">
-<div className="col-md-3 color-offwhite" style={{paddingTop:"2px"}}>
-<i className="fa fa-lock pr-10 color-white"></i> Secured by: GeoTrust Inc
-</div>
-{/* <div className="col-md-3 color-offwhite" style={{paddingTop:"2px"}}>
-<i className="fa fa-phone pr-10 color-white"></i> Telephone: +44 2035192105
-</div> */}
-<div className="col-md-6 color-offwhite" style = {{paddingTop:"2px"}}>
-<i className="fa fa-envelope-o pr-10 color-white"></i>support@csmwealth.com
-</div>
-<div className="col-md-3 color-offwhite">
-<ul className="social-links circle animated-effect-1" style={{marginTop:"0px",marginBottom:"2px",float:"right"}}>
-<li className="facebook"><a target="_blank" rel="noopener noreferrer" href="/"><i className="fa fa-facebook"></i></a></li>
-<li className="twitter"><a target="_blank" rel="noopener noreferrer" href="/"><i className="fa fa-twitter"></i></a></li>
-<li className="googleplus"><a target="_blank" rel="noopener noreferrer" href="/"><i className="fa fa-google-plus"></i></a></li>
-<li className="linkedin"><a target="_blank" rel="noopener noreferrer" href="/"><i className="fa fa-linkedin"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div className="row">
-<div className="col-md-12">
-<div className="separator-2"></div>
-<p className="color-offwhite" style={{fontSize:"12px"}}>
-<b></b>
-</p>
-<p className="color-offwhite" style={{fontSize:"12px"}}>
-<a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>Registered office address</a> <br />
-1 Windsor Road, Northam, Bideford, Devon, England, EX39 1EN
-</p>
-<p className="color-offwhite" style={{fontSize:"12px"}}>
-CSM Wealth holds a Financial Services Licence which authorizes us to issue and act as a responsible entity to <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>registered </a> managed investment schemes and to act as trustee to wholesale unregistered investment schemes worldwide.
-<p><b>Risk Warning:</b> Contracts for Difference (‘CFDs’) are complex financial products that are traded on margin. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage.
-<br/>
-As a result, CFDs may not be suitable for all investors because you may lose all your invested capital. You should not risk more than you are prepared to lose. Before deciding to trade, you need to ensure that you understand the risks involved taking into account your investment objectives and level of experience. All information on this website is not directed toward soliciting citizens or residents of the United States, United Kingdom, Japan or any other jurisdiction that would be contrary to local law or regulation.
-<br/>
-Past performance of CFDs is not a reliable indicator of future results. Most CFDs have no set maturity date. Hence, a CFD position matures on the date you choose to close an existing open position. Seek independent advice, if necessary. Please read CSM Wealth’s full ‘Risk Disclosure Statement’.
-</p>
-<br/></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</footer>
-            {/* footer end */}
+            </form>
           </div>
         </div>
-      );
+      </div>{" "}
+      {/* end row */}
+    </div>{" "}
+    {/* end container */}
+  </section>
+            
+            <Footer/>
+            </div>
+    )
 }
 
 export default ContactUs;

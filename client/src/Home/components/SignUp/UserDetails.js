@@ -167,15 +167,14 @@ const styles = {
     },
 
     root:{
-        // width:600,
-        // minWidth:200,
+        background:"#fff",
         boxShadow: "0 0 20px #00000033",
     },
 
     header:{
         padding:20,
         borderBottom:"1px solid #ccc",
-        backgroundColor:"#42ce7a",
+        backgroundColor:"#3a700e",
         textAlign:"center",
     },
 
@@ -184,7 +183,6 @@ const styles = {
     },
 
     container:{
-        // margin:"2px auto",
         display:"flex",
         flexDirection:"row",
         justifyContent:"space-between"

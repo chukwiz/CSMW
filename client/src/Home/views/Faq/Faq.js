@@ -1,140 +1,30 @@
 import React from 'react';
-import "./Faq.css"
+import "./Faq.css";
+import { Link } from 'react-router-dom';
+import Header from '../../components/Includes/Header'; 
+import Footer from '../../components/Includes/Footer'; 
 
 const Faq = () => {
     return(
-        <div style={{fontSize:"100%"}}>
-          {/*[if lt IE 9]>
-  <div style="text-align:center; padding: 6px 0; background: #cc0000; font-size: 18px; color: #fff; font-weight: 500;">You are using an old version of Internet Explorer. For a better experience, keep your browser up to date. <a href="http://windows.microsoft.com/ie" target="_blank" class="btn btn-sm btn-info"><i class="fa fa-edge"></i> Get the latest IE</a></div>
-  <![endif]*/}
-          {/* scrollToTop */}
-          {/* ================ */}
-          <div className="scrollToTop circle"><i className="icon-up-open-big" /></div>
-          {/* page wrapper start */}
-          {/* ================ */}
-          <div className="page-wrapper">
-            {/* header-container start */}
-            <nav className="navbar  navbar-light bg-white">
-  {/* <a className="navbar-brand" href="/">Sticky top</a> */}
-  <a className="navbar-brand" href="/">
-    <img src="../csmwhitelogo.png" alt="logo" />
-</a>
-  <ul className="list-inline">
-{/* <li ><i className="fa fa-phone "></i>International: +44 2035192105</li> */}
-<li className="">&nbsp;|&nbsp;</li>
-<li><a href="mailto:support@csmwealth.com" target="_blank" rel = "noopener noreferrer"><i className="fa fa-envelope"></i> support@csmwealth.com</a></li>
-<li className="">&nbsp;|&nbsp;</li>
-{/* <li><a href="/" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-default-login" style={{margin:"0"}}><b>LOGIN</b></a></li> */}
-</ul>
-
-<ul className="ml-auto list-inline" style={{marginRight:"40px"}}>
-<li className="hidden-xs"><a href="/login" className="btn btn-sm btn-white" style={{margin:"0", padding:"8px 20px 6px 20px"}}><b>CLIENT LOGIN</b></a></li>
-<li><a href="/signup" className="btn btn-sm btn-default btn-ocean-green" style={{margin:"0"}}><b>SIGN UP</b></a></li>
-</ul>
-
-</nav>
-<nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-  
-  <a className="navbar-brand" href="/">
-    CSM
-  </a>
-  <button
-    className="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNavDropdown"
-    aria-controls="navbarNavDropdown"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span className="navbar-toggler-icon" />
-  </button>
-  <div className="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul className="navbar-nav ml-auto" style={{marginRight:"40px"}}>
-      <li className="nav-item">
-        <a className="nav-link" href="/">
-          HOME <span className="sr-only">(current)</span>
-        </a>
-      </li>
-      <li className="nav-item dropdown">
-        <a
-          className="nav-link  dropdown-toggle"
-          href="/"
-          id="navbarDropdownMenuLink"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          PORTFOLIO
-        </a>
-        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a className="dropdown-item" href="/crypto">
-            Crypto
-          </a>
-          <a className="dropdown-item" href="/forex">
-            Forex
-          </a>
-          <a className="dropdown-item" href="/nfp">
-            Trade Nfp
-          </a>
-          <a className="dropdown-item" href="/retirement">
-            Retirement Income
-          </a>
-          
+      <div className="page-wrapper">
+          <Header/>
+          <section className="page-title">
+    <div className="container">
+      <div className="row">
+        <div className="col col-xs-12">
+          <h2>Frequently Asked Questions</h2>
+          <ol className="breadcrumb">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>Frequently Asked Questions</li>
+          </ol>
         </div>
-      </li>
-      
-      <li className="nav-item">
-        <a className="nav-link" href="/ourteam">
-          OUR TEAM
-        </a>
-      </li>
-      <li className="nav-item dropdown">
-        <a
-          className="nav-link dropdown-toggle"
-          href="/"
-          id="navbarDropdownMenuLink"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          ABOUT
-        </a>
-        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a className="dropdown-item" href="/aboutus">
-            About
-          </a>
-          <a className="dropdown-item" href="/vision">
-            Vision
-          </a>
-          <a className="dropdown-item" href="/contactus">
-            Contact us
-          </a>
-          <a className="dropdown-item" href="/testimony">
-            Testimonials
-          </a>
-        </div>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link active" href="/faq">
-          FAQ
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
-            {/* header-container end */}
-            {/* <div className="breadcrumb-container" style={{borderTop: '2px solid #f1f1f1'}}>
-              <div className="container">
-                <ol className="breadcrumb">
-                  <li><a href="../index.html"><i className="fa fa-home" /></a></li>
-                  <li><a href="../trading/premium-account.html">Account Types</a></li>
-                  <li className="active">Open Account</li>
-                </ol>
-              </div>
-            </div> */}
+      </div>{" "}
+      {/* end row */}
+    </div>{" "}
+    {/* end container */}
+  </section>
             <section className="main-container">
               <div className="container">
                 <div className="row">
@@ -426,165 +316,92 @@ const Faq = () => {
               </div>
             </div>
           </div> 
-          {/* <div className="tab-pane" id="tab6" role="tabpanel" aria-labelledby="tab6">
-            <div className="accordion" id="accordion-tab-6">
-              <div className="card">
-                <div className="card-header" id="accordion-tab-6-heading-1">
-                  <h5>
-                    <button className="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-1" aria-expanded="false" aria-controls="accordion-tab-6-content-1">Doomsday device?</button>
-                  </h5>
-                </div>
-                <div className="collapse show" id="accordion-tab-6-content-1" aria-labelledby="accordion-tab-6-heading-1" data-parent="#accordion-tab-6">
-                  <div className="card-body">
-                    <p>Ah, now the ball's in Farnsworth's court! We'll need to have a look inside you with this camera. Stop it, stop it. It's fine. I will 'destroy' you! Bender! Ship! Stop bickering or I'm going to come back there and change your opinions manually!</p>
-                    <p><strong>Example: </strong>So I really am important? How I feel when I'm drunk is correct?</p>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-header" id="accordion-tab-6-heading-2">
-                  <h5>
-                    <button className="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-2" aria-expanded="false" aria-controls="accordion-tab-6-content-2">And so we say goodbye to our beloved pet, Nibbler?</button>
-                  </h5>
-                </div>
-                <div className="collapse" id="accordion-tab-6-content-2" aria-labelledby="accordion-tab-6-heading-2" data-parent="#accordion-tab-6">
-                  <div className="card-body">
-                    <p>Nibbler, who's gone to a place where I, too, hope one day to go. The toilet. But existing is basically all I do! I suppose I could part with 'one' and still be feared. I just told you! You've killed me!</p>
-                    <p><strong>Example: </strong>What's with you kids? Every other day it's food, food, food.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-header" id="accordion-tab-6-heading-3">
-                  <h5>
-                    <button className="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-3" aria-expanded="false" aria-controls="accordion-tab-6-content-3">Tell her you just want to talk?</button>
-                  </h5>
-                </div>
-                <div className="collapse" id="accordion-tab-6-content-3" aria-labelledby="accordion-tab-6-heading-3" data-parent="#accordion-tab-6">
-                  <div className="card-body">
-                    <p>It has nothing to do with mating. Soon enough. There, now he's trapped in a book I wrote: a crummy world of plot holes and spelling errors! Daylight and everything. Hey! I'm a porno-dealing monster, what do I care what you think?</p>
-                    <p><strong>Example: </strong>Is that a cooking show? It doesn't look so shiny to me. And why did 'I' have to take a cab?</p>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-header" id="accordion-tab-6-heading-4">
-                  <h5>
-                    <button className="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-4" aria-expanded="false" aria-controls="accordion-tab-6-content-4">Good man. Nixon's pro-war and pro-family?</button>
-                  </h5>
-                </div>
-                <div className="collapse" id="accordion-tab-6-content-4" aria-labelledby="accordion-tab-6-heading-4" data-parent="#accordion-tab-6">
-                  <div className="card-body">
-                    <p>I don't 'need' to drink. I can quit anytime I want! THE BIG BRAIN AM WINNING AGAIN! I AM THE GREETEST! NOW I AM LEAVING EARTH, FOR NO RAISEN! There's one way and only one way to determine if an animal is intelligent. Dissect its brain!</p>
-                    <p><strong>Example: </strong>Guess again. Yeah, I do that with my stupidness. And when we woke up, we had these bodies.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
-      {/*  */}
                 </div>
               </div>
             </section>
-            {/*================== FOOTER starts here =======================*/}
-            <section className="clearfix pv-20 hidden-sm hidden-xs" id="paymen-methods" style = {{backgroundColor:"#42ce7a"}}>
-<div className="container">
-<div className="row" style={{display:"flex",justifyContent:"space-around"}}>
-<div className="owl-clients-v1" style={{display:"flex",justifyContent:"space-around",margin:"10px 0px"}}>
-<div className="item col-md-3">
-<a href="/"><img src="../static/redesign/images/payment-methods/wire-transfer.png" alt="wire-transfer" title="wire-transfer"/></a>
-</div>
-<div className="item col-md-3">
-<a href="/"><img src="../static/redesign/images/payment-methods/visa.png" alt="visa" title="visa" /></a>
-</div>
-<div className="item col-md-3">
-<a href="/"><img src="../static/redesign/images/payment-methods/btc.png" alt="mastercard" title="mastercard"/></a>
-</div>
-<div className="item col-md-3">
-<a href="/"><img src="../static/redesign/images/payment-methods/mastercard.png" alt="mastercard" title="mastercard"/></a>
-</div>
-{/* <div className="item">
-<a href="/"><img src="../static/redesign/images/payment-methods/maestro.png" alt="maestro" title="maestro"/></a>
-</div> */}
-{/* <div className="item">
-<a href="/"><img src="../static/redesign/images/payment-methods/skrill.png" alt="skrill" title="skrill"/></a>
-</div>
-<div className="item">
-<a href="/"><img src="../static/redesign/images/payment-methods/neteller.png" alt="neteller" title="neteller"/></a>
-</div>
-<div className="item">
-<a href="/"><img src="../static/redesign/images/payment-methods/fasapay.png" alt="fasapay" title="fasapay" style={{border: "1px solid #ddd"}} /></a>
-</div>
-<div className="item">
-<a href="/"><img src="../static/redesign/images/payment-methods/vload1.png" alt="vload" title="vload" style={{border: "1px solid #ddd"}}/></a>
-</div> */}
-</div>
-</div>
-</div>
-</section>
-<footer id="footer" className="clearfix dark">
-<div className="footer">
-<div className="container">
-<div className="footer-inner">
-<div className="row">
-
-</div>
-<div className="row">
-<div className="col-md-12">
-<div className="footer-content" style={{padding:"0px"}}>
-<div className="separator-2"></div>
-<div className="row">
-<div className="col-md-3 color-offwhite" style={{paddingTop:"2px"}}>
-<i className="fa fa-lock pr-10 color-white"></i> Secured by: GeoTrust Inc
-</div>
-{/* <div className="col-md-3 color-offwhite" style={{paddingTop:"2px"}}>
-<i className="fa fa-phone pr-10 color-white"></i> Telephone: +44 2035192105
-</div> */}
-<div className="col-md-6 color-offwhite" style = {{paddingTop:"2px"}}>
-<i className="fa fa-envelope-o pr-10 color-white"></i>support@csmwealth.com
-</div>
-<div className="col-md-3 color-offwhite">
-<ul className="social-links circle animated-effect-1" style={{marginTop:"0px",marginBottom:"2px",float:"right"}}>
-<li className="facebook"><a target="_blank" rel="noopener noreferrer" href="/"><i className="fa fa-facebook"></i></a></li>
-<li className="twitter"><a target="_blank" rel="noopener noreferrer" href="/"><i className="fa fa-twitter"></i></a></li>
-<li className="googleplus"><a target="_blank" rel="noopener noreferrer" href="/"><i className="fa fa-google-plus"></i></a></li>
-<li className="linkedin"><a target="_blank" rel="noopener noreferrer" href="/"><i className="fa fa-linkedin"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div className="row">
-<div className="col-md-12">
-<div className="separator-2"></div>
-<p className="color-offwhite" style={{fontSize:"12px"}}>
-<b></b>
-</p>
-<p className="color-offwhite" style={{fontSize:"12px"}}>
-<a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>Registered office address</a> <br />
-1 Windsor Road, Northam, Bideford, Devon, England, EX39 1EN
-</p>
-<p className="color-offwhite" style={{fontSize:"12px"}}>
-CSM Wealth holds a Financial Services Licence which authorizes us to issue and act as a responsible entity to <a href="https://beta.companieshouse.gov.uk/company/07659758" target="_blank" rel="noopener noreferrer" style={{color:"#22356d"}}>registered </a> managed investment schemes and to act as trustee to wholesale unregistered investment schemes worldwide.
-<p><b>Risk Warning:</b> Contracts for Difference (‘CFDs’) are complex financial products that are traded on margin. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage.
-<br/>
-As a result, CFDs may not be suitable for all investors because you may lose all your invested capital. You should not risk more than you are prepared to lose. Before deciding to trade, you need to ensure that you understand the risks involved taking into account your investment objectives and level of experience. All information on this website is not directed toward soliciting citizens or residents of the United States, United Kingdom, Japan or any other jurisdiction that would be contrary to local law or regulation.
-<br/>
-Past performance of CFDs is not a reliable indicator of future results. Most CFDs have no set maturity date. Hence, a CFD position matures on the date you choose to close an existing open position. Seek independent advice, if necessary. Please read CSM Wealth’s full ‘Risk Disclosure Statement’.
-</p>
-<br/></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</footer>
-            {/* footer end */}
+            <section className="contact-section section-padding">
+    <div className="container">
+      <div className="row">
+        <div className="col col-md-6">
+          <div className="contact-location-map" id="map" />
+        </div>
+        <div className="col col-md-6">
+          <div className="section-title-s4">
+            <h2>Request a call back</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do
+              eiusmod tempor incidi dunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div className="contact-form">
+            <form
+              method="post"
+              id="contact-form"
+              className="form row contact-validation-active"
+            >
+              <div className="col col-sm-6">
+                <label htmlFor="name">Full Name</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="name"
+                  name="name"
+                />
+              </div>
+              <div className="col col-sm-6">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div className="col col-sm-6">
+                <label htmlFor="phone">Phone No</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="phone"
+                  name="phone"
+                />
+              </div>
+              <div className="col col-sm-6">
+                <label htmlFor="business">Business Type</label>
+                <select name="business" id="business" className="form-control">
+                  <option selected disabled>
+                    Select one
+                  </option>
+                  <option>Select number 1</option>
+                  <option>Select number 2</option>
+                  <option>Select number 3</option>
+                </select>
+              </div>
+              <div className="col col-xs-12 submit-btn">
+                <button type="submit">Submit</button>
+                <div id="loader">
+                  <i className="fa fa-refresh fa-spin fa-3x fa-fw" />
+                </div>
+              </div>
+              <div className="error-handling-messages">
+                <div id="success">Thank you</div>
+                <div id="error">
+                  {" "}
+                  Error occurred while sending email. Please try again later.{" "}
+                </div>
+              </div>
+            </form>
           </div>
         </div>
+      </div>{" "}
+      {/* end row */}
+    </div>{" "}
+    {/* end container */}
+  </section>
+            <Footer/>
+            </div>
     )
 }
 

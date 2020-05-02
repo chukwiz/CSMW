@@ -104,12 +104,13 @@ const styles = {
     },
     root:{
         boxShadow: "0 0 20px #00000033",
+        background:"#fff",
     },
 
     header:{
         padding:20,
         borderBottom:"1px solid #ccc",
-        backgroundColor:"#42ce7a",
+        backgroundColor:"#3a700e",
         textAlign:"center"
     },
 

@@ -2,8 +2,7 @@ import React,{Component} from 'react';
 
 import Backdrop from '@material-ui/core/Backdrop';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import Button from '@material-ui/core/Button';
-import { makeStyles } from '@material-ui/core/styles';
+import {Link} from 'react-router-dom';
 
 import './Login.css';
 import {login,forgot} from '../UserFunctions/UserFunctions';
@@ -120,9 +119,9 @@ onSubmit = (e) => {
     </form>
     <div className="powered">
       {/* copyright <a href="/">csmwealth</a> */}
-      Don't have an account? <a href="/signup">Sign Up</a>
+      Don't have an account? <Link to="/register">Sign Up</Link>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    {/* <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -143,7 +142,7 @@ onSubmit = (e) => {
       </div>
     </div>
   </div>
-</div>
+</div> */}
   </div>
 </div>
         )
